@@ -1,0 +1,193 @@
+body {
+	background-color: blueviolet;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-background {
+	background-color: white;
+	height: 50rem;
+	width: 50rem;
+}
+
+.text::before {
+	font-size: 10rem;
+	color: black;
+	animation: sing 30s infinite;
+	content: '';
+}
+
+@keyframes sing {
+	0% {
+		content: '🎺';
+	}
+
+	9% {
+		content: '🎺';
+	}
+	10% {
+		content: 'I dont';
+
+		font-size: 10rem;
+	}
+
+	13.33% {
+		content: 'want you';
+
+		font-size: 10rem;
+	}
+
+	16.66% {
+		content: '';
+
+		font-size: 10rem;
+	}
+
+	20% {
+		content: 'to be no slave';
+
+		font-size: 10rem;
+	}
+	23.33% {
+		content: '';
+
+		font-size: 10rem;
+	}
+	26.66% {
+		content: 'I dont';
+
+		font-size: 10rem;
+	}
+
+	30% {
+		content: 'want you';
+
+		font-size: 10rem;
+	}
+
+	33.33% {
+		content: '';
+
+		font-size: 10rem;
+	}
+
+	36.66% {
+		content: 'to work all day';
+
+		font-size: 10rem;
+	}
+
+	43.33% {
+		content: '';
+
+		font-size: 10rem;
+	}
+
+	46.66% {
+		content: 'but i want you';
+
+		font-size: 10rem;
+	}
+
+	50% {
+		content: '';
+
+		font-size: 10rem;
+	}
+
+	53.33% {
+		content: 'to be true';
+
+		font-size: 10rem;
+	}
+
+	56.66% {
+		content: '';
+
+		font-size: 10rem;
+	}
+
+	60% {
+		content: 'and I';
+
+		font-size: 10rem;
+	}
+
+	62% {
+		content: 'just';
+
+		font-size: 10rem;
+	}
+
+	64% {
+		content: 'want ';
+
+		font-size: 10rem;
+	}
+
+	66% {
+		content: 'to make';
+
+		font-size: 10rem;
+	}
+
+	68% {
+		content: 'web';
+		font-size: 20rem;
+	}
+
+	71.33% {
+		content: 'with you';
+
+		font-size: 10rem;
+	}
+
+	73.33% {
+		content: '';
+
+		font-size: 10rem;
+	}
+
+	76.66% {
+		content: 'web';
+		font-size: 20rem;
+	}
+
+	80% {
+		content: 'with you';
+
+		font-size: 10rem;
+	}
+
+	83.33% {
+		content: 'ooohooo';
+		font-size: 10rem;
+	}
+
+	84% {
+		content: 'ooohooo';
+		font-size: 20rem;
+	}
+
+	85% {
+		content: 'ooohooo';
+		font-size: 15rem;
+	}
+
+	86% {
+		content: 'ooohooo';
+		font-size: 20rem;
+	}
+
+	92% {
+		content: 'web';
+		font-size: 20rem;
+	}
+
+	93.33% {
+		content: 'with you';
+
+		font-size: 10rem;
+	}
+}
