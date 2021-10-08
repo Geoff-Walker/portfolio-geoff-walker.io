@@ -137,6 +137,12 @@ body {
 		font-size: 20rem;
 	}
 
+	70% {
+		content: '';
+
+		font-size: 10rem;
+	}
+
 	71.33% {
 		content: 'with you';
 
@@ -152,6 +158,12 @@ body {
 	76.66% {
 		content: 'web';
 		font-size: 20rem;
+	}
+
+	79% {
+		content: '';
+
+		font-size: 10rem;
 	}
 
 	80% {
@@ -183,6 +195,12 @@ body {
 	92% {
 		content: 'web';
 		font-size: 20rem;
+	}
+
+	93% {
+		content: '';
+
+		font-size: 10rem;
 	}
 
 	93.33% {
