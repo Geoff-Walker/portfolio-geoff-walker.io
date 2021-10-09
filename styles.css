@@ -5,6 +5,10 @@ body {
 	align-items: center;
 }
 
+h1 {
+	font-family: 'Style Script', cursive;
+}
+
 .text-background {
 	background-color: white;
 	height: 50rem;
