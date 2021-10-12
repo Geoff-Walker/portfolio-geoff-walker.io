@@ -1,2 +1,0 @@
-Ignore_Work_lib/
-diet_coke.jpg
