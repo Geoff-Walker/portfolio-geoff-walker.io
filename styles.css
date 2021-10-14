@@ -32,6 +32,10 @@ main {
 	background-color: rgba(10, 8, 6, 1);
 	/* background-color: rgba(116, 63, 16, 1); */
 	/* background-color: rgba(255, 240, 240, 1); */
+	/* background-image: url(Diet-geoff-break.svg); */
+	/* background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 0; */
 }
 
 .index__bubbling_background span {
@@ -42,6 +46,7 @@ main {
 
 	bottom: -100px;
 	animation: animate 4s linear infinite;
+	/* display: none; */
 }
 
 .index__bubbling_background span1 {
@@ -52,6 +57,7 @@ main {
 
 	bottom: -100px;
 	animation: animate 4s linear infinite;
+	/* display: none; */
 }
 
 .index__bubbling_background span1:before {
@@ -72,6 +78,7 @@ main {
 
 	bottom: -100px;
 	animation: animate 4s linear infinite;
+	/* display: none; */
 }
 
 .index__bubbling_background span2:before {

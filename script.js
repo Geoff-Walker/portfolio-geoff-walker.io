@@ -30,3 +30,5 @@ function createBubbles() {
 // setInterval(createBubbles, 0.0000001);
 setInterval(createBubbles, 1);
 // setInterval(createBubbles, 1);
+
+function deleteBubbles() {}
