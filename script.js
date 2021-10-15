@@ -36,7 +36,7 @@ function applyThemeLight() {}
 function applyThemeDark() {}
 
 function dietGeoffBreak() {
-	bubblingBackground.classList.add('background-hidden');
+	// bubblingBackground.classList.add('background-hidden');
 	pictureBackground.classList.remove('background-hidden');
 	mainHeading.classList.add('highlight-text');
 	subHeading.classList.add('shadow-text');
@@ -46,7 +46,7 @@ function dietGeoffBreak() {
 	textBackground.classList.remove('text-background-hidden');
 
 	setTimeout(() => {
-		bubblingBackground.classList.remove('background-hidden');
+		// bubblingBackground.classList.remove('background-hidden');
 		pictureBackground.classList.add('background-hidden');
 		mainHeading.classList.remove('highlight-text');
 		subHeading.classList.remove('shadow-text');
