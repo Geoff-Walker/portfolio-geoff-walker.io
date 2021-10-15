@@ -2,21 +2,36 @@ const contactBubble = document.querySelector('.bubble-contact-me');
 const bubbleContactText = document.querySelector('.bubble-contact-text');
 const bubbleContactEmail = document.querySelector('.bubble-contact-email');
 
+const textContainer = document.querySelector('.text_content');
+const mainHeading = document.querySelector('.main-heading');
+const subHeading = document.querySelector('.sub-heading');
+
 // diet can
 // zero can
 // animation Text
-// text containter
-// text Heading
+
 // link buttons
 // text straplinw
 // background animation
 // background picture
-// button Cotact
+
 // lemon theme button
 // thought bubble
 
 contactBubble.addEventListener('mouseover', showBubble);
 contactBubble.addEventListener('mouseout', hideBubble);
+textContainer.addEventListener('mouseover', textHighlight);
+textContainer.addEventListener('mouseout', textStopHighlight);
+
+function textHighlight() {
+	mainHeading.classList.add('highlight-text');
+	subHeading.classList.add('shadow-text');
+}
+
+function textStopHighlight() {
+	mainHeading.classList.remove('highlight-text');
+	subHeading.classList.remove('shadow-text');
+}
 
 function showBubble() {
 	bubbleContactEmail.classList.remove('email-hidden');
