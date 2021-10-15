@@ -1,3 +1,16 @@
+// diet can
+// zero can
+// animation Text
+// text containter
+// text Heading
+// link buttons
+// text straplinw
+// background animation
+// background picture
+// button Cotact
+// lemon theme button
+// thought bubble
+
 function createBubbles() {
 	const background = document.querySelector('.index__bubbling_background');
 	const createElement = document.createElement('span');

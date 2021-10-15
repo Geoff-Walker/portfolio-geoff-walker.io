@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="66.596786mm"
+   height="122.23819mm"
+   viewBox="0 0 66.596786 122.23819"
    version="1.1"
    id="svg5"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
@@ -24,58 +24,63 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.332716"
-     inkscape:cx="226.22974"
-     inkscape:cy="518.86523"
+     inkscape:zoom="0.666358"
+     inkscape:cx="-343.65911"
+     inkscape:cy="264.87264"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="1912"
+     inkscape:window-x="3832"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2" />
+     inkscape:current-layer="svg5"
+     showborder="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <defs
      id="defs2">
     <rect
-       x="81.03752"
+       x="81.037521"
        y="227.35527"
-       width="358.66607"
+       width="358.66608"
        height="26.262159"
        id="rect44835" />
     <rect
        x="283.63132"
-       y="559.00882"
+       y="559.00885"
        width="5.2524319"
-       height="51.773971"
+       height="51.773972"
        id="rect24057" />
     <rect
        x="33.765633"
-       y="305.3914"
+       y="305.39139"
        width="148.56879"
-       height="60.77814"
+       height="60.778141"
        id="rect51651" />
     <rect
        x="-12.755906"
        y="273.8768"
-       width="264.12229"
-       height="45.771192"
+       width="264.12228"
+       height="45.771191"
        id="rect23323" />
     <rect
-       x="-25.382005"
+       x="-25.382006"
        y="289.71255"
-       width="465.51417"
-       height="97.631875"
+       width="465.51416"
+       height="97.631874"
        id="rect295441" />
     <rect
-       x="22.671924"
-       y="300.07145"
+       x="22.671925"
+       y="300.07144"
        width="202.82085"
-       height="74.418826"
+       height="74.418823"
        id="rect287323" />
     <rect
        x="33.765633"
-       y="305.3914"
+       y="305.39139"
        width="148.56879"
-       height="60.77814"
+       height="60.778141"
        id="rect881" />
     <rect
        x="33.765633"
@@ -95,7 +100,8 @@
      inkscape:groupmode="layer"
      id="layer1"
      sodipodi:insensitive="true"
-     style="display:none">
+     style="display:none"
+     transform="translate(-67.577802,-77.350201)">
     <image
        width="105.03958"
        height="161.925"
@@ -109,7 +115,8 @@
   <g
      id="layer2"
      inkscape:label="Layer 2"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-67.577802,-77.350201)">
     <path
        style="display:inline;fill:#b8b1ac;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 73.138757,79.455924 4.211444,-1.263433 7.580601,-0.280762 8.001746,-0.421145 9.124792,-0.140383 h 7.86137 l 8.98441,0.140383 6.59793,0.421145 2.66725,0.701908 -0.28076,2.10572 -3.64992,0.982671 -5.68545,0.631716 -6.24698,0.210574 -8.2825,0.210572 L 89.4932,82.614507 79.245353,82.403936 73.981047,81.631837 73.419519,80.578978 Z"
@@ -166,7 +173,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Style Script';-inkscape-font-specification:'Style Script';direction:ltr;white-space:pre;shape-inside:url(#rect23323);fill:#ff0000;fill-opacity:1;stroke:none"><tspan
          x="-12.755859"
          y="305.19274"
-         id="tspan930">Geoff-Walker</tspan></text>
+         id="tspan887">Geoff-Walker</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0,-0.7390815,0.53286633,0,-62.527164,187.13627)"
@@ -175,7 +182,7 @@
        inkscape:label="text51649"><tspan
          x="33.765625"
          y="342.16017"
-         id="tspan932">zero</tspan></text>
+         id="tspan889">zero</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0,-0.32947766,0.2375483,0,32.716576,195.74532)"
@@ -184,7 +191,7 @@
        inkscape:label=".one"><tspan
          x="33.765625"
          y="342.16017"
-         id="tspan934">.one</tspan></text>
+         id="tspan891">.one</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0,-0.26458333,0.26458333,0,12.986037,202.74596)"
@@ -192,6 +199,6 @@
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:21.3333px;line-height:1.25;font-family:'Cabin Condensed';-inkscape-font-specification:'Cabin Condensed, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect44835);fill:#ffffff;fill-opacity:1;stroke:none"><tspan
          x="81.037109"
          y="246.96586"
-         id="tspan936">Maximum web development no hassle</tspan></text>
+         id="tspan893">Maximum web development no hassle</tspan></text>
   </g>
 </svg>
