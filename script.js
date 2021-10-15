@@ -1,3 +1,7 @@
+const contactBubble = document.querySelector('.bubble-contact-me');
+const bubbleContactText = document.querySelector('.bubble-contact-text');
+const bubbleContactEmail = document.querySelector('.bubble-contact-email');
+
 // diet can
 // zero can
 // animation Text
@@ -11,8 +15,21 @@
 // lemon theme button
 // thought bubble
 
+contactBubble.addEventListener('mouseover', showBubble);
+contactBubble.addEventListener('mouseout', hideBubble);
+
+function showBubble() {
+	bubbleContactEmail.classList.remove('email-hidden');
+	bubbleContactText.classList.add('email-hidden');
+}
+
+function hideBubble() {
+	bubbleContactEmail.classList.add('email-hidden');
+	bubbleContactText.classList.remove('email-hidden');
+}
+
 function createBubbles() {
-	const background = document.querySelector('.index__bubbling_background');
+	const background = document.querySelector('.bubbling_background');
 	const createElement = document.createElement('span');
 	const createMidElement = document.createElement('span1');
 	const createBrownElement = document.createElement('span2');
