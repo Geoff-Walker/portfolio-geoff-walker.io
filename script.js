@@ -5,23 +5,67 @@ const bubbleContactEmail = document.querySelector('.bubble-contact-email');
 const textContainer = document.querySelector('.text_content');
 const mainHeading = document.querySelector('.main-heading');
 const subHeading = document.querySelector('.sub-heading');
+const hoverCan = document.querySelector('.container-animation');
+const canZero = document.querySelector('.can-zero');
+const canDiet = document.querySelector('.can-diet');
+const canLemon = document.querySelector('.can-lemon');
+const thoughtBubble = document.querySelector('.thought-bubble');
+const themeSelectorLight = document.querySelector('.page_theme_light');
+const themeSelectorDark = document.querySelector('.page_theme_dark');
+const bubblingBackground = document.querySelector('.bubbling_background');
+const pictureBackground = document.querySelector('.picture_background');
+const textBackground = document.querySelector('.text-background');
 
-// diet can
-// zero can
+const themeDark = true;
 // animation Text
 
 // link buttons
-
-// background animation
-// background picture
-
-// lemon theme button
-// thought bubble
 
 contactBubble.addEventListener('mouseover', showBubble);
 contactBubble.addEventListener('mouseout', hideBubble);
 textContainer.addEventListener('mouseover', textHighlight);
 textContainer.addEventListener('mouseout', textStopHighlight);
+hoverCan.addEventListener('mouseover', canHover);
+hoverCan.addEventListener('mouseout', canRemoveHover);
+hoverCan.addEventListener('click', dietGeoffBreak);
+themeSelectorLight.addEventListener('click', applyThemeLight);
+themeSelectorDark.addEventListener('click', applyThemeDark);
+
+function applyThemeLight() {}
+
+function applyThemeDark() {}
+
+function dietGeoffBreak() {
+	bubblingBackground.classList.add('background-hidden');
+	pictureBackground.classList.remove('background-hidden');
+	mainHeading.classList.add('highlight-text');
+	subHeading.classList.add('shadow-text');
+	canZero.classList.add('can-hidden');
+	thoughtBubble.classList.add('thought-bubble-hidden');
+	canDiet.classList.remove('can-hidden');
+	textBackground.classList.remove('text-background-hidden');
+
+	setTimeout(() => {
+		bubblingBackground.classList.remove('background-hidden');
+		pictureBackground.classList.add('background-hidden');
+		mainHeading.classList.remove('highlight-text');
+		subHeading.classList.remove('shadow-text');
+		canZero.classList.remove('can-hidden');
+		canDiet.classList.add('can-hidden');
+		thoughtBubble.classList.remove('thought-bubble-hidden');
+		textBackground.classList.add('text-background-hidden');
+	}, 29000);
+}
+
+function canHover() {
+	canZero.classList.add('can-hover');
+	thoughtBubble.classList.add('thought-bubble-hover');
+}
+
+function canRemoveHover() {
+	canZero.classList.remove('can-hover');
+	thoughtBubble.classList.remove('thought-bubble-hover');
+}
 
 function textHighlight() {
 	mainHeading.classList.add('highlight-text');
@@ -72,8 +116,4 @@ function createBubbles() {
 	}, 8000);
 }
 
-// setInterval(createBubbles, 0.0000001);
 setInterval(createBubbles, 1);
-// setInterval(createBubbles, 1);
-
-function deleteBubbles() {}
