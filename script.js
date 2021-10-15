@@ -11,7 +11,7 @@ const subHeading = document.querySelector('.sub-heading');
 // animation Text
 
 // link buttons
-// text straplinw
+
 // background animation
 // background picture
 
