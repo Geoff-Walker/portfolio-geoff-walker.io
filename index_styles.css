@@ -37,12 +37,25 @@ main {
 .picture_background {
 	background-image: url(Diet-geoff-break.svg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-position: center;
+	background-color: black;
+	background-size: 80%;
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	overflow: hidden;
 	z-index: 0;
+	animation: pan 30s linear;
+}
+
+@keyframes pan {
+	0% {
+		background-size: 80%;
+	}
+
+	100% {
+		background-size: 40%;
+	}
 }
 
 .background-hidden {
@@ -247,7 +260,7 @@ ul li a:active::before {
 	padding-left: 5rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: center;
 
 	width: 48rem;
 }
@@ -380,9 +393,40 @@ ul li a:active::before {
 	margin: 0 auto;
 }
 
+.can-animation {
+	position: relative;
+	margin: 0 auto;
+}
 .can {
 	height: 20rem;
 	margin-top: 2rem;
+}
+
+.can-spray {
+	height: 20rem;
+	position: absolute;
+	animation: spray 2700ms linear;
+	transform-origin: 100% 100%;
+	top: -14rem;
+	left: -14rem;
+}
+
+@keyframes spray {
+	0% {
+		transform: scale(0.5);
+	}
+
+	20% {
+		transform: scale(1);
+	}
+
+	40% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
 }
 
 .can-infinite-animate {
@@ -524,10 +568,13 @@ ul li a:active::before {
 	content: '';
 }
 
+.text-hidden {
+	display: none;
+}
+
 @keyframes sing {
 	0% {
-		content: 'Diet Geoff Break';
-		z-index: 5;
+		content: '';
 	}
 
 	9% {

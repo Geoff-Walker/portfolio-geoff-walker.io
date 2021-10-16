@@ -5,10 +5,15 @@ const bubbleContactEmail = document.querySelector('.bubble-contact-email');
 const textContainer = document.querySelector('.text_content');
 const mainHeading = document.querySelector('.main-heading');
 const subHeading = document.querySelector('.sub-heading');
+const tagHeading = document.querySelector('.tag-heading');
+const intHeading = document.querySelector('.int-heading');
+const titleHeading = document.querySelector('.title-heading');
+const paraTextContent = document.querySelector('.para-text-content');
 const hoverCan = document.querySelector('.container-animation');
 const canZero = document.querySelector('.can-zero');
 const canDiet = document.querySelector('.can-diet');
 const canLemon = document.querySelector('.can-lemon');
+const canSpray = document.querySelector('.can-spray');
 const thoughtBubble = document.querySelector('.thought-bubble');
 const themeSelectorLight = document.querySelector('.page_theme_light');
 const themeSelectorDark = document.querySelector('.page_theme_dark');
@@ -43,7 +48,17 @@ function dietGeoffBreak() {
 	canZero.classList.add('can-hidden');
 	thoughtBubble.classList.add('thought-bubble-hidden');
 	canDiet.classList.remove('can-hidden');
+	canSpray.classList.remove('can-hidden');
 	textBackground.classList.remove('text-background-hidden');
+	contactBubble.classList.add('thought-bubble-hidden');
+	titleHeading.classList.add('text-hidden');
+	tagHeading.classList.add('text-hidden');
+	paraTextContent.classList.add('text-hidden');
+	intHeading.classList.add('text-hidden');
+
+	setTimeout(() => {
+		canSpray.classList.add('can-hidden');
+	}, 2500);
 
 	setTimeout(() => {
 		// bubblingBackground.classList.remove('background-hidden');
@@ -52,8 +67,14 @@ function dietGeoffBreak() {
 		subHeading.classList.remove('shadow-text');
 		canZero.classList.remove('can-hidden');
 		canDiet.classList.add('can-hidden');
+
 		thoughtBubble.classList.remove('thought-bubble-hidden');
 		textBackground.classList.add('text-background-hidden');
+		contactBubble.classList.remove('thought-bubble-hidden');
+		titleHeading.classList.remove('text-hidden');
+		tagHeading.classList.remove('text-hidden');
+		paraTextContent.classList.remove('text-hidden');
+		intHeading.classList.remove('text-hidden');
 	}, 29000);
 }
 
