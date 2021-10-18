@@ -20,6 +20,7 @@ const themeSelectorDark = document.querySelector('.theme-cola');
 const bubblingBackground = document.querySelector('.bubbling_background');
 const pictureBackground = document.querySelector('.picture_background');
 const textBackground = document.querySelector('.text-background');
+const linkHeader = document.querySelectorAll('.header_li');
 
 const background = document.querySelector('#bubbling_background');
 
@@ -49,6 +50,15 @@ function applyThemeLight() {
 	canZero.classList.remove('can-hidden');
 	canZero.classList.add('can-infinite-animate');
 	themeDark = true;
+	console.log(linkHeader);
+	linkHeader.forEach((el) => {
+		el.classList.add('header_li-dark');
+		el.classList.remove('header_li-light');
+	});
+	textContainer.classList.add('text_content-dark');
+	textContainer.classList.remove('text_content-light');
+	mainHeading.classList.add('main-heading-dark');
+	mainHeading.classList.remove('main-heading-light');
 }
 
 function applyThemeDark() {
@@ -62,13 +72,28 @@ function applyThemeDark() {
 	canZero.classList.add('can-hidden');
 	canZero.classList.remove('can-infinite-animate');
 	themeDark = false;
+	linkHeader.forEach((el) => {
+		el.classList.add('header_li-light');
+		el.classList.remove('header_li-dark');
+	});
+
+	textContainer.classList.remove('text_content-dark');
+	textContainer.classList.add('text_content-light');
+	mainHeading.classList.remove('main-heading-dark');
+	mainHeading.classList.add('main-heading-light');
 }
 
 function dietGeoffBreak() {
 	// bubblingBackground.classList.add('background-hidden');
 	pictureBackground.classList.remove('background-hidden');
-	mainHeading.classList.add('highlight-text');
-	subHeading.classList.add('shadow-text');
+
+	mainHeading.classList.add('highlight-text-dark');
+	subHeading.classList.add('shadow-text-dark');
+	textContainer.classList.add('text_content-dark');
+
+	themeSelectorDark.classList.add('page_theme-hidden');
+	themeSelectorLight.classList.add('page_theme-hidden');
+
 	canZero.classList.add('can-hidden');
 	canLemon.classList.add('can-hidden');
 	thoughtBubble.classList.add('thought-bubble-hidden');
@@ -88,6 +113,7 @@ function dietGeoffBreak() {
 	setTimeout(() => {
 		// bubblingBackground.classList.remove('background-hidden');
 		pictureBackground.classList.add('background-hidden');
+
 		mainHeading.classList.remove('highlight-text');
 		subHeading.classList.remove('shadow-text');
 		canZero.classList.remove('can-hidden');
@@ -107,6 +133,15 @@ function dietGeoffBreak() {
 			canLemon.classList.remove('can-hidden');
 			canZero.classList.add('can-hidden');
 		}
+
+		mainHeading.classList.remove('highlight-text-dark');
+		subHeading.classList.remove('shadow-text-dark');
+		if (themeDark === false) {
+			textContainer.classList.remove('text_content-dark');
+			themeSelectorDark.classList.remove('page_theme-hidden');
+		} else {
+			themeSelectorLight.classList.remove('page_theme-hidden');
+		}
 	}, 29000);
 }
 
@@ -123,13 +158,23 @@ function canRemoveHover() {
 }
 
 function textHighlight() {
-	mainHeading.classList.add('highlight-text');
-	subHeading.classList.add('shadow-text');
+	if (themeDark === true) {
+		mainHeading.classList.add('highlight-text-dark');
+		subHeading.classList.add('shadow-text-dark');
+	} else {
+		mainHeading.classList.add('highlight-text-light');
+		subHeading.classList.add('shadow-text-light');
+	}
 }
 
 function textStopHighlight() {
-	mainHeading.classList.remove('highlight-text');
-	subHeading.classList.remove('shadow-text');
+	if (themeDark === true) {
+		mainHeading.classList.remove('highlight-text-dark');
+		subHeading.classList.remove('shadow-text-dark');
+	} else {
+		mainHeading.classList.remove('highlight-text-light');
+		subHeading.classList.remove('shadow-text-light');
+	}
 }
 
 function showBubble() {

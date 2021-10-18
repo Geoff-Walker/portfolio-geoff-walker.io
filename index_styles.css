@@ -128,6 +128,10 @@ main {
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Light theme//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+.theme-cola {
+	color: black;
+}
+
 .bubbling_background-light {
 	height: 100%;
 	width: 100%;
@@ -205,6 +209,94 @@ main {
 	border-radius: 50%;
 }
 
+.header_li-light {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-family: 'Carter One', cursive;
+	font-size: 3rem;
+}
+
+.header_li-light a {
+	text-decoration: none;
+	color: rgba(10, 8, 6, 1);
+	-webkit-text-stroke: 1px white;
+	/* -webkit-text-stroke: 4px black; */
+	position: relative;
+	text-shadow: 2px 2px 3px rgba(100, 100, 100, 0.5);
+}
+.header_li-light a:hover {
+	color: darkgrey;
+	-webkit-text-stroke: 1px white;
+}
+
+.header_li-light a::before {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.header_li-light a:hover:before {
+	color: green;
+	z-index: 1;
+	-webkit-text-stroke: 1px white;
+	transform: translate(10px, -10px);
+}
+
+.header_li-light a::after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.header_li-light a:hover:after {
+	color: yellow;
+	z-index: 2;
+	-webkit-text-stroke: 1px white;
+	transform: translate(20px, -20px);
+}
+.header_li-light a:active {
+	color: white;
+}
+
+.header_li-light a:active:after {
+	z-index: 2;
+	color: white;
+	transform: translate(0px, 0px);
+}
+.header_li-light a:active::before {
+	z-index: 1;
+	color: white;
+	transform: translate(0px, 0px);
+}
+
+.text_content-light {
+	color: black;
+	text-shadow: 2px 2px 3px rgba(100, 100, 100, 0.5);
+	font-family: 'Carter One', cursive;
+	padding-left: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	width: 48rem;
+}
+
+.theme-cola {
+	color: black;
+}
+
+.theme-lemonade {
+	color: white;
+}
+
+.main-heading-light {
+	font-size: 5rem;
+	letter-spacing: 0.5rem;
+	-webkit-text-stroke: 1px white;
+}
+
 @keyframes animate {
 	0% {
 		transform: translateY(0%);
@@ -237,7 +329,6 @@ main {
 }
 
 .page_theme {
-	color: white;
 	font-family: 'Carter One', cursive;
 	font-size: 0.75rem;
 	display: flex;
@@ -247,6 +338,14 @@ main {
 	align-items: center;
 	text-align: center;
 	cursor: pointer;
+}
+
+.theme-cola {
+	color: black;
+}
+
+.theme-lemonade {
+	color: white;
 }
 
 .page_theme-hidden {
@@ -261,14 +360,14 @@ main {
 	padding-right: 2rem;
 }
 
-.header_li {
+.header_li-dark {
 	padding-left: 2rem;
 	padding-right: 2rem;
 	font-family: 'Carter One', cursive;
 	font-size: 3rem;
 }
 
-ul li a {
+.header_li-dark a {
 	text-decoration: none;
 	color: white;
 	-webkit-text-stroke: 4px white;
@@ -276,50 +375,48 @@ ul li a {
 	position: relative;
 	text-shadow: 2px 2px 3px rgba(100, 100, 100, 0.5);
 }
-ul li a:hover {
+.header_li-dark a:hover {
 	color: black;
 	-webkit-text-stroke: 1px white;
 }
 
-ul li a::before {
+.header_li-dark a::before {
 	content: attr(data-text);
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 
-ul li a:hover:before {
+.header_li-dark a:hover:before {
 	color: darkgray;
 	z-index: 1;
 	-webkit-text-stroke: 1px white;
 	transform: translate(10px, -10px);
 }
 
-ul li a::after {
+.header_li-dark a::after {
 	content: attr(data-text);
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 
-ul li a:hover:after {
+.header_li-dark a:hover:after {
 	color: red;
 	z-index: 2;
 	-webkit-text-stroke: 1px white;
 	transform: translate(20px, -20px);
 }
-
-ul li a:active {
+.header_li a:active {
 	color: white;
 }
 
-ul li a:active:after {
+.header_li-dark a:active:after {
 	z-index: 2;
 	color: white;
 	transform: translate(0px, 0px);
 }
-
-ul li a:active::before {
+.header_li-dark a:active::before {
 	z-index: 1;
 	color: white;
 	transform: translate(0px, 0px);
@@ -333,7 +430,7 @@ ul li a:active::before {
 	width: 100%;
 }
 
-.text_content {
+.text_content-dark {
 	color: white;
 	text-shadow: 2px 2px 3px rgba(100, 100, 100, 0.5);
 	font-family: 'Carter One', cursive;
@@ -345,7 +442,7 @@ ul li a:active::before {
 	width: 48rem;
 }
 
-.main-heading {
+.main-heading-dark {
 	font-size: 5rem;
 	letter-spacing: 0.5rem;
 	-webkit-text-stroke: 2px white;
@@ -377,17 +474,49 @@ ul li a:active::before {
 	font-weight: 900;
 }
 
-.highlight-text {
+.highlight-text-dark {
 	color: black;
 	-webkit-text-stroke: 1px white;
 	position: relative;
 }
 
-.shadow-text {
+.highlight-text-light {
+	color: grey;
+	-webkit-text-stroke: 1px white;
+	position: relative;
+}
+
+.shadow-text-dark {
 	text-shadow: 2px 2px 3px grey, 4px 4px 6px red;
 }
 
-.highlight-text::before {
+.shadow-text-light {
+	text-shadow: 2px 2px 3px green, 4px 4px 6px yellow;
+}
+
+.highlight-text-light::before {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: green;
+	z-index: 1;
+	-webkit-text-stroke: 0.5px white;
+	transform: translate(10px, -10px);
+}
+
+.highlight-text-light::after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: yellow;
+	z-index: 2;
+	-webkit-text-stroke: 1px white;
+	transform: translate(20px, -20px);
+}
+
+.highlight-text-dark::before {
 	content: attr(data-text);
 	position: absolute;
 	top: 0;
@@ -398,7 +527,7 @@ ul li a:active::before {
 	transform: translate(10px, -10px);
 }
 
-.highlight-text::after {
+.highlight-text-dark::after {
 	content: attr(data-text);
 	position: absolute;
 	top: 0;
