@@ -126,6 +126,85 @@ main {
 	border-radius: 50%;
 }
 
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Light theme//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.bubbling_background-light {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(219, 216, 179, 1);
+
+	z-index: -1;
+}
+
+.bubbling_background-light span {
+	background-color: rgba(219, 216, 179, 1);
+	border-radius: 50%;
+	position: absolute;
+	box-shadow: inset 0px 0px 3px white;
+
+	bottom: -100px;
+	animation: animate 4s linear infinite;
+	/* display: none; */
+}
+
+.bubbling_background-light span1 {
+	background-color: rgba(219, 216, 179, 1);
+	border-radius: 50%;
+	position: absolute;
+	box-shadow: inset 0px 0px 3px lightgray;
+
+	bottom: -100px;
+	animation: animate 4s linear infinite;
+	/* display: none; */
+}
+
+.bubbling_background-light span1:before {
+	background: radial-gradient(white, transparent);
+	transform: scale(0.25) translate(-70%, -70%);
+	border-radius: 50%;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.bubbling_background-light span2 {
+	background-color: rgba(219, 216, 179, 1);
+	border-radius: 50%;
+	position: absolute;
+	box-shadow: inset 0px 0px 3px white;
+
+	bottom: -100px;
+	animation: animate 4s linear infinite;
+	/* display: none; */
+}
+
+.bubbling_background-light span2:before {
+	background: radial-gradient(white, transparent);
+	transform: scale(0.25) translate(-70%, -70%);
+	border-radius: 50%;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.bubbling_background-light span:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	transform: scale(0.25) translate(-70%, -70%);
+	background: radial-gradient(white, transparent);
+	border-radius: 50%;
+}
+
 @keyframes animate {
 	0% {
 		transform: translateY(0%);
@@ -167,6 +246,7 @@ main {
 	padding-left: 3.5em;
 	align-items: center;
 	text-align: center;
+	cursor: pointer;
 }
 
 .page_theme-hidden {

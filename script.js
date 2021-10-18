@@ -15,13 +15,15 @@ const canDiet = document.querySelector('.can-diet');
 const canLemon = document.querySelector('.can-lemon');
 const canSpray = document.querySelector('.can-spray');
 const thoughtBubble = document.querySelector('.thought-bubble');
-const themeSelectorLight = document.querySelector('.page_theme_light');
-const themeSelectorDark = document.querySelector('.page_theme_dark');
+const themeSelectorLight = document.querySelector('.theme-lemonade');
+const themeSelectorDark = document.querySelector('.theme-cola');
 const bubblingBackground = document.querySelector('.bubbling_background');
 const pictureBackground = document.querySelector('.picture_background');
 const textBackground = document.querySelector('.text-background');
 
-const themeDark = true;
+const background = document.querySelector('#bubbling_background');
+
+let themeDark = true;
 // animation Text
 
 // link buttons
@@ -33,12 +35,34 @@ textContainer.addEventListener('mouseout', textStopHighlight);
 hoverCan.addEventListener('mouseover', canHover);
 hoverCan.addEventListener('mouseout', canRemoveHover);
 hoverCan.addEventListener('click', dietGeoffBreak);
-themeSelectorLight.addEventListener('click', applyThemeLight);
-themeSelectorDark.addEventListener('click', applyThemeDark);
+themeSelectorLight.addEventListener('click', applyThemeDark);
+themeSelectorDark.addEventListener('click', applyThemeLight);
 
-function applyThemeLight() {}
+function applyThemeLight() {
+	background.classList.add('bubbling_background');
+	background.classList.remove('bubbling_background-light');
+	themeSelectorDark.classList.add('page_theme-hidden');
+	themeSelectorLight.classList.remove('page_theme-hidden');
+	canLemon.classList.remove('can-infinite-animate');
+	canLemon.classList.add('can-hidden');
 
-function applyThemeDark() {}
+	canZero.classList.remove('can-hidden');
+	canZero.classList.add('can-infinite-animate');
+	themeDark = true;
+}
+
+function applyThemeDark() {
+	background.classList.add('bubbling_background-light');
+	background.classList.remove('bubbling_background');
+	themeSelectorDark.classList.remove('page_theme-hidden');
+	themeSelectorLight.classList.add('page_theme-hidden');
+	canLemon.classList.add('can-infinite-animate');
+	canLemon.classList.remove('can-hidden');
+
+	canZero.classList.add('can-hidden');
+	canZero.classList.remove('can-infinite-animate');
+	themeDark = false;
+}
 
 function dietGeoffBreak() {
 	// bubblingBackground.classList.add('background-hidden');
@@ -46,6 +70,7 @@ function dietGeoffBreak() {
 	mainHeading.classList.add('highlight-text');
 	subHeading.classList.add('shadow-text');
 	canZero.classList.add('can-hidden');
+	canLemon.classList.add('can-hidden');
 	thoughtBubble.classList.add('thought-bubble-hidden');
 	canDiet.classList.remove('can-hidden');
 	canSpray.classList.remove('can-hidden');
@@ -75,16 +100,25 @@ function dietGeoffBreak() {
 		tagHeading.classList.remove('text-hidden');
 		paraTextContent.classList.remove('text-hidden');
 		intHeading.classList.remove('text-hidden');
+		if (themeDark === true) {
+			canZero.classList.remove('can-hidden');
+			canLemon.classList.add('can-hidden');
+		} else {
+			canLemon.classList.remove('can-hidden');
+			canZero.classList.add('can-hidden');
+		}
 	}, 29000);
 }
 
 function canHover() {
 	canZero.classList.add('can-hover');
+	canLemon.classList.add('can-hover');
 	thoughtBubble.classList.add('thought-bubble-hover');
 }
 
 function canRemoveHover() {
 	canZero.classList.remove('can-hover');
+	canLemon.classList.remove('can-hover');
 	thoughtBubble.classList.remove('thought-bubble-hover');
 }
 
@@ -109,7 +143,6 @@ function hideBubble() {
 }
 
 function createBubbles() {
-	const background = document.querySelector('.bubbling_background');
 	const createElement = document.createElement('span');
 	const createMidElement = document.createElement('span1');
 	const createBrownElement = document.createElement('span2');
