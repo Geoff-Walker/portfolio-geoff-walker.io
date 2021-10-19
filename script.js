@@ -105,6 +105,10 @@ function dietGeoffBreak() {
 	tagHeading.classList.add('text-hidden');
 	paraTextContent.classList.add('text-hidden');
 	intHeading.classList.add('text-hidden');
+	linkHeader.forEach((el) => {
+		el.classList.add('header_li-dark');
+		el.classList.remove('header_li-light');
+	});
 
 	setTimeout(() => {
 		canSpray.classList.add('can-hidden');
@@ -139,6 +143,10 @@ function dietGeoffBreak() {
 		if (themeDark === false) {
 			textContainer.classList.remove('text_content-dark');
 			themeSelectorDark.classList.remove('page_theme-hidden');
+			linkHeader.forEach((el) => {
+				el.classList.add('header_li-light');
+				el.classList.remove('header_li-dark');
+			});
 		} else {
 			themeSelectorLight.classList.remove('page_theme-hidden');
 		}
