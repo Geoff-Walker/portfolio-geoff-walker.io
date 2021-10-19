@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index_styles.css">
-    <!-- <link rel="stylesheet" href="style_index.css"> -->
+    <!-- <link rel="stylesheet" href="index_styles.css"> -->
+    <link rel="stylesheet" href="style_index.css">
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon" >
-    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet"> 
 
     <title>Home Page - Geoff-Walker.io </title>
@@ -19,17 +17,31 @@
  
     
     <header class="header">
-        <div class="page_theme">
-            <div class="page_theme theme-lemonade "><img src="images/lemonade.svg" alt="Lemonade can" class="theme-can">Lemonade <br>(Light Theme)</div>
-            <div class="page_theme theme-cola page_theme-hidden"><img src="images/Can-zero.svg" alt="Coke can" class="theme-can">Cola <br>(Dark Theme)</div>
-        </div>
+    
+      
         <nav>
+             <div class="header-nav-mobile">
+                 <img src="images/Can-zero.svg" class="header-can" alt="Cola can">
+            <!-- <h1 class="mobile-heading">Geoff-Walker.io</h1> -->
+            <img src="images/icons8-x-24.png" class="nav-mobile-close nav-mobile page_theme-hidden mob-hidden" onclick="closeMenu()"/>
+            <img src="images/icons8-x-24-white.png" class="nav-mobile-close nav-mobile mob-hidden" onclick="closeMenu()"/>
+            <img src="images/icons8-menu-rounded-24.png" class="nav-mobile-open nav-mobile page_theme-hidden" onclick="openMenu()"/>
+            <img src="images/icons8-menu-rounded-24-white.png" class="nav-mobile-open nav-mobile " onclick="openMenu()"/>
+        </div>
+
+
             <ul class="header_ul">
-                <li class="header_li header_li-dark"><a href="#" data-text="Portfolio">Portfolio</a></li>
-                <li class="header_li header_li-dark"><a href="#" data-text="About">About</a></li>
-                <li class="header_li header_li-dark"><a href="#" data-text="Contact">Contact</a></li>
+                <li class="header_li header_li-dark mob-hidden"><a href="#" data-text="Portfolio">Portfolio</a></li>
+                <li class="header_li header_li-dark mob-hidden"><a href="#" data-text="About">About</a></li>
+                <li class="header_li header_li-dark mob-hidden"><a href="#" data-text="Contact">Contact</a></li>
             </ul>
         </nav>
+
+        <div class="page_theme">
+            <div class="page_theme theme-lemonade mob-hidden"><img src="images/lemonade.svg" alt="Lemonade can" class="theme-can">Lemonade <br>(Light Theme)</div>
+            <div class="page_theme theme-cola page_theme-hidden mob-hidden"><img src="images/Can-zero.svg" alt="Coke can" class="theme-can">Cola <br>(Dark Theme)</div>
+        </div>
+
     </header>
     <main>
         <div class="container">
