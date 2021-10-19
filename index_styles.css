@@ -26,11 +26,7 @@ main {
 	width: 100%;
 	position: relative;
 	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: rgba(10, 8, 6, 1);
-
 	z-index: -1;
 }
 
@@ -43,19 +39,9 @@ main {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	overflow: hidden;
+
 	z-index: 0;
 	animation: pan 30s linear;
-}
-
-@keyframes pan {
-	0% {
-		background-size: 80%;
-	}
-
-	100% {
-		background-size: 40%;
-	}
 }
 
 .background-hidden {
@@ -70,7 +56,6 @@ main {
 
 	bottom: -100px;
 	animation: animate 4s linear infinite;
-	/* display: none; */
 }
 
 .bubbling_background span1 {
@@ -79,9 +64,8 @@ main {
 	position: absolute;
 	box-shadow: inset 0px 0px 3px rgba(216, 163, 116, 1);
 
-	bottom: -100px;
+	bottom: -50px;
 	animation: animate 4s linear infinite;
-	/* display: none; */
 }
 
 .bubbling_background span1:before {
@@ -100,9 +84,8 @@ main {
 	position: absolute;
 	box-shadow: inset 0px 0px 3px rgba(116, 63, 16, 1);
 
-	bottom: -100px;
+	bottom: -50px;
 	animation: animate 4s linear infinite;
-	/* display: none; */
 }
 
 .bubbling_background span2:before {
@@ -122,7 +105,7 @@ main {
 	height: 100%;
 
 	transform: scale(0.25) translate(-70%, -70%);
-	background: radial-gradient(rgba(255, 240, 240, 1), transparent);
+	background: radial-gradient(white, transparent);
 	border-radius: 50%;
 }
 
@@ -295,21 +278,6 @@ main {
 	font-size: 5rem;
 	letter-spacing: 0.5rem;
 	-webkit-text-stroke: 1px white;
-}
-
-@keyframes animate {
-	0% {
-		transform: translateY(0%);
-		opacity: 1;
-	}
-
-	99% {
-		opacity: 1;
-	}
-	100% {
-		transform: translateY(-10000%);
-		opacity: 0;
-	}
 }
 
 .header {
@@ -620,24 +588,6 @@ main {
 	left: -14rem;
 }
 
-@keyframes spray {
-	0% {
-		transform: scale(0.5);
-	}
-
-	20% {
-		transform: scale(1);
-	}
-
-	40% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-	}
-}
-
 .can-infinite-animate {
 	animation: can 1s linear infinite;
 }
@@ -646,26 +596,6 @@ main {
 	animation: can 0.5s linear infinite;
 }
 
-@keyframes can {
-	0% {
-		transform: rotate(0deg);
-	}
-
-	25% {
-		transform: rotate(-5deg);
-	}
-
-	50% {
-		transform: rotate(0deg);
-	}
-	75% {
-		transform: rotate(5deg);
-	}
-
-	100% {
-		transform: rotate(0deg);
-	}
-}
 .can-hidden {
 	display: none;
 }
@@ -689,27 +619,6 @@ main {
 }
 .thought-bubble-hover {
 	animation: scale 1s linear infinite;
-}
-
-@keyframes scale {
-	0% {
-		transform: scale(1);
-	}
-
-	25% {
-		transform: scale(0.8);
-	}
-
-	50% {
-		transform: scale(1);
-	}
-	75% {
-		transform: scale(1.2);
-	}
-
-	100% {
-		transform: scale(1);
-	}
 }
 
 .thought-bubble-hidden {
@@ -779,6 +688,91 @@ main {
 
 .text-hidden {
 	display: none;
+}
+
+@keyframes pan {
+	0% {
+		background-size: 80%;
+	}
+
+	100% {
+		background-size: 40%;
+	}
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+
+	99% {
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-10000%);
+		opacity: 0;
+	}
+}
+
+@keyframes spray {
+	0% {
+		transform: scale(0.5);
+	}
+
+	20% {
+		transform: scale(1);
+	}
+
+	40% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes can {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(-5deg);
+	}
+
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(5deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(1);
+	}
+
+	25% {
+		transform: scale(0.8);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+	75% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 
 @keyframes sing {
@@ -979,7 +973,11 @@ main {
 		color: white;
 	}
 
-	92% {
+	88% {
+		content: '';
+	}
+
+	91% {
 		content: 'web';
 		color: red;
 

@@ -1,7 +1,21 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Selectors////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////Backgrounds////////////////////////////////////////////////////////////////////////////////////
+
+const background = document.querySelector('#bubbling_background');
+const bubblingBackground = document.querySelector('.bubbling_background');
+const pictureBackground = document.querySelector('.picture_background');
+const textBackground = document.querySelector('.text-background');
+
+////////////////////////////////////////////////////////////////////////Header////////////////////////////////////////////////////////////////////////////////////////
+const linkHeader = document.querySelectorAll('.header_li');
+
+////////////////////////////////////////////////////////////////////////Contact bubbles////////////////////////////////////////////////////////////////////////////////
 const contactBubble = document.querySelector('.bubble-contact-me');
 const bubbleContactText = document.querySelector('.bubble-contact-text');
 const bubbleContactEmail = document.querySelector('.bubble-contact-email');
 
+////////////////////////////////////////////////////////////////////////Text///////////////////////////////////////////////////////////////////////////////////////////
 const textContainer = document.querySelector('.text_content');
 const mainHeading = document.querySelector('.main-heading');
 const subHeading = document.querySelector('.sub-heading');
@@ -9,6 +23,8 @@ const tagHeading = document.querySelector('.tag-heading');
 const intHeading = document.querySelector('.int-heading');
 const titleHeading = document.querySelector('.title-heading');
 const paraTextContent = document.querySelector('.para-text-content');
+
+////////////////////////////////////////////////////////////////////////Animations////////////////////////////////////////////////////////////////////////////////////
 const hoverCan = document.querySelector('.container-animation');
 const canZero = document.querySelector('.can-zero');
 const canDiet = document.querySelector('.can-diet');
@@ -17,18 +33,11 @@ const canSpray = document.querySelector('.can-spray');
 const thoughtBubble = document.querySelector('.thought-bubble');
 const themeSelectorLight = document.querySelector('.theme-lemonade');
 const themeSelectorDark = document.querySelector('.theme-cola');
-const bubblingBackground = document.querySelector('.bubbling_background');
-const pictureBackground = document.querySelector('.picture_background');
-const textBackground = document.querySelector('.text-background');
-const linkHeader = document.querySelectorAll('.header_li');
 
-const background = document.querySelector('#bubbling_background');
-
+////////////////////////////////////////////////////////////////////////Variables//////////////////////////////////////////////////////////////////////////////////////
 let themeDark = true;
-// animation Text
 
-// link buttons
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Event Listeners//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 contactBubble.addEventListener('mouseover', showBubble);
 contactBubble.addEventListener('mouseout', hideBubble);
 textContainer.addEventListener('mouseover', textHighlight);
@@ -39,6 +48,7 @@ hoverCan.addEventListener('click', dietGeoffBreak);
 themeSelectorLight.addEventListener('click', applyThemeDark);
 themeSelectorDark.addEventListener('click', applyThemeLight);
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Functions////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function applyThemeLight() {
 	background.classList.add('bubbling_background');
 	background.classList.remove('bubbling_background-light');
@@ -84,16 +94,12 @@ function applyThemeDark() {
 }
 
 function dietGeoffBreak() {
-	// bubblingBackground.classList.add('background-hidden');
 	pictureBackground.classList.remove('background-hidden');
-
 	mainHeading.classList.add('highlight-text-dark');
 	subHeading.classList.add('shadow-text-dark');
 	textContainer.classList.add('text_content-dark');
-
 	themeSelectorDark.classList.add('page_theme-hidden');
 	themeSelectorLight.classList.add('page_theme-hidden');
-
 	canZero.classList.add('can-hidden');
 	canLemon.classList.add('can-hidden');
 	thoughtBubble.classList.add('thought-bubble-hidden');
@@ -115,14 +121,11 @@ function dietGeoffBreak() {
 	}, 2500);
 
 	setTimeout(() => {
-		// bubblingBackground.classList.remove('background-hidden');
 		pictureBackground.classList.add('background-hidden');
-
 		mainHeading.classList.remove('highlight-text');
 		subHeading.classList.remove('shadow-text');
 		canZero.classList.remove('can-hidden');
 		canDiet.classList.add('can-hidden');
-
 		thoughtBubble.classList.remove('thought-bubble-hidden');
 		textBackground.classList.add('text-background-hidden');
 		contactBubble.classList.remove('thought-bubble-hidden');
@@ -137,7 +140,6 @@ function dietGeoffBreak() {
 			canLemon.classList.remove('can-hidden');
 			canZero.classList.add('can-hidden');
 		}
-
 		mainHeading.classList.remove('highlight-text-dark');
 		subHeading.classList.remove('shadow-text-dark');
 		if (themeDark === false) {
