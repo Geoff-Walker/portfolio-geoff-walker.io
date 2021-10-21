@@ -66,6 +66,7 @@ function closeMobNav() {
 }
 
 function openMobNav() {
+	console.log('open me');
 	navMobOpen.classList.add('mob-hidden');
 	navMobClose.classList.remove('mob-hidden');
 	linkHeader.forEach((el) => {
