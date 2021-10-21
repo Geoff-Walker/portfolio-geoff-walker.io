@@ -9,6 +9,9 @@ const textBackground = document.querySelector('.text-background');
 
 ////////////////////////////////////////////////////////////////////////Header////////////////////////////////////////////////////////////////////////////////////////
 const linkHeader = document.querySelectorAll('.header_li');
+const navMobClose = document.querySelector('.nav-mobile-close');
+const navMobOpen = document.querySelector('.nav-mobile-open');
+const mobHeader = document.querySelector('.header-nav-mobile');
 
 ////////////////////////////////////////////////////////////////////////Contact bubbles////////////////////////////////////////////////////////////////////////////////
 const contactBubble = document.querySelector('.bubble-contact-me');
@@ -47,8 +50,31 @@ hoverCan.addEventListener('mouseout', canRemoveHover);
 hoverCan.addEventListener('click', dietGeoffBreak);
 themeSelectorLight.addEventListener('click', applyThemeDark);
 themeSelectorDark.addEventListener('click', applyThemeLight);
+navMobClose.addEventListener('click', closeMobNav);
+navMobOpen.addEventListener('click', openMobNav);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Functions////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function closeMobNav() {
+	navMobOpen.classList.remove('mob-hidden');
+	navMobClose.classList.add('mob-hidden');
+	linkHeader.forEach((el) => {
+		el.classList.add('mob-hidden');
+	});
+
+	themeSelectorDark.classList.add('mob-hidden');
+	themeSelectorLight.classList.add('mob-hidden');
+}
+
+function openMobNav() {
+	navMobOpen.classList.add('mob-hidden');
+	navMobClose.classList.remove('mob-hidden');
+	linkHeader.forEach((el) => {
+		el.classList.remove('mob-hidden');
+	});
+	themeSelectorDark.classList.remove('mob-hidden');
+	themeSelectorLight.classList.remove('mob-hidden');
+}
+
 function applyThemeLight() {
 	background.classList.add('bubbling_background');
 	background.classList.remove('bubbling_background-light');
@@ -69,6 +95,8 @@ function applyThemeLight() {
 	textContainer.classList.remove('text_content-light');
 	mainHeading.classList.add('main-heading-dark');
 	mainHeading.classList.remove('main-heading-light');
+	mobHeader.classList.remove('header-nav-mobile-light');
+	mobHeader.classList.add('header-nav-mobile-dark');
 }
 
 function applyThemeDark() {
@@ -91,6 +119,8 @@ function applyThemeDark() {
 	textContainer.classList.add('text_content-light');
 	mainHeading.classList.remove('main-heading-dark');
 	mainHeading.classList.add('main-heading-light');
+	mobHeader.classList.add('header-nav-mobile-light');
+	mobHeader.classList.remove('header-nav-mobile-dark');
 }
 
 function dietGeoffBreak() {
