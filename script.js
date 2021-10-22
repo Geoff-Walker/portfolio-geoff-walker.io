@@ -12,6 +12,7 @@ const linkHeader = document.querySelectorAll('.header_li');
 const navMobClose = document.querySelector('.nav-mobile-close');
 const navMobOpen = document.querySelector('.nav-mobile-open');
 const mobHeader = document.querySelector('.header-nav-mobile');
+const mobLinks = document.querySelector('.mobile-links');
 
 ////////////////////////////////////////////////////////////////////////Contact bubbles////////////////////////////////////////////////////////////////////////////////
 const contactBubble = document.querySelector('.bubble-contact-me');
@@ -63,6 +64,7 @@ function closeMobNav() {
 
 	themeSelectorDark.classList.add('mob-hidden');
 	themeSelectorLight.classList.add('mob-hidden');
+	mobLinks.classList.add('mob-hidden');
 }
 
 function openMobNav() {
@@ -74,6 +76,8 @@ function openMobNav() {
 	});
 	themeSelectorDark.classList.remove('mob-hidden');
 	themeSelectorLight.classList.remove('mob-hidden');
+	mobLinks.classList.remove('mob-hidden');
+	mobLinks.classList.remove('.mobile-links-reverse');
 }
 
 function applyThemeLight() {
@@ -98,6 +102,8 @@ function applyThemeLight() {
 	mainHeading.classList.remove('main-heading-light');
 	mobHeader.classList.remove('header-nav-mobile-light');
 	mobHeader.classList.add('header-nav-mobile-dark');
+	mobLinks.classList.add('mobile-links-dark');
+	mobLinks.classList.remove('mobile-links-light');
 }
 
 function applyThemeDark() {
@@ -122,6 +128,8 @@ function applyThemeDark() {
 	mainHeading.classList.add('main-heading-light');
 	mobHeader.classList.add('header-nav-mobile-light');
 	mobHeader.classList.remove('header-nav-mobile-dark');
+	mobLinks.classList.remove('mobile-links-dark');
+	mobLinks.classList.add('mobile-links-light');
 }
 
 function dietGeoffBreak() {
