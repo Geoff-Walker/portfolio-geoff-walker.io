@@ -280,7 +280,6 @@ main {
 	background-image: url(images/lemonade-froth.png);
 	background-size: cover;
 }
-
 .header-nav-mobile-light:before {
 	background: linear-gradient(transparent, var(--color-lemonade), transparent);
 }
