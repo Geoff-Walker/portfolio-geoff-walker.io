@@ -268,7 +268,7 @@ main {
 }
 
 .header-nav-mobile-dark {
-	background-image: url(images/coke-froth.png);
+	background-image: url(Images/coke-froth.png);
 	background-size: cover;
 }
 
@@ -277,7 +277,7 @@ main {
 }
 
 .header-nav-mobile-light {
-	background-image: url(images/lemonade-froth.png);
+	background-image: url(Images/lemonade-froth.png);
 	background-size: cover;
 }
 .header-nav-mobile-light:before {
