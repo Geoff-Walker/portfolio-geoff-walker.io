@@ -91,7 +91,6 @@ function applyThemeLight() {
 	canZero.classList.remove('can-hidden');
 	canZero.classList.add('can-infinite-animate');
 	themeDark = true;
-	console.log(linkHeader);
 	linkHeader.forEach((el) => {
 		el.classList.add('header_li-dark');
 		el.classList.remove('header_li-light');
