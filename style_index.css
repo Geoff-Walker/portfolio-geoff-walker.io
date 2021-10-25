@@ -28,11 +28,11 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 100vw;
+	width: 100%;
 	min-height: 100%;
 	position: relative;
 	z-index: -1;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 /* 
 main {
@@ -234,7 +234,7 @@ main {
 }
 
 .mobile-links {
-	min-height: 100vh;
+	min-height: 100%;
 	min-width: 100vw;
 	animation: mobNav 1s ease-in-out;
 	padding-top: 3rem;
@@ -262,7 +262,7 @@ main {
 .header-nav-mobile:before {
 	position: absolute;
 	height: 1rem;
-	width: 110vw;
+	width: 100vw;
 	content: '';
 	bottom: -0.5rem;
 }
