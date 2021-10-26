@@ -261,7 +261,8 @@ body {
 .header-nav-mobile:before {
 	position: absolute;
 	height: 1rem;
-	width: 110vw;
+	width: 100vw;
+	padding-right: 1rem;
 	content: '';
 	bottom: -0.5rem;
 }
