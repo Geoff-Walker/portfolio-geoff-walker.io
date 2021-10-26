@@ -507,6 +507,14 @@ body {
 	padding-top: 1rem;
 }
 
+.sub-heading-dark {
+	color: white;
+}
+
+.sub-heading-light {
+	color: black;
+}
+
 /* ///////////////// Tag Heading //////////////////////////////////// */
 .text_content h4 {
 	font-size: 1rem;

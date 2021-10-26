@@ -4,7 +4,6 @@
 
 const background = document.querySelector('#bubbling_background');
 const bubblingBackground = document.querySelector('.bubbling_background');
-const pictureBackground = document.querySelector('.picture_background');
 const textBackground = document.querySelector('.text-background');
 
 ////////////////////////////////////////////////////////////////////////Header////////////////////////////////////////////////////////////////////////////////////////
@@ -132,7 +131,15 @@ function applyThemeDark() {
 }
 
 function dietGeoffBreak() {
-	pictureBackground.classList.remove('background-hidden');
+	background.classList.add('bubbling_background');
+	background.classList.remove('bubbling_background-light');
+	subHeading.classList.add('sub-heading-dark');
+	subHeading.classList.remove('sub-heading-light');
+	mobHeader.classList.add('header-nav-mobile-dark');
+	mobHeader.classList.remove('header-nav-mobile-light');
+	mobLinks.classList.add('mobile-links-dark');
+	mobLinks.classList.remove('mobile-links-light');
+
 	mainHeading.classList.add('highlight-text-dark');
 	subHeading.classList.add('shadow-text-dark');
 	textContainer.classList.add('text_content-dark');
@@ -159,7 +166,6 @@ function dietGeoffBreak() {
 	}, 2500);
 
 	setTimeout(() => {
-		pictureBackground.classList.add('background-hidden');
 		mainHeading.classList.remove('highlight-text');
 		subHeading.classList.remove('shadow-text');
 		canZero.classList.remove('can-hidden');
@@ -177,6 +183,10 @@ function dietGeoffBreak() {
 		} else {
 			canLemon.classList.remove('can-hidden');
 			canZero.classList.add('can-hidden');
+			background.classList.add('bubbling_background-light');
+			subHeading.classList.add('sub-heading-light');
+			mobHeader.classList.add('header-nav-mobile-light');
+			mobLinks.classList.add('mobile-links-light');
 		}
 		mainHeading.classList.remove('highlight-text-dark');
 		subHeading.classList.remove('shadow-text-dark');
