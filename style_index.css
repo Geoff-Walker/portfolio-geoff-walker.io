@@ -647,7 +647,7 @@ body {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
-	min-height: 30rem;
+	min-height: 27.5rem;
 	position: relative;
 	margin: 0 auto;
 }
