@@ -48,8 +48,8 @@ textContainer.addEventListener('mouseout', textStopHighlight);
 hoverCan.addEventListener('mouseover', canHover);
 hoverCan.addEventListener('mouseout', canRemoveHover);
 hoverCan.addEventListener('click', dietGeoffBreak);
-themeSelectorLight.addEventListener('click', applyThemeDark);
-themeSelectorDark.addEventListener('click', applyThemeLight);
+themeSelectorLight.addEventListener('click', applyThemeLight);
+themeSelectorDark.addEventListener('click', applyThemeDark);
 navMobClose.addEventListener('click', closeMobNav);
 navMobOpen.addEventListener('click', openMobNav);
 
@@ -79,7 +79,7 @@ function openMobNav() {
 	mobLinks.classList.remove('.mobile-links-reverse');
 }
 
-function applyThemeLight() {
+function applyThemeDark() {
 	background.classList.add('bubbling_background');
 	background.classList.remove('bubbling_background-light');
 	themeSelectorDark.classList.add('page_theme-hidden');
@@ -102,9 +102,11 @@ function applyThemeLight() {
 	mobHeader.classList.add('header-nav-mobile-dark');
 	mobLinks.classList.add('mobile-links-dark');
 	mobLinks.classList.remove('mobile-links-light');
+	subHeading.classList.add('sub-heading-dark');
+	subHeading.classList.remove('sub-heading-light');
 }
 
-function applyThemeDark() {
+function applyThemeLight() {
 	background.classList.add('bubbling_background-light');
 	background.classList.remove('bubbling_background');
 	themeSelectorDark.classList.remove('page_theme-hidden');
@@ -128,6 +130,8 @@ function applyThemeDark() {
 	mobHeader.classList.remove('header-nav-mobile-dark');
 	mobLinks.classList.remove('mobile-links-dark');
 	mobLinks.classList.add('mobile-links-light');
+	subHeading.classList.remove('sub-heading-dark');
+	subHeading.classList.add('sub-heading-light');
 }
 
 function dietGeoffBreak() {
