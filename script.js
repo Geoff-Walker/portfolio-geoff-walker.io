@@ -144,6 +144,7 @@ function dietGeoffBreak() {
 	mobLinks.classList.add('mobile-links-dark');
 	mobLinks.classList.remove('mobile-links-light');
 
+	mainHeading.classList.add('main-heading-dark');
 	mainHeading.classList.add('highlight-text-dark');
 	subHeading.classList.add('shadow-text-dark');
 	textContainer.classList.add('text_content-dark');
@@ -191,6 +192,7 @@ function dietGeoffBreak() {
 			subHeading.classList.add('sub-heading-light');
 			mobHeader.classList.add('header-nav-mobile-light');
 			mobLinks.classList.add('mobile-links-light');
+			mainHeading.classList.remove('main-heading-dark');
 		}
 		mainHeading.classList.remove('highlight-text-dark');
 		subHeading.classList.remove('shadow-text-dark');
