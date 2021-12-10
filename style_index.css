@@ -749,6 +749,7 @@ body {
 @media screen and (min-width: 800px) {
 	html {
 		height: 100vh;
+		max-width: 100vw;
 	}
 	.header-nav-mobile {
 		display: none;
