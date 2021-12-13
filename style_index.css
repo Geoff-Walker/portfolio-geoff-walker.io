@@ -851,8 +851,8 @@ body {
 	}
 
 	.text-background {
-		overflow: visible;
-		height: 20rem;
+		min-height: 25rem;
+		width: 35rem;
 	}
 }
 
@@ -924,8 +924,8 @@ body {
 		padding-left: 1rem;
 	}
 	.text-background {
-		overflow: visible;
-		height: 20rem;
+		min-height: 25rem;
+		width: 35rem;
 	}
 }
 
@@ -967,6 +967,10 @@ body {
 	.me {
 		height: 4rem;
 		padding-left: 1rem;
+	}
+	.text-background {
+		min-height: 25rem;
+		width: 35rem;
 	}
 }
 
@@ -1010,7 +1014,7 @@ body {
 		padding-left: 1rem;
 	}
 	.text-background {
-		height: 25rem;
+		min-height: 25rem;
 		width: 35rem;
 	}
 }
