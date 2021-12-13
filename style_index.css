@@ -852,6 +852,7 @@ body {
 
 	.text-background {
 		overflow: visible;
+		height: 20rem;
 	}
 }
 
