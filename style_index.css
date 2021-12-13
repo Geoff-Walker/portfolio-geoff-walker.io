@@ -1010,8 +1010,8 @@ body {
 		padding-left: 1rem;
 	}
 	.text-background {
-		overflow: visible;
-		height: 20rem;
+		height: 25rem;
+		width: 35rem;
 	}
 }
 
