@@ -851,8 +851,7 @@ body {
 	}
 
 	.text-background {
-		height: 25rem;
-		width: 35rem;
+		overflow: visible;
 	}
 }
 
