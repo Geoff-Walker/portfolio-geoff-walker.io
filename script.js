@@ -161,10 +161,12 @@ function dietGeoffBreak() {
 	tagHeading.classList.add('text-hidden');
 	paraTextContent.classList.add('text-hidden');
 	intHeading.classList.add('text-hidden');
+
 	linkHeader.forEach((el) => {
 		el.classList.add('header_li-dark');
 		el.classList.remove('header_li-light');
 	});
+	canDiet.addEventListener('click', reload);
 
 	setTimeout(() => {
 		canSpray.classList.add('can-hidden');
@@ -279,4 +281,7 @@ function createBubbles() {
 	}, 8000);
 }
 
+function reload() {
+	location.reload();
+}
 setInterval(createBubbles, 1);
