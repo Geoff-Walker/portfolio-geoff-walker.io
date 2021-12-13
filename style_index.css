@@ -925,8 +925,8 @@ body {
 		padding-left: 1rem;
 	}
 	.text-background {
-		min-height: 25rem;
-		width: 35rem;
+		min-height: 22rem;
+		width: 30rem;
 	}
 }
 
@@ -1013,10 +1013,6 @@ body {
 	.me {
 		height: 4rem;
 		padding-left: 1rem;
-	}
-	.text-background {
-		min-height: 25rem;
-		width: 35rem;
 	}
 }
 
