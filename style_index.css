@@ -853,6 +853,7 @@ body {
 	.text-background {
 		min-height: 15rem;
 		width: 25rem;
+		transform: translateY(-2rem);
 	}
 }
 
