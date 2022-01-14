@@ -11,7 +11,7 @@ header {
 	width: 100vw;
 	height: 20vh;
 	position: fixed;
-	background-image: url(images/bg-variations-1-1186474.jpg);
+	background-image: url(Images/project-images/bg-variations-1-1186474.jpg);
 	background-size: 100vw 20vh;
 	background-repeat: no-repeat;
 	display: flex;
@@ -23,7 +23,7 @@ header {
 }
 
 .title {
-	background-image: url(images/brushed-metal-1-1198882.jpg);
+	background-image: url(Images/project-images/brushed-metal-1-1198882.jpg);
 	min-width: 30%;
 	height: 6rem;
 	background-size: cover;
@@ -56,7 +56,7 @@ header {
 	border-right: 5px solid darkgoldenrod;
 	box-shadow: 0px 5px 30px rgba(0, 0, 0, 1);
 	z-index: 9;
-	background-image: url(images/wall-pattern.png);
+	background-image: url(Images/project-images/wall-pattern.png);
 	background-size: cover;
 	background-position: left;
 }
@@ -69,7 +69,7 @@ header {
 	width: 80%;
 	height: 50%;
 	margin: 2rem auto;
-	background-image: url(images/brushed-metal-1-1198882.jpg);
+	background-image: url(Images/project-images/brushed-metal-1-1198882.jpg);
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, .9);
 	border-radius: 1rem;
 	padding-top: 2rem;
@@ -97,7 +97,7 @@ header {
 .selectors {
 	width: 20vw;
 	height: 80vh;
-	background-image: url(images/wall-pattern.png);
+	background-image: url(Images/project-images/wall-pattern.png);
 	background-size: cover;
 	background-position: right;
 	position: fixed;
@@ -108,7 +108,7 @@ header {
 	z-index: 9;
 }
 .sel-title {
-	background-image: url(images/brushed-metal-1-1198882.jpg);
+	background-image: url(Images/project-images/brushed-metal-1-1198882.jpg);
 	background-size: cover;
 	padding: 1rem;
 	width: 80%;
@@ -144,7 +144,7 @@ header {
 }
 .selector h1 {
 	margin-left: 2rem;
-	background-image: url(images/brushed-metal-1-1198882.jpg);
+	background-image: url(Images/project-images/brushed-metal-1-1198882.jpg);
 	background-size: cover;
 	padding: 1rem;
 	min-width: 15rem;
@@ -253,23 +253,23 @@ header {
 }
 
 .project-fallback {
-	background-image: url(images/omar-rodriguez-XYuNwlYtfLI-unsplash.jpg);
+	background-image: url(Images/project-images/omar-rodriguez-XYuNwlYtfLI-unsplash.jpg);
 }
 
 .project-aob {
-	background-image: url(images/giorgio-trovato-OKXwmdbdXkk-unsplash.jpg);
+	background-image: url(Images/project-images/giorgio-trovato-OKXwmdbdXkk-unsplash.jpg);
 }
 
 .project-fem-json {
-	background-image: url(images/gina-lin-m27OTMegUyA-unsplash.jpg);
+	background-image: url(Images/project-images/gina-lin-m27OTMegUyA-unsplash.jpg);
 }
 
 .project-etch {
-	background-image: url(images/mick-haupt-8tN0Uq0GjCs-unsplash.jpg);
+	background-image: url(Images/project-images/mick-haupt-8tN0Uq0GjCs-unsplash.jpg);
 }
 
 .project-fork {
-	background-image: url(images/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg);
+	background-image: url(Images/project-images/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg);
 }
 
 .project-detail {
@@ -333,16 +333,14 @@ header {
 }
 
 .image-fallback {
-	width: 60%;
+	width: 40%;
 	border-radius: 1rem;
 	z-index: 5;
-	transform: rotate(90deg);
 	padding-bottom: 2rem;
-	padding-left: 0rem;
-	padding-right: 10rem;
+	margin: 0 auto;
 }
 .image-fallback:hover {
-	width: 70%;
+	width: 45%;
 
 	margin: 0;
 }
@@ -356,7 +354,7 @@ header {
 .door {
 	height: 80vh;
 	width: 32vw;
-	background-image: url(images/doors.svg);
+	background-image: url(Images/project-images/doors.svg);
 	background-position: right center;
 	background-size: cover;
 	position: fixed;
@@ -755,7 +753,6 @@ header {
 	.title {
 		font-size: 1.5rem;
 
-		background-image: url(images/brushed-metal-1-1198882.jpg);
 		min-width: 30%;
 		height: 4rem;
 		background-size: cover;
@@ -913,7 +910,6 @@ header {
 	.title {
 		font-size: 1rem;
 
-		background-image: url(images/brushed-metal-1-1198882.jpg);
 		min-width: 30%;
 		height: 3rem;
 		background-size: cover;
