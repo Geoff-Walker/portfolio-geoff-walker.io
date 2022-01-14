@@ -1,0 +1,1033 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: none;
+	font-family: 'Fredericka the Great', cursive;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Header////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+header {
+	width: 100vw;
+	height: 20vh;
+	position: fixed;
+	background-image: url(images/bg-variations-1-1186474.jpg);
+	background-size: 100vw 20vh;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 5px solid darkgoldenrod;
+	box-shadow: 5px 0px 30px rgba(0, 0, 0, 1);
+	z-index: 10;
+}
+
+.title {
+	background-image: url(images/brushed-metal-1-1198882.jpg);
+	min-width: 30%;
+	height: 6rem;
+	background-size: cover;
+	text-align: center;
+	font-size: 3rem;
+	padding: 1rem;
+	border-radius: 1rem;
+	font-weight: 700;
+	vertical-align: middle;
+	color: black;
+	outline: 3px solid black;
+	outline-offset: -10px;
+}
+
+.menu-link {
+	display: none;
+}
+
+.menu-detail {
+	display: none;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Summary//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.summary {
+	width: 20vw;
+	height: 80vh;
+	position: fixed;
+	transform: translateY(20vh);
+	border-right: 5px solid darkgoldenrod;
+	box-shadow: 0px 5px 30px rgba(0, 0, 0, 1);
+	z-index: 9;
+	background-image: url(images/wall-pattern.png);
+	background-size: cover;
+	background-position: left;
+}
+
+.tech-summary {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 80%;
+	height: 50%;
+	margin: 2rem auto;
+	background-image: url(images/brushed-metal-1-1198882.jpg);
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, .9);
+	border-radius: 1rem;
+	padding-top: 2rem;
+	outline: 3px solid black;
+	outline-offset: -10px;
+	font-size: 2rem;
+}
+
+.summary-detail {
+	padding-top: 1rem;
+	font-weight: 600;
+	font-size: 2rem;
+}
+.selectors-ext-link {
+	padding-top: 1rem;
+	border-top: 4px solid darkgoldenrod;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Selectors or Nav//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.selectors {
+	width: 20vw;
+	height: 80vh;
+	background-image: url(images/wall-pattern.png);
+	background-size: cover;
+	background-position: right;
+	position: fixed;
+	transform: translate(80vw, 20vh);
+	border-left: 5px solid darkgoldenrod;
+	padding-top: 2rem;
+	box-shadow: 0px -5px 30px rgba(0, 0, 0, 1);
+	z-index: 9;
+}
+.sel-title {
+	background-image: url(images/brushed-metal-1-1198882.jpg);
+	background-size: cover;
+	padding: 1rem;
+	width: 80%;
+	margin: 0rem 1rem 1rem 1rem;
+	text-align: center;
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, .7);
+	border-radius: 1rem;
+	outline: 1px solid black;
+	outline-offset: -10px;
+	font-size: 2rem;
+}
+
+.selectors-int-link {
+	border-bottom: 4px solid darkgoldenrod;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.selectors-filter {
+	padding-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.selector {
+	display: flex;
+	align-items: center;
+	padding: 0.5rem 4rem;
+}
+.selector h1 {
+	margin-left: 2rem;
+	background-image: url(images/brushed-metal-1-1198882.jpg);
+	background-size: cover;
+	padding: 1rem;
+	min-width: 15rem;
+	text-align: center;
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, .7);
+	font-size: 2rem;
+	border-radius: 1rem;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Buttons///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.btn-selector {
+	min-height: 6rem;
+	min-width: 6rem;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: rgb(255, 253, 208);
+	box-shadow: inset 0px 3px 0 rgba(255, 255, 255, 1), 0 3px 3px rgba(0, 0, 0, 0.3);
+	border-bottom: solid 3px rgba(255, 255, 255, 1);
+	font-weight: bold;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 1.25rem;
+}
+
+.btn-link:hover {
+	background-color: rgb(255, 136, 136);
+	box-shadow: inset 0px 3px 0 rgb(255, 106, 106), 0 3px 3px rgba(0, 0, 0, 0.3);
+	border: none;
+	border-bottom: solid 3px rgb(255, 106, 106);
+	text-shadow: 1px 1px 0px rgb(255, 106, 106);
+}
+
+.btn-link:active {
+	background-color: rgb(255, 136, 136);
+	border-bottom: none;
+	border: 0.5px solid black;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+.btn-filter-active {
+	box-shadow: inset 0px 3px 0 rgb(106, 255, 106), 0 3px 3px rgba(0, 0, 0, 0.3);
+	border: none;
+	border-bottom: solid 3px rgb(106, 255, 106);
+	text-shadow: 1px 1px 0px rgb(106, 255, 106);
+	background-color: rgb(136, 255, 136);
+}
+
+.btn-filter-flash {
+	animation: filterflashing 0.5s infinite;
+}
+
+.btn-flash {
+	animation: flashing 0.5s infinite;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Project Container/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.main-section {
+	width: 60vw;
+	height: 80vh;
+	position: fixed;
+	left: 20vw;
+	top: 20vh;
+	z-index: 1;
+}
+
+.container-projects {
+	z-index: 2;
+	height: 80vh;
+	min-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	scroll-snap-type: Y mandatory;
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	z-index: 2;
+}
+
+.container-projects::-webkit-scrollbar {
+	display: none;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Projects//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.project {
+	z-index: 3;
+	background-size: cover;
+	width: 100%;
+	height: 80vh;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	scroll-snap-align: end;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.beam {
+	width: 100%;
+	position: relative;
+	transform: translateY(-2px);
+	border-bottom: 5px solid black;
+	box-shadow: 0px 10px 20px black;
+	z-index: 3;
+}
+
+.project-fallback {
+	background-image: url(images/omar-rodriguez-XYuNwlYtfLI-unsplash.jpg);
+}
+
+.project-aob {
+	background-image: url(images/giorgio-trovato-OKXwmdbdXkk-unsplash.jpg);
+}
+
+.project-fem-json {
+	background-image: url(images/gina-lin-m27OTMegUyA-unsplash.jpg);
+}
+
+.project-etch {
+	background-image: url(images/mick-haupt-8tN0Uq0GjCs-unsplash.jpg);
+}
+
+.project-fork {
+	background-image: url(images/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg);
+}
+
+.project-detail {
+	height: 80vh;
+	width: 90%;
+	padding: 3rem;
+	background-color: rgba(255, 255, 255, .6);
+	border-radius: 1rem;
+	z-index: 4;
+}
+
+.project-detail h1 {
+	font-size: 3rem;
+	padding-bottom: 1rem;
+	text-decoration: underline;
+}
+
+.project-detail p {
+	font-size: 2rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+	font-weight: 600;
+}
+
+.image {
+	float: right;
+	width: 30%;
+	border-radius: 1rem;
+	z-index: 5;
+	margin-left: 2rem;
+}
+
+.image-large {
+	width: 100%;
+	margin: 0;
+}
+
+/*///////////////////////////////////////////////////////////////////Fall back Project//////////////////////////////////////////////////////////////////////////////*/
+.project-detail-fallback {
+	height: 80vh;
+	width: 90%;
+	padding: 3rem;
+	background-color: rgba(255, 255, 255, .6);
+	border-radius: 1rem;
+	z-index: 4;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.project-detail-fallback:hover {
+	color: rgb(2, 71, 2);
+}
+
+.big-arrow {
+	font-size: 5rem;
+}
+
+.image-fallback {
+	width: 60%;
+	border-radius: 1rem;
+	z-index: 5;
+	transform: rotate(90deg);
+	padding-bottom: 2rem;
+	padding-left: 0rem;
+	padding-right: 10rem;
+}
+.image-fallback:hover {
+	width: 70%;
+
+	margin: 0;
+}
+/*//////////////////////////////////move scoll snap point down for all project elements////////////////////////////////////////////////////////////////////////////*/
+.anchor {
+	scroll-margin-top: 20vh;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Lift Doors///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.door {
+	height: 80vh;
+	width: 32vw;
+	background-image: url(images/doors.svg);
+	background-position: right center;
+	background-size: cover;
+	position: fixed;
+	z-index: 6;
+}
+
+.door-left {
+	transform: translateX(-30.5vw);
+	transform-origin: right center;
+}
+
+.door-right {
+	transform: translateX(90.5vw)rotate(180deg);
+	transform-origin: left center;
+}
+
+.close-door-left {
+	transform: translateX(-1.75vw);
+	animation: cdoorL 2s linear;
+}
+
+.close-door-right {
+	transform: translateX(61.75vw)rotate(180deg);
+	animation: cdoorR 2s linear;
+}
+
+.open-door-left {
+	animation: odoorL 2s linear;
+	transform: translateX(-30.5vw);
+}
+
+.open-door-right {
+	animation: odoorR 2s linear;
+	transform: translateX(90.5vw)rotate(180deg);
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Global settings//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.hide {
+	display: none;
+}
+
+.hidden {
+	opacity: 0;
+	animation: hidedetail 1s linear;
+}
+.shown {
+	opacity: 1;
+	animation: showdetail 3s linear;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Animations////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@keyframes odoorR {
+	0% {
+		transform: translateX(61.75vw)rotate(180deg);
+	}
+	100% {
+		transform: translateX(90.5vw)rotate(180deg);
+	}
+}
+
+@keyframes odoorL {
+	0% {
+		transform: translateX(-1.75vw);
+	}
+	100% {
+		transform: translateX(-30.5vw);
+	}
+}
+@keyframes cdoorR {
+	0% {
+		transform: translateX(90.5vw)rotate(180deg);
+	}
+	100% {
+		transform: translateX(61.75vw)rotate(180deg);
+	}
+}
+
+@keyframes cdoorL {
+	0% {
+		transform: translateX(-30.5vw);
+	}
+	100% {
+		transform: translateX(-1.75vw);
+	}
+}
+
+@keyframes showdetail {
+	0% {
+		opacity: 0;
+	}
+
+	66% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes hidedetail {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes flashing {
+	0% {
+		background-color: rgb(255, 253, 208);
+		box-shadow: inset 0px 3px 0 rgba(255, 255, 255, 1), 0 3px 3px rgba(0, 0, 0, 0.3);
+		border-bottom: solid 3px rgba(255, 255, 255, 1);
+		font-weight: bold;
+		text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+	}
+
+	50% {
+		background-color: rgb(255, 136, 136);
+		box-shadow: inset 0px 3px 0 rgb(255, 106, 106), 0 3px 3px rgba(0, 0, 0, 0.3);
+		border: none;
+		border-bottom: solid 3px rgb(255, 106, 106);
+		text-shadow: 1px 1px 0px rgb(255, 106, 106);
+	}
+
+	100% {
+		background-color: rgb(255, 253, 208);
+		box-shadow: inset 0px 3px 0 rgba(255, 255, 255, 1), 0 3px 3px rgba(0, 0, 0, 0.3);
+		border-bottom: solid 3px rgba(255, 255, 255, 1);
+		font-weight: bold;
+		text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+	}
+}
+
+@keyframes filterflashing {
+	0% {
+		background-color: rgb(255, 253, 208);
+		box-shadow: inset 0px 3px 0 rgba(255, 255, 255, 1), 0 3px 3px rgba(0, 0, 0, 0.3);
+		border-bottom: solid 3px rgba(255, 255, 255, 1);
+		font-weight: bold;
+		text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+	}
+
+	50% {
+		box-shadow: inset 0px 3px 0 rgb(106, 255, 106), 0 3px 3px rgba(0, 0, 0, 0.3);
+		border: none;
+		border-bottom: solid 3px rgb(106, 255, 106);
+		text-shadow: 1px 1px 0px rgb(106, 255, 106);
+		background-color: rgb(136, 255, 136);
+	}
+
+	100% {
+		background-color: rgb(255, 253, 208);
+		box-shadow: inset 0px 3px 0 rgba(255, 255, 255, 1), 0 3px 3px rgba(0, 0, 0, 0.3);
+		border-bottom: solid 3px rgba(255, 255, 255, 1);
+		font-weight: bold;
+		text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+	}
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Media Queries/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 2150px) {
+	.tech-summary {
+		font-size: 1.75rem;
+	}
+	.project-detail h1 {
+		font-size: 2.25rem;
+	}
+
+	.project-detail p {
+		font-size: 1.75rem;
+	}
+	.btn-selector {
+		min-height: 4.5rem;
+		min-width: 4.5rem;
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 1900px) {
+	.tech-summary {
+		font-size: 1.5rem;
+	}
+
+	.summary-detail {
+		font-size: 1.5rem;
+	}
+
+	.sel-title {
+		font-size: 1.5rem;
+	}
+
+	.selector h1 {
+		font-size: 1.5rem;
+		min-width: 10rem;
+	}
+
+	.project-detail h1 {
+		font-size: 2rem;
+	}
+
+	.project-detail p {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 1550px) {
+	.selector h1 {
+		display: none;
+	}
+
+	.btn-selector {
+		min-height: 4rem;
+		min-width: 4rem;
+		font-size: 0.75rem;
+	}
+	.tech-summary {
+		font-size: 1.25rem;
+	}
+
+	.summary-detail {
+		font-size: 1.25rem;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.tech-summary {
+		font-size: 1rem;
+	}
+	.summary-detail {
+		font-size: 1rem;
+	}
+
+	.btn-selector {
+		min-height: 3.5rem;
+		min-width: 3.5rem;
+		font-size: 0.75rem;
+	}
+	.sel-title {
+		font-size: 1rem;
+	}
+
+	.project-detail h1 {
+		font-size: 1.75rem;
+	}
+
+	.project-detail p {
+		font-size: 1.25rem;
+	}
+
+	.selector {
+		padding: 0.25rem;
+	}
+
+	.sel-title {
+		margin: 0rem;
+		margin-bottom: 0.5rem;
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.tech-summary {
+		font-size: 0.75rem;
+	}
+	.summary-detail {
+		font-size: 0.75rem;
+	}
+
+	.selector {
+		padding: 0.25rem;
+	}
+
+	.sel-title {
+		margin: 0rem;
+		margin-bottom: 0.5rem;
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.menu-link {
+		display: block;
+		position: fixed;
+		top: 6vh;
+		right: 6vw;
+	}
+
+	.selector {
+		padding: 0.25rem;
+	}
+
+	.sel-title {
+		margin: 0rem;
+		margin-bottom: 0.5rem;
+		font-size: 0.8rem;
+	}
+
+	.door {
+		width: 42vw;
+	}
+
+	.door-right {
+		transform: translateX(120.5vw)rotate(180deg);
+	}
+	.door-left {
+		transform: translateX(-40.5vw);
+		transform-origin: right center;
+	}
+
+	.main-section {
+		width: 80vw;
+	}
+
+	.close-door-right {
+		transform: translateX(81.75vw)rotate(180deg);
+		animation: cdoorR 2s linear;
+	}
+
+	.open-door-right {
+		animation: odoorR 2s linear;
+		transform: translateX(120.5vw)rotate(180deg);
+	}
+
+	.close-door-left {
+		transform: translateX(-1.75vw);
+		animation: cdoorL 2s linear;
+	}
+
+	.open-door-left {
+		animation: odoorL 2s linear;
+		transform: translateX(-40.5vw);
+	}
+
+	@keyframes cdoorR {
+		0% {
+			transform: translateX(120.5vw)rotate(180deg);
+		}
+		100% {
+			transform: translateX(81.75vw)rotate(180deg);
+		}
+	}
+
+	@keyframes odoorR {
+		0% {
+			transform: translateX(81.75vw)rotate(180deg);
+		}
+		100% {
+			transform: translateX(120.5vw)rotate(180deg);
+		}
+	}
+
+	@keyframes odoorL {
+		0% {
+			transform: translateX(-1.75vw);
+		}
+		100% {
+			transform: translateX(-40.5vw);
+		}
+	}
+
+	@keyframes cdoorL {
+		0% {
+			transform: translateX(-40.5vw);
+		}
+		100% {
+			transform: translateX(-1.75vw);
+		}
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.tech-summary {
+		font-size: 0.6rem;
+	}
+	.summary-detail {
+		font-size: 0.6rem;
+	}
+
+	.selector {
+		padding: 0.25rem;
+	}
+
+	.sel-title {
+		margin: 0rem;
+		margin-bottom: 0.5rem;
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.title {
+		font-size: 1.5rem;
+
+		background-image: url(images/brushed-metal-1-1198882.jpg);
+		min-width: 30%;
+		height: 4rem;
+		background-size: cover;
+		text-align: center;
+
+		padding: 1rem;
+	}
+
+	.project {
+		padding: 1rem;
+	}
+
+	.project-detail h1 {
+		font-size: 1.5rem;
+	}
+
+	.project-detail p {
+		font-size: 1rem;
+	}
+
+	.menu-detail {
+		position: fixed;
+		top: 6vh;
+		left: 6vw;
+		display: block;
+	}
+	.main-section {
+		width: 100vw;
+		transform: translate(-20vw);
+	}
+
+	.summary {
+		width: 50vw;
+	}
+
+	.tech-summary {
+		font-size: 1rem;
+	}
+	.summary-detail {
+		font-size: 1rem;
+	}
+
+	.btn-selector {
+		min-height: 3.5rem;
+		min-width: 3.5rem;
+		font-size: 0.75rem;
+	}
+	.sel-title {
+		font-size: 1rem;
+	}
+
+	.selector {
+		padding: 0.25rem;
+	}
+
+	.selector h1 {
+		display: block;
+		font-size: 1rem;
+	}
+
+	.selectors {
+		width: 50vw;
+		transform: translateY(20vh) translateX(50vw);
+	}
+
+	.door {
+		width: 52vw;
+	}
+
+	.door-right {
+		transform: translateX(120.5vw)rotate(180deg);
+	}
+	.door-left {
+		transform: translateX(-50.5vw);
+		transform-origin: right center;
+	}
+
+	.close-door-right {
+		transform: translateX(101.75vw)rotate(180deg);
+		animation: cdoorR 2s linear;
+	}
+
+	.open-door-right {
+		animation: odoorR 2s linear;
+		transform: translateX(150.5vw)rotate(180deg);
+	}
+
+	.close-door-left {
+		transform: translateX(-1.75vw);
+		animation: cdoorL 2s linear;
+	}
+
+	.open-door-left {
+		animation: odoorL 2s linear;
+		transform: translateX(-50.5vw);
+	}
+
+	@keyframes cdoorR {
+		0% {
+			transform: translateX(150.5vw)rotate(180deg);
+		}
+		100% {
+			transform: translateX(101.75vw)rotate(180deg);
+		}
+	}
+
+	@keyframes odoorR {
+		0% {
+			transform: translateX(101.75vw)rotate(180deg);
+		}
+		100% {
+			transform: translateX(150.5vw)rotate(180deg);
+		}
+	}
+
+	@keyframes odoorL {
+		0% {
+			transform: translateX(-1.75vw);
+		}
+		100% {
+			transform: translateX(-50.5vw);
+		}
+	}
+
+	@keyframes cdoorL {
+		0% {
+			transform: translateX(-50.5vw);
+		}
+		100% {
+			transform: translateX(-1.75vw);
+		}
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.selector h1 {
+		display: none;
+	}
+
+	.project-detail {
+		padding: 1rem;
+	}
+
+	.project-detail h1 {
+		font-size: 1rem;
+		padding-bottom: 0.25rem;
+	}
+
+	.project-detail p {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.title {
+		font-size: 1rem;
+
+		background-image: url(images/brushed-metal-1-1198882.jpg);
+		min-width: 30%;
+		height: 3rem;
+		background-size: cover;
+		text-align: center;
+		outline: 2px solid black;
+		outline-offset: -5px;
+		padding: 1rem;
+	}
+
+	.tech-summary {
+		font-size: 0.7rem;
+	}
+
+	.summary-detail {
+		font-size: 0.8rem;
+	}
+
+	.project-detail h1 {
+		font-size: 0.85rem;
+		padding-bottom: 0.15rem;
+	}
+
+	.project-detail p {
+		font-size: 0.85rem;
+	}
+	.sel-title {
+		font-size: 0.8rem;
+	}
+
+	.selectors {
+		padding-top: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 335px) {
+	.tech-summary {
+		font-size: 0.6rem;
+	}
+
+	.summary-detail {
+		font-size: 0.7rem;
+	}
+
+	.project-detail h1 {
+		font-size: 0.85rem;
+		padding-bottom: 0.15rem;
+	}
+
+	.project-detail p {
+		font-size: 0.85rem;
+	}
+
+	.menu-link {
+		min-height: 2.5rem;
+		min-width: 2.5rem;
+		font-size: 0.65rem;
+		top: 18vw;
+	}
+
+	.menu-detail {
+		min-height: 2.5rem;
+		min-width: 2.5rem;
+		font-size: 0.65rem;
+		top: 18vw;
+	}
+
+	.selectors-ext-link {
+		padding-top: 0.2rem;
+		border-top: 4px solid darkgoldenrod;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 290px) {
+	.title {
+		font-size: 0.75rem;
+		height: 2.5rem;
+		padding: 0.75rem;
+	}
+
+	.tech-summary {
+		font-size: 0.5rem;
+	}
+
+	.summary-detail {
+		font-size: 0.575rem;
+	}
+
+	.project-detail h1 {
+		font-size: 0.75rem;
+		padding-bottom: 0rem;
+	}
+
+	.project-detail p {
+		font-size: 0.75rem;
+	}
+	.project {
+		padding: 0.25rem;
+	}
+	.sel-title {
+		font-size: 0.6rem;
+	}
+
+	.selectors {
+		padding-top: 0.25rem;
+	}
+
+	.btn-selector {
+		min-height: 2.5rem;
+		min-width: 2.5rem;
+		font-size: 0.5rem;
+		top: 18vw;
+	}
+}

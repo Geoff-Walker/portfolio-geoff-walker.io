@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project-styles.css">
+    <link rel="shortcut icon" href="../Images/favicon-32x32.png" type="image/x-icon" >
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet"> 
+  
+    <script defer src="project-script.js"></script>
+
+    <title>Portfolio Page</title>
+</head>
+<body>
+<main>
+    <header>
+        <h1 class="title">Project Title</h1>
+        <button class="menu-link hide btn-selector btn-link btn-int">Menu</button>
+        <button class="menu-detail hide btn-selector btn-link btn-int">Detail</button>
+           
+    </header>
+    <section class="summary">
+        <div class="tech-summary">
+            <h1>Technologies</h1>
+            <div class="summary-detail">
+                <ul class="clear-sum">   
+                <li>Javascript</li>
+                   <li>API</li>
+                   <li>Flexbox</li>
+                   <li>Grid</li>
+                </ul>
+            </div>
+        </div>
+        <div class="selectors-ext-link">
+            <h1 class="sel-title">External Links</h1>
+            <div class="selector"><button class="btn-selector btn-link btn-ext" onclick="website()">URL</button><h1>Website</h1></div>
+            <div class="selector"><button class="btn-selector btn-link btn-ext" onclick="repo()">Repo</button><h1>GitHub</h1></div>
+
+        </div>
+
+    </section>
+
+    <section class="selectors">
+        
+           
+           <div class="selectors-int-link">
+            <h1 class="sel-title">Internal Links</h1>
+               <div class="selector"><button class="btn-selector btn-link btn-int">Home</button><h1>Home</h1></div>
+               <div class="selector"><button class="btn-selector btn-link btn-int">About</button><h1>About</h1></div>
+               <div class="selector"><button class="btn-selector btn-link btn-int">Contact</button><h1>Contact</h1></div>
+            </div>
+
+            <div class="selectors-filter">
+                <h1 class="sel-title">Filters</h1>
+                <div class="selector"><button class="btn-selector btn-filter-web btn-filter btn-filter-active" onclick="filter('web')">Websites</button><h1>Websites</h1></div>
+                <div class="selector"><button class="btn-selector btn-filter-javascript btn-filter btn-filter-active" onclick="filter('javascript')">Javascript</button><h1>Javascript</h1></div>
+                <div class="selector"><button class="btn-selector btn-filter-api btn-filter btn-filter-active" onclick="filter('api')">API</button><h1>API</h1></div>
+                <!-- <div class="selector"><button class="btn-selector btn-limit">Fullstack</button><h1>Fullstack</h1></div> -->
+            </div>
+
+    </section>
+
+    <Section class="main-section">
+      
+          
+           <div class="container-projects" onscroll="startElevator()">
+
+                   <div class="project project-fallback anchor hide" data-title="Project Elevator"  data-website="https://www.geoff-walker.io" data-repo="https://github.com/Geoff-Walker" data-tech="HTML, CSS, Javascript, API'S, JSON">
+                <div class="project-detail-fallback project-hide ">
+                    <img class="image-fallback project-hide" src="images/My-Icon.png" alt="My Image" onclick="largeImage()">
+                    <h1>Welcome to my project elevator</h1>
+                    <p>You currently have no filters selected ⁉- please select some floors to view in the elevator by using the filters on the bottom right.<p class="big-arrow">➡</p></p>                                  
+                </div>
+            </div>
+            <img class="beam project-fallback hide" src="images/beam.png" alt="i-beam">
+
+
+            <div class="project project-aob anchor filter-website filter-javascript"  data-title="Beautician's Website"  data-website="https://geoff-walker.github.io/portfolio-aspects-of-beauty/" data-repo="https://github.com/Geoff-Walker/portfolio-aspects-of-beauty" data-tech='CSS-Grid, Flexbox, Animation, CSS-Variables, Mask-Image'>
+                <div class="project-detail project-hide ">
+                    <img class="image project-hide" src="images/Aspects of beauty.gif.gif" alt="project images" onclick="largeImage()">
+                    <h1>The Problem</h1>
+                    <p >Aspects of Beauty is a small family run beauticians in Lincolnshire, who's owner came to me because their webpage wouldn't open properly in mobile and was nearly unsuable.  It had been made by a family friend of the owner and was a poor example of a no code website!</p>
+                            
+                    <h1>The Solution</h1>
+                            
+                     <p>I took the existing feel of the design and came up with an exhaustive list of things that needed changing from the original. I then rebuilt the site from the ground up fixing the errors as I went. These included simple things like not having more than two fonts on a page or making sure the right images or logos are shown. Through setting up a CSS-Grid with some repeat minmax so all screen sizes would be accomodated.  The biggest change I made to the site was the landing section which previosuly had been really dull but I added some animated images behind a Mask-Image as shown in the preview.</p>                          
+                            
+                </div>
+            </div>
+            <img class="beam filter-website filter-javascript" src="images/beam.png" alt="i-beam">
+             
+                
+
+            <div class="project project-fem-json anchor filter-javascript"  data-title="Activity Tracker" data-website="https://geoff-walker.github.io/fem-time-tracking_json/" data-repo="https://github.com/Geoff-Walker/fem-time-tracking_json" data-tech='JSON, Flexbox, Mobile-First, CSS-Grid,'>
+                <div class="project-detail project-hide hidden">
+                    <img class="image project-hide hidden" src="images/fem-json-activity.jpeg" alt="project images" onclick="largeImage()">
+                    <h1>The Problem</h1>
+                    <p>A fitness tracker that displays hours doing different acitivities using data coming from a Local JSON file.</p>
+                        
+                    <h1>The Solution</h1>
+                        
+                     <p>The design of this project is based upon the Front End Mentor challenge <a href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw" target="_blank">Time Tracking Dashboard</a>. I love Front End Mentor as it provides the design and the problem but leaves it entirely up to you how to achieve this much more inline with corporate work, while providing a platform to test your skills.  <br><br>I used CSS-Grid and repeat minmax to create a fully responsive activity tracker with media queries for phone, tablet and desktop.  I made this tracker exclusively in the mobile first workflow </p>
+                    
+                 </div>
+            </div>
+             <img class="beam filter-javascript" src="images/beam.png" alt="i-beam">
+
+            <div class="project project-etch anchor filter-javascript" data-title="Etch a Sketch" data-website="https://geoff-walker.github.io/odin-etch-a-sketch/" data-repo="https://github.com/Geoff-Walker/odin-etch-a-sketch" data-tech='DOM-Manip, Javascript, Application, CSS-Grid'>
+                <div class="project-detail project-hide hidden">
+                    <img class="image project-hide hidden" src="images/etch1.png" alt="project images" onclick="largeImage()">
+                    <h1>The Problem</h1>
+                    <p >To build an etch a sketch appliation in HTML, CSS and Vanilla Javascript</p>
+                    
+                    <h1>The Solution</h1>
+                    
+                    <p>The etch a sketch application was build using CSS-Grid to create a grid of divs based upon the number specified using css variables.<br><br>  I also used three random number generators to create a red, green and blue variables which combined gives a random rainbow affect. <br><br>  The very simple mousover event then applies the colour to the sketch pad</p>        
+                </div> 
+            </div>
+            <img class="beam filter-javascript" src="images/beam.png" alt="i-beam">
+
+            <div class="project project-fork anchor filter-javascript filter-api" data-title="Forkify App" data-website="https://forkify-geoff-walker.netlify.app/" data-repo="https://github.com/Geoff-Walker/forkify-app" data-tech='Javascript, Module-Pattern, API, Application'>
+                <div class="project-detail project-hide hidden">
+                    <img class="image project-hide hidden" src="images/forkify.png" alt="project images" onclick="largeImage()">
+                    <h1>The Problem</h1>
+                    <p>Building projects with an APi can be a minefield not so much the build process but successful free API's soon become not free when enough people use them.  I need an Api that I can rely on being around for at least a couple of years.</p>
+                    
+                    <h1>The Solution</h1>
+                    
+                    <p>To that end I have used the API created by Jonas Schmedtmann for use in his Master Javascript Udemy course to build an application using the javascript module-pattern to render the results.  The APi allows me to both read hundreds of recipes from it but also write my personal recipes to it via an ssh key.  </p>
+               
+                </div> 
+            </div>
+            <img class="beam filter-javascript filter-api" src="images/beam.png" alt="i-beam">
+            
+            <div class="door door-right"></div>
+            <div class="door door-left"></div>
+                       
+         
+
+        </div>
+
+    </Section>
+   </main> 
+    
+</body>
+</html>
