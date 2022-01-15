@@ -25,17 +25,15 @@ header {
 .title {
 	background-image: url(Images/project-images/brushed-metal-1-1198882.jpg);
 	min-width: 30%;
-	height: 6rem;
-	background-size: cover;
-	text-align: center;
-	font-size: 3rem;
-	padding: 1rem;
+	height: 8vh;
+	font-size: 3.5vh;
+	padding: 2vh 1vh 1vh 1vh;
+	outline: 3px solid black;
+	outline-offset: -1vh;
+	color: black;
 	border-radius: 1rem;
 	font-weight: 700;
-	vertical-align: middle;
-	color: black;
-	outline: 3px solid black;
-	outline-offset: -10px;
+	text-align: center;
 }
 
 .menu-link {
@@ -59,6 +57,9 @@ header {
 	background-image: url(Images/project-images/wall-pattern.png);
 	background-size: cover;
 	background-position: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 .tech-summary {
@@ -84,7 +85,7 @@ header {
 	font-size: 2rem;
 }
 .selectors-ext-link {
-	padding-top: 1rem;
+	padding-top: 3rem;
 	border-top: 4px solid darkgoldenrod;
 	display: flex;
 	flex-direction: column;
@@ -106,6 +107,9 @@ header {
 	padding-top: 2rem;
 	box-shadow: 0px -5px 30px rgba(0, 0, 0, 1);
 	z-index: 9;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 .sel-title {
 	background-image: url(Images/project-images/brushed-metal-1-1198882.jpg);
@@ -127,6 +131,7 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding-bottom: 2rem;
 }
 
 .selectors-filter {
@@ -140,7 +145,7 @@ header {
 .selector {
 	display: flex;
 	align-items: center;
-	padding: 0.5rem 4rem;
+	padding: 1.5rem 4rem;
 }
 .selector h1 {
 	margin-left: 2rem;
@@ -275,7 +280,7 @@ header {
 .project-detail {
 	height: 80vh;
 	width: 90%;
-	padding: 3rem;
+	padding: 5rem;
 	background-color: rgba(255, 255, 255, .6);
 	border-radius: 1rem;
 	z-index: 4;
@@ -288,9 +293,9 @@ header {
 }
 
 .project-detail p {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	padding-right: 1rem;
-	padding-bottom: 1rem;
+	padding-bottom: 3rem;
 	font-weight: 600;
 }
 
@@ -304,7 +309,12 @@ header {
 
 .image-large {
 	width: 100%;
-	margin: 0;
+	clear: right;
+	margin: 0 auto;
+}
+
+.fill-me {
+	padding: 0rem;
 }
 
 /*///////////////////////////////////////////////////////////////////Fall back Project//////////////////////////////////////////////////////////////////////////////*/
@@ -319,7 +329,7 @@ header {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: 600;
 	text-align: center;
 }
@@ -329,7 +339,7 @@ header {
 }
 
 .big-arrow {
-	font-size: 5rem;
+	font-size: 10rem;
 }
 
 .image-fallback {

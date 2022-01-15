@@ -1,6 +1,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Selectors and Variables/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+fadeMe = document.querySelectorAll('.fade-me');
 showMenu = document.querySelector('.menu-link');
+fillDetail = document.querySelectorAll('.project-detail');
 showDetail = document.querySelector('.menu-detail');
 doors = document.querySelectorAll('.door');
 doorLeft = document.querySelector('.door-left');
@@ -40,10 +41,31 @@ image.forEach((img) => {
 
 function largeImage() {
 	this.classList.toggle('image-large');
+
+	fillDetail.forEach((project) => {
+		if (this.classList.contains('image-large')) {
+			project.classList.add('fill-me');
+		} else {
+			project.classList.remove('fill-me');
+		}
+	});
+
+	fadeMe.forEach((text) => {
+		if (this.classList.contains('image-large')) {
+			text.classList.add('hide');
+		} else {
+			text.classList.remove('hide');
+		}
+	});
 }
 
 function removeLargeImage() {
 	this.classList.remove('image-large');
+	fadeMe.forEach((text) => {
+		text.classList.remove('hide');
+	});
+
+	fillDetail.forEach((project) => project.classList.remove('fill-me'));
 }
 
 showMenu.addEventListener('click', menu);
