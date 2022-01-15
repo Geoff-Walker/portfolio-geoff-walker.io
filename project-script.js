@@ -25,6 +25,7 @@ filterApi = document.querySelectorAll('.filter-api');
 beams = document.querySelectorAll('.beam');
 fallbackProjects = document.querySelectorAll('.project-fallback');
 image = document.querySelectorAll('.image');
+containerProjects = document.querySelector('.container-projects');
 let javascriptFilter = true;
 let webFilter = true;
 let apiFilter = true;
@@ -86,6 +87,10 @@ doors.forEach((door) => {
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Flash Elevator buttons to draw users attention to the Side Nav////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+containerProjects.addEventListener('scroll', startElevator);
+containerProjects.addEventListener('onstouchstart', startElevator);
+
 function onLoad() {
 	internalLinks.forEach((element) => {
 		element.classList.add('btn-flash');
