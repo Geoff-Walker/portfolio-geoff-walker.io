@@ -76,16 +76,16 @@ header {
 	padding-top: 2rem;
 	outline: 3px solid black;
 	outline-offset: -10px;
-	font-size: 2rem;
+	font-size: 2vh;
 }
 
 .summary-detail {
 	padding-top: 1rem;
 	font-weight: 600;
-	font-size: 2rem;
+	font-size: 2.5vh;
 }
 .selectors-ext-link {
-	padding-top: 3rem;
+	padding-top: 2.5vh;
 	border-top: 4px solid darkgoldenrod;
 	display: flex;
 	flex-direction: column;
@@ -104,7 +104,7 @@ header {
 	position: fixed;
 	transform: translate(80vw, 20vh);
 	border-left: 5px solid darkgoldenrod;
-	padding-top: 2rem;
+	padding-top: 2.5vh;
 	box-shadow: 0px -5px 30px rgba(0, 0, 0, 1);
 	z-index: 9;
 	display: flex;
@@ -116,13 +116,13 @@ header {
 	background-size: cover;
 	padding: 1rem;
 	width: 80%;
-	margin: 0rem 1rem 1rem 1rem;
+	margin: 0rem 1vh 1vh 1vh;
 	text-align: center;
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, .7);
 	border-radius: 1rem;
 	outline: 1px solid black;
 	outline-offset: -10px;
-	font-size: 2rem;
+	font-size: 2.5vh;
 }
 
 .selectors-int-link {
@@ -145,24 +145,24 @@ header {
 .selector {
 	display: flex;
 	align-items: center;
-	padding: 1.5rem 4rem;
+	padding: 1vh 4vw;
 }
 .selector h1 {
-	margin-left: 2rem;
+	margin-left: 1vw;
 	background-image: url(Images/project-images/brushed-metal-1-1198882.jpg);
 	background-size: cover;
 	padding: 1rem;
 	min-width: 15rem;
 	text-align: center;
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, .7);
-	font-size: 2rem;
+	font-size: 2vh;
 	border-radius: 1rem;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Buttons///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .btn-selector {
-	min-height: 6rem;
-	min-width: 6rem;
+	min-height: 6.5vh;
+	min-width: 6.5vh;
 	border-radius: 50%;
 	overflow: hidden;
 	background-color: rgb(255, 253, 208);
@@ -171,7 +171,7 @@ header {
 	font-weight: bold;
 	text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
 	color: rgba(0, 0, 0, 0.3);
-	font-size: 1.25rem;
+	font-size: 1.25vh;
 }
 
 .btn-link:hover {
@@ -287,13 +287,13 @@ header {
 }
 
 .project-detail h1 {
-	font-size: 3rem;
+	font-size: 3vh;
 	padding-bottom: 1rem;
 	text-decoration: underline;
 }
 
 .project-detail p {
-	font-size: 2.5rem;
+	font-size: 2.5vh;
 	padding-right: 1rem;
 	padding-bottom: 3rem;
 	font-weight: 600;
@@ -311,6 +311,7 @@ header {
 	width: 100%;
 	clear: right;
 	margin: 0 auto;
+	padding-bottom: 2vh;
 }
 
 .fill-me {
@@ -530,125 +531,44 @@ header {
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Media Queries/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-@media screen and (max-width: 2150px) {
-	.tech-summary {
-		font-size: 1.75rem;
-	}
-	.project-detail h1 {
-		font-size: 2.25rem;
-	}
-
-	.project-detail p {
-		font-size: 1.75rem;
-	}
-	.btn-selector {
-		min-height: 4.5rem;
-		min-width: 4.5rem;
-		font-size: 1rem;
-	}
-}
-
-@media screen and (max-width: 1900px) {
-	.tech-summary {
-		font-size: 1.5rem;
-	}
-
-	.summary-detail {
-		font-size: 1.5rem;
-	}
-
-	.sel-title {
-		font-size: 1.5rem;
-	}
-
-	.selector h1 {
-		font-size: 1.5rem;
-		min-width: 10rem;
-	}
-
-	.project-detail h1 {
-		font-size: 2rem;
-	}
-
-	.project-detail p {
-		font-size: 1.5rem;
-	}
-}
-
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1750px) {
 	.selector h1 {
 		display: none;
 	}
 
-	.btn-selector {
-		min-height: 4rem;
-		min-width: 4rem;
-		font-size: 0.75rem;
-	}
-	.tech-summary {
-		font-size: 1.25rem;
-	}
-
 	.summary-detail {
-		font-size: 1.25rem;
+		font-size: 2vh;
 	}
 }
 
-@media screen and (max-width: 1280px) {
-	.tech-summary {
-		font-size: 1rem;
-	}
-	.summary-detail {
-		font-size: 1rem;
-	}
-
-	.btn-selector {
-		min-height: 3.5rem;
-		min-width: 3.5rem;
-		font-size: 0.75rem;
-	}
-	.sel-title {
-		font-size: 1rem;
+@media screen and (max-width: 1350px) {
+	.project-detail {
+		width: 100%;
+		padding: 3vh;
+		padding-left: 3vw;
+		padding-right: 3vw;
 	}
 
-	.project-detail h1 {
-		font-size: 1.75rem;
-	}
-
-	.project-detail p {
-		font-size: 1.25rem;
-	}
-
-	.selector {
-		padding: 0.25rem;
-	}
-
-	.sel-title {
+	.project {
 		margin: 0rem;
-		margin-bottom: 0.5rem;
-		font-size: 0.8rem;
+		padding: 0rem;
 	}
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1050px) {
+	.sel-title {
+		font-size: 2vh;
+	}
+
 	.tech-summary {
-		font-size: 0.75rem;
+		font-size: 1.75vh;
 	}
 	.summary-detail {
-		font-size: 0.75rem;
-	}
-
-	.selector {
-		padding: 0.25rem;
-	}
-
-	.sel-title {
-		margin: 0rem;
-		margin-bottom: 0.5rem;
-		font-size: 0.8rem;
+		font-size: 1.75vh;
 	}
 }
 
+/*//////////////////////////////////////////////////////////Tablet Queries//////////////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (max-width: 950px) {
 	.menu-link {
 		display: block;
