@@ -87,12 +87,8 @@ doors.forEach((door) => {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Flash Elevator buttons to draw users attention to the Side Nav////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// containerProjects.addEventListener('scroll', startElevator);
-// containerProjects.addEventListener('touchstart', testing);
-
-function testing() {
-	console.log('please start');
-}
+containerProjects.addEventListener('scroll', startElevator);
+containerProjects.addEventListener('touchstart', startElevator);
 
 function onLoad() {
 	internalLinks.forEach((element) => {
@@ -112,8 +108,6 @@ function onLoad() {
 			element.classList.remove('btn-filter-flash');
 		});
 	}, 2000);
-
-	startElevator();
 }
 
 window.onLoad = onLoad();
@@ -128,6 +122,7 @@ const observer = new IntersectionObserver(
 				renderDetail(target);
 			} else {
 				closeDoors();
+				console.log('why');
 			}
 		});
 	},
