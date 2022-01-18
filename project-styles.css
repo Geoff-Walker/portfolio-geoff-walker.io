@@ -44,6 +44,18 @@ header {
 	display: none;
 }
 
+.mobile-menu {
+	display: block;
+}
+
+.tablet-menu {
+	display: block;
+}
+
+.rotate-me {
+	display: none;
+}
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Summary//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .summary {
@@ -69,7 +81,7 @@ header {
 	justify-content: flex-start;
 	width: 80%;
 	height: 50%;
-	margin: 2rem auto;
+	margin: 2vh auto;
 	background-image: url(Images/project-images/brushed-metal-1-1198882.jpg);
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, .9);
 	border-radius: 1rem;
@@ -152,7 +164,7 @@ header {
 	background-image: url(Images/project-images/brushed-metal-1-1198882.jpg);
 	background-size: cover;
 	padding: 1rem;
-	min-width: 15rem;
+	min-width: 10vw;
 	text-align: center;
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, .7);
 	font-size: 2vh;
@@ -196,6 +208,14 @@ header {
 	border-bottom: solid 3px rgb(106, 255, 106);
 	text-shadow: 1px 1px 0px rgb(106, 255, 106);
 	background-color: rgb(136, 255, 136);
+}
+
+.btn-menu-active {
+	background-color: rgb(255, 136, 136);
+	box-shadow: inset 0px 3px 0 rgb(255, 106, 106), 0 3px 3px rgba(0, 0, 0, 0.3);
+	border: none;
+	border-bottom: solid 3px rgb(255, 106, 106);
+	text-shadow: 1px 1px 0px rgb(255, 106, 106);
 }
 
 .btn-filter-flash {
@@ -532,6 +552,18 @@ header {
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Media Queries/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 @media screen and (max-width: 1750px) {
+	.project-detail {
+		width: 90%;
+		padding: 3vh;
+	}
+
+	.project {
+		padding-top: 2vh;
+		padding-bottom: 2vh;
+	}
+}
+
+@media screen and (max-width: 1500px) {
 	.selector h1 {
 		display: none;
 	}
@@ -544,7 +576,6 @@ header {
 @media screen and (max-width: 1350px) {
 	.project-detail {
 		width: 100%;
-		padding: 3vh;
 		padding-left: 3vw;
 		padding-right: 3vw;
 	}
@@ -553,13 +584,26 @@ header {
 		margin: 0rem;
 		padding: 0rem;
 	}
-}
 
-@media screen and (max-width: 1050px) {
-	.sel-title {
-		font-size: 2vh;
+	.selectors {
+		padding-top: 1vh;
+		justify-content: flex-start;
 	}
 
+	.summary {
+		justify-content: flex-start;
+	}
+
+	.tech-summary {
+		margin: 1vh auto;
+	}
+
+	.sel-title {
+		font-size: 1.5vh;
+	}
+}
+
+@media screen and (max-width: 1100px) {
 	.tech-summary {
 		font-size: 1.75vh;
 	}
@@ -570,182 +614,68 @@ header {
 
 /*//////////////////////////////////////////////////////////Tablet Queries//////////////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (max-width: 950px) {
+	header {
+		justify-content: space-between;
+		padding-right: 3vw;
+		padding-left: 3vw;
+	}
 	.menu-link {
 		display: block;
-		position: fixed;
-		top: 6vh;
-		right: 6vw;
-	}
-
-	.selector {
-		padding: 0.25rem;
-	}
-
-	.sel-title {
-		margin: 0rem;
-		margin-bottom: 0.5rem;
-		font-size: 0.8rem;
-	}
-
-	.door {
-		width: 42vw;
-	}
-
-	.door-right {
-		transform: translateX(120.5vw)rotate(180deg);
-	}
-	.door-left {
-		transform: translateX(-40.5vw);
-		transform-origin: right center;
-	}
-
-	.main-section {
-		width: 80vw;
-	}
-
-	.close-door-right {
-		transform: translateX(81.75vw)rotate(180deg);
-		animation: cdoorR 2s linear;
-	}
-
-	.open-door-right {
-		animation: odoorR 2s linear;
-		transform: translateX(120.5vw)rotate(180deg);
-	}
-
-	.close-door-left {
-		transform: translateX(-1.75vw);
-		animation: cdoorL 2s linear;
-	}
-
-	.open-door-left {
-		animation: odoorL 2s linear;
-		transform: translateX(-40.5vw);
-	}
-
-	@keyframes cdoorR {
-		0% {
-			transform: translateX(120.5vw)rotate(180deg);
-		}
-		100% {
-			transform: translateX(81.75vw)rotate(180deg);
-		}
-	}
-
-	@keyframes odoorR {
-		0% {
-			transform: translateX(81.75vw)rotate(180deg);
-		}
-		100% {
-			transform: translateX(120.5vw)rotate(180deg);
-		}
-	}
-
-	@keyframes odoorL {
-		0% {
-			transform: translateX(-1.75vw);
-		}
-		100% {
-			transform: translateX(-40.5vw);
-		}
-	}
-
-	@keyframes cdoorL {
-		0% {
-			transform: translateX(-40.5vw);
-		}
-		100% {
-			transform: translateX(-1.75vw);
-		}
-	}
-}
-
-@media screen and (max-width: 850px) {
-	.tech-summary {
-		font-size: 0.6rem;
-	}
-	.summary-detail {
-		font-size: 0.6rem;
-	}
-
-	.selector {
-		padding: 0.25rem;
-	}
-
-	.sel-title {
-		margin: 0rem;
-		margin-bottom: 0.5rem;
-		font-size: 0.8rem;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.title {
-		font-size: 1.5rem;
-
-		min-width: 30%;
-		height: 4rem;
-		background-size: cover;
-		text-align: center;
-
-		padding: 1rem;
-	}
-
-	.project {
-		padding: 1rem;
-	}
-
-	.project-detail h1 {
-		font-size: 1.5rem;
-	}
-
-	.project-detail p {
-		font-size: 1rem;
 	}
 
 	.menu-detail {
-		position: fixed;
-		top: 6vh;
-		left: 6vw;
 		display: block;
 	}
+
+	.tablet-menu {
+		display: none;
+	}
+
+	.mobile-menu {
+		display: none;
+	}
+
 	.main-section {
 		width: 100vw;
-		transform: translate(-20vw);
+		transform: translatex(-20vw);
 	}
 
 	.summary {
 		width: 50vw;
 	}
 
-	.tech-summary {
-		font-size: 1rem;
-	}
-	.summary-detail {
-		font-size: 1rem;
-	}
-
-	.btn-selector {
-		min-height: 3.5rem;
-		min-width: 3.5rem;
-		font-size: 0.75rem;
-	}
-	.sel-title {
-		font-size: 1rem;
-	}
-
-	.selector {
-		padding: 0.25rem;
+	.selectors {
+		width: 50vw;
+		transform: translate(50vw, 20vh);
 	}
 
 	.selector h1 {
 		display: block;
-		font-size: 1rem;
+		min-width: 20vw;
+		margin-left: 2vw;
 	}
 
-	.selectors {
-		width: 50vw;
-		transform: translateY(20vh) translateX(50vw);
+	.sel-title {
+		font-size: 2vh;
+		margin-top: 1vh;
+	}
+
+	.title {
+		font-size: 2vh;
+		height: 6.5vh;
+	}
+
+	.project-detail {
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+
+	.project-detail h1 {
+		font-size: 2vh;
+	}
+
+	.project-detail p {
+		font-size: 2vh;
 	}
 
 	.door {
@@ -753,7 +683,7 @@ header {
 	}
 
 	.door-right {
-		transform: translateX(120.5vw)rotate(180deg);
+		transform: translateX(150.5vw)rotate(180deg);
 	}
 	.door-left {
 		transform: translateX(-50.5vw);
@@ -817,143 +747,81 @@ header {
 	}
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 425px) {
+	.selectors {
+		width: 100vw;
+		transform: translate(0vw, 20vh);
+		padding-top: 0vh;
+	}
+
+	.selectors-filter {
+		padding-top: 0.5vh;
+	}
+
+	.selector {
+		padding: 0.5vh 4vw;
+	}
+
 	.selector h1 {
-		display: none;
+		display: block;
+		min-width: 30vw;
+		margin-left: 5vw;
+	}
+
+	.sel-title {
+		font-size: 2vh;
+		margin-top: 1vh;
+	}
+
+	.title {
+		font-size: 2vh;
+		height: 6.5vh;
+		min-width: 35vw;
+		outline: 1px solid black;
+		outline-offset: -0.5vh;
+	}
+	.summary {
+		width: 100vw;
+	}
+
+	.tech-summary {
+		font-size: 3vh;
+		padding-top: 1.75vh;
+	}
+
+	.summary-detail {
+		font-size: 3.5vh;
 	}
 
 	.project-detail {
-		padding: 1rem;
+		padding-left: 5vw;
+		padding-right: 5vw;
 	}
 
 	.project-detail h1 {
-		font-size: 1rem;
-		padding-bottom: 0.25rem;
+		padding-bottom: 0.5vh;
 	}
 
 	.project-detail p {
-		font-size: 1rem;
+		padding-bottom: 0.75vh;
 	}
 }
 
-@media screen and (max-width: 425px) {
-	.title {
-		font-size: 1rem;
-
-		min-width: 30%;
-		height: 3rem;
-		background-size: cover;
-		text-align: center;
-		outline: 2px solid black;
-		outline-offset: -5px;
-		padding: 1rem;
-	}
-
-	.tech-summary {
-		font-size: 0.7rem;
-	}
-
-	.summary-detail {
-		font-size: 0.8rem;
-	}
-
-	.project-detail h1 {
-		font-size: 0.85rem;
-		padding-bottom: 0.15rem;
-	}
-
-	.project-detail p {
-		font-size: 0.85rem;
-	}
-	.sel-title {
-		font-size: 0.8rem;
-	}
-
-	.selectors {
-		padding-top: 0.5rem;
-	}
-}
-
-@media screen and (max-width: 335px) {
-	.tech-summary {
-		font-size: 0.6rem;
-	}
-
-	.summary-detail {
-		font-size: 0.7rem;
-	}
-
-	.project-detail h1 {
-		font-size: 0.85rem;
-		padding-bottom: 0.15rem;
-	}
-
-	.project-detail p {
-		font-size: 0.85rem;
-	}
-
-	.menu-link {
-		min-height: 2.5rem;
-		min-width: 2.5rem;
-		font-size: 0.65rem;
-		top: 18vw;
-	}
-
-	.menu-detail {
-		min-height: 2.5rem;
-		min-width: 2.5rem;
-		font-size: 0.65rem;
-		top: 18vw;
-	}
-
-	.selectors-ext-link {
-		padding-top: 0.2rem;
-		border-top: 4px solid darkgoldenrod;
+@media screen and (max-width: 750px) and (orientation: landscape) {
+	.rotate-me {
+		position: fixed;
+		top: 0rem;
+		right: 0rem;
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	}
-}
-
-@media screen and (max-width: 290px) {
-	.title {
-		font-size: 0.75rem;
-		height: 2.5rem;
-		padding: 0.75rem;
+		height: 100vh;
+		width: 100vw;
+		background-color: black;
+		z-index: 50;
 	}
 
-	.tech-summary {
-		font-size: 0.5rem;
-	}
-
-	.summary-detail {
-		font-size: 0.575rem;
-	}
-
-	.project-detail h1 {
-		font-size: 0.75rem;
-		padding-bottom: 0rem;
-	}
-
-	.project-detail p {
-		font-size: 0.75rem;
-	}
-	.project {
-		padding: 0.25rem;
-	}
-	.sel-title {
-		font-size: 0.6rem;
-	}
-
-	.selectors {
-		padding-top: 0.25rem;
-	}
-
-	.btn-selector {
-		min-height: 2.5rem;
-		min-width: 2.5rem;
-		font-size: 0.5rem;
-		top: 18vw;
+	.rotate-me h1 {
+		color: blanchedalmond;
 	}
 }

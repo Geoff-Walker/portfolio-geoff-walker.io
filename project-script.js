@@ -73,11 +73,36 @@ showMenu.addEventListener('click', menu);
 showDetail.addEventListener('click', detail);
 
 function menu() {
-	selectors.classList.toggle('hide');
+	selectors.classList.toggle('tablet-menu');
+
+	if (selectors.classList.contains('tablet-menu')) {
+		showMenu.classList.remove('btn-menu-active');
+		console.log('tablet-active');
+	} else {
+		showMenu.classList.add('btn-menu-active');
+		console.log('tablet-inactive');
+
+		if (!summary.classList.contains('mobile-menu')) {
+			showDetail.classList.remove('btn-menu-active');
+			summary.classList.toggle('mobile-menu');
+		}
+	}
 }
 
 function detail() {
-	summary.classList.toggle('hide');
+	summary.classList.toggle('mobile-menu');
+
+	if (summary.classList.contains('mobile-menu')) {
+		showDetail.classList.remove('btn-menu-active');
+		console.log('mobile-active');
+	} else {
+		showDetail.classList.add('btn-menu-active');
+		console.log('mobile-inactive');
+		if (!selectors.classList.contains('tablet-menu')) {
+			showMenu.classList.remove('btn-menu-active');
+			selectors.classList.toggle('tablet-menu');
+		}
+	}
 }
 
 /////////////////////////////////////////////////////////////////////Emergency door open//////////////////////////////////////////////////////////////////////////////
@@ -130,6 +155,9 @@ function onLoad() {
 		element.classList.add('btn-filter-flash');
 	});
 
+	showMenu.classList.add('btn-flash');
+	showDetail.classList.add('btn-flash');
+
 	setTimeout(() => {
 		internalLinks.forEach((element) => {
 			element.classList.remove('btn-flash');
@@ -138,6 +166,9 @@ function onLoad() {
 		btnFilter.forEach((element) => {
 			element.classList.remove('btn-filter-flash');
 		});
+
+		showMenu.classList.remove('btn-flash');
+		showDetail.classList.remove('btn-flash');
 	}, 2000);
 }
 
