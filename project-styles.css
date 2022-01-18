@@ -11,7 +11,7 @@ header {
 	width: 100vw;
 	height: 20vh;
 	position: fixed;
-	background-image: url(Images/project-images/bg-variations-1-1186474.jpg);
+	background-image: url(Images/project-images/bg-variations-1-1186474.png);
 	background-size: 100vw 20vh;
 	background-repeat: no-repeat;
 	display: flex;
@@ -23,7 +23,7 @@ header {
 }
 
 .title {
-	background-image: url(Images/project-images/brushed-metal-1-1198882.jpg);
+	background-image: url(Images/project-images/brushed-metal-1-1198882.png);
 	min-width: 30%;
 	height: 8vh;
 	font-size: 3.5vh;
@@ -82,7 +82,7 @@ header {
 	width: 80%;
 	height: 50%;
 	margin: 2vh auto;
-	background-image: url(Images/project-images/brushed-metal-1-1198882.jpg);
+	background-image: url(Images/project-images/brushed-metal-1-1198882.png);
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, .9);
 	border-radius: 1rem;
 	padding-top: 2rem;
@@ -124,7 +124,7 @@ header {
 	justify-content: space-evenly;
 }
 .sel-title {
-	background-image: url(Images/project-images/brushed-metal-1-1198882.jpg);
+	background-image: url(Images/project-images/brushed-metal-1-1198882.png);
 	background-size: cover;
 	padding: 1rem;
 	width: 80%;
@@ -161,7 +161,7 @@ header {
 }
 .selector h1 {
 	margin-left: 1vw;
-	background-image: url(Images/project-images/brushed-metal-1-1198882.jpg);
+	background-image: url(Images/project-images/brushed-metal-1-1198882.png);
 	background-size: cover;
 	padding: 1rem;
 	min-width: 10vw;
@@ -350,7 +350,7 @@ header {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
-	font-size: 2rem;
+	font-size: 2vh;
 	font-weight: 600;
 	text-align: center;
 }
@@ -360,18 +360,18 @@ header {
 }
 
 .big-arrow {
-	font-size: 10rem;
+	font-size: 10vh;
 }
 
 .image-fallback {
-	width: 40%;
+	width: 20vw;
 	border-radius: 1rem;
 	z-index: 5;
-	padding-bottom: 2rem;
+	padding-bottom: 2vh;
 	margin: 0 auto;
 }
 .image-fallback:hover {
-	width: 45%;
+	transform: scale(1.1);
 
 	margin: 0;
 }
@@ -561,6 +561,10 @@ header {
 		padding-top: 2vh;
 		padding-bottom: 2vh;
 	}
+
+	.image-fallback {
+		width: 15vw;
+	}
 }
 
 @media screen and (max-width: 1500px) {
@@ -676,6 +680,10 @@ header {
 
 	.project-detail p {
 		font-size: 2vh;
+	}
+
+	.image-fallback {
+		width: 35vw;
 	}
 
 	.door {
