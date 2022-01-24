@@ -1,0 +1,947 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: grutchShaded;
+	src: url(GrutchShaded.ttf);
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Nav////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 30%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background: transparent;
+	z-index: 2;
+}
+
+.links {
+	padding: 1rem;
+	background-color: rgb(250, 244, 226);
+	margin: 1rem;
+	border: 1rem ridge rgb(24, 24, 24);
+	font-family: grutchShaded;
+}
+
+.links-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	min-height: 6rem;
+	min-width: 4rem;
+	box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.3);
+}
+
+.link-about {
+	min-height: 4rem;
+	min-width: 6rem;
+}
+
+.links-inner a {
+	text-decoration: none;
+	font-size: 2rem;
+	padding: 1rem;
+	text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.links-home {
+	transform: rotate(5deg) translateY(-0.5rem);
+}
+
+.links-projects {
+	transform: rotate(7deg) translateY(0.7rem);
+}
+
+.links-about {
+	transform: rotate(-5deg) translateY(0.5rem);
+}
+
+.links:hover {
+	transform: rotate(0deg) translateY(0rem);
+}
+
+.link-home a {
+	color: red;
+}
+
+.link-home:hover {
+	background-color: red;
+}
+
+.link-home a:hover {
+	color: white;
+}
+.link-projects a {
+	color: green;
+}
+
+.link-projects:hover {
+	background-color: green;
+}
+
+.link-projects a:hover {
+	color: white;
+}
+
+.link-about a {
+	color: rgb(86, 124, 161);
+}
+
+.link-about:hover {
+	background-color: rgb(86, 124, 161);
+}
+
+.link-about a:hover {
+	color: white;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Left Wall/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.left {
+	height: 100vh;
+	width: 20vw;
+	background-color: brown;
+	overflow: hidden;
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+.wall-left {
+	height: 200%;
+	width: 110%;
+	background-color: black;
+
+	background-image: radial-gradient(
+			circle at left 20%,
+			rgba(34, 34, 34, 0.3),
+			rgba(34, 34, 34, 0.3) 80px,
+			rgba(34, 34, 34, 0.5) 100px,
+			rgba(51, 51, 51, 0.5) 160px,
+			rgba(51, 51, 51, 0.5)
+		),
+		linear-gradient(
+			to left,
+			rgb(255, 255, 255, 0.3),
+			rgb(0, 0, 0, 0.2),
+			rgb(0, 0, 0, 0.2),
+			rgb(0, 0, 0, 0.2),
+			rgb(255, 255, 255, 0.1)
+		);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Right Wall/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.right {
+	position: fixed;
+	right: 0;
+	top: 0;
+	background-image: linear-gradient(
+		to right,
+		rgb(116, 129, 151),
+		rgb(139, 157, 180),
+		rgb(176, 196, 222),
+		rgb(176, 196, 222),
+		rgb(176, 196, 222)
+	);
+	/* background-color: rgb(176, 196, 222); */
+	height: 80%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	border-left: 3px solid black;
+	border-bottom: 3px solid black;
+}
+
+.desk-div {
+	position: relative;
+	top: 20%;
+	right: -30%;
+	width: 80%;
+}
+
+.desk-top {
+	content: '';
+	width: 100%;
+	height: 7rem;
+	z-index: 3;
+	background: linear-gradient(rgb(129, 70, 23), rgb(109, 50, 3));
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: skewX(-60deg);
+	border-left: 6px solid black;
+
+	border-top: 3px solid black;
+}
+
+.desk-top::after {
+	content: '';
+	width: 100%;
+	height: 1rem;
+	top: 7rem;
+	left: 0;
+	position: absolute;
+	background-color: rgb(129, 70, 23);
+	transform: skewX(60deg) translate(15px, -3px);
+	border: 3px solid black;
+}
+
+.desk-leg {
+	content: '';
+	width: 2rem;
+	height: 25rem;
+	background-color: black;
+	position: absolute;
+	top: 8rem;
+	left: -5.5rem;
+}
+
+.desk-front {
+	content: '';
+	position: absolute;
+	top: 8rem;
+	left: -3.5rem;
+	width: 25rem;
+	height: 25rem;
+	background: linear-gradient(rgb(109, 50, 3), rgb(129, 70, 23));
+	border-right: 3px solid black;
+}
+
+.desk-front::before {
+	content: '';
+	position: absolute;
+	top: 0rem;
+	left: 25rem;
+	width: 25rem;
+	height: 35rem;
+	background: linear-gradient(rgb(22, 10, 0), rgb(134, 54, 0), rgb(129, 70, 23));
+
+	clip-path: polygon(0 0, 51% 0, 51% 35%, 0% 100%);
+}
+
+.desk-front::after {
+	content: '';
+	position: absolute;
+	top: 0rem;
+	right: -60rem;
+	width: 25rem;
+	height: 25rem;
+	background: linear-gradient(rgb(109, 50, 3), rgb(129, 70, 23));
+	border-left: 3px solid black;
+}
+
+.desk-cupboard {
+	content: '';
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	width: 80%;
+	height: 80%;
+	border: 3px solid black;
+	background: linear-gradient(rgb(59, 24, 0), rgb(36, 16, 0));
+}
+
+.desk-cupboard::after {
+	content: '';
+	position: absolute;
+	top: 0rem;
+	right: -66rem;
+	width: 25rem;
+	height: 25rem;
+	border: 3px solid black;
+	background: linear-gradient(rgb(59, 24, 0), rgb(36, 16, 0));
+	z-index: 5;
+}
+
+.desk-cupboard::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	width: 5%;
+	height: 5%;
+	border-radius: 50%;
+	border: 3px solid black;
+	background-color: goldenrod;
+}
+
+.bottom {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 20%;
+	width: 100%;
+	background: linear-gradient(rgb(122, 107, 63), rgb(247, 224, 162));
+	z-index: -1;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////clock/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.clock-div {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	padding-top: 7rem;
+	padding-left: 7rem;
+}
+
+.clock-div h1 {
+	font-size: 2.5rem;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	color: black;
+	text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;
+	padding-bottom: 2rem;
+	padding-left: 5rem;
+}
+
+.clock {
+	width: 20rem;
+	height: 20rem;
+	background-color: rgb(250, 244, 190);
+	border-radius: 50%;
+	border: 10px solid black;
+	position: relative;
+	box-shadow: 4px 2px 10px rgba(0, 0, 0, .8);
+}
+
+.clock::before {
+	content: '';
+	position: absolute;
+	width: 5%;
+	height: 5%;
+	background-color: black;
+	border-radius: 50%;
+	border: .1px solid white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 5;
+	box-shadow: 1px 1px 2.5px rgba(0, 0, 0, .8);
+}
+
+.clock::after {
+	content: '';
+	position: absolute;
+	width: 1%;
+	height: 1%;
+	background-color: white;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 6;
+}
+
+.hand {
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	width: 6px;
+	height: 40%;
+	background-color: black;
+	transform: translatex(-50%);
+	border-radius: 50% 50% 20% 20%;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
+}
+
+.hand-second {
+	--rotation: 30;
+	border: 0.1px solid white;
+	width: 3px;
+	background-color: red;
+	transform: translateX(-50%) rotate(calc((var(--rotation) * 1deg)));
+	transform-origin: bottom;
+}
+
+.hand-hour {
+	--rotation: 60;
+	height: 25%;
+	width: 8px;
+	border: .1px solid white;
+	transform: translateX(-50%) rotate(calc((var(--rotation) * 1deg)));
+	transform-origin: bottom;
+}
+
+.hand-minute {
+	--rotation: 90;
+	height: 35%;
+	border: .1px solid white;
+	transform: translateX(-50%) rotate(calc((var(--rotation) * 1deg)));
+	transform-origin: bottom;
+}
+
+.dial-ring {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	transform-origin: center;
+	transform: scale(0.97);
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, .8);
+	border: 2px solid black;
+}
+
+.dial-ring::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: none;
+	height: 94%;
+	width: 94%;
+	border-radius: 50%;
+	transform: translate(-7px, 7px);
+	transform-origin: center;
+	border: 2px solid black;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, .8);
+}
+
+.hour {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	font-size: 1.9rem;
+	padding-top: 1.1rem;
+	letter-spacing: -0.1rem;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
+}
+
+.hour-1 {
+	transform: rotate(30deg);
+}
+
+.hour-2 {
+	transform: rotate(60deg);
+}
+
+.hour-3 {
+	transform: rotate(90deg);
+}
+
+.hour-4 {
+	transform: rotate(120deg);
+}
+
+.hour-5 {
+	transform: rotate(150deg);
+}
+.hour-6 {
+	transform: rotate(180deg);
+}
+.hour-7 {
+	transform: rotate(210deg);
+}
+.hour-8 {
+	transform: rotate(240deg);
+}
+.hour-9 {
+	transform: rotate(270deg);
+}
+.hour-10 {
+	transform: rotate(300deg);
+}
+.hour-11 {
+	transform: rotate(330deg);
+}
+
+.minute {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	padding-top: 0.28rem;
+}
+
+.minute-span {
+	height: 10px;
+	width: 1.2px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
+
+	background-color: black;
+}
+
+.minor-minute-span {
+	height: 10px;
+	width: 2px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
+
+	background-color: black;
+}
+
+.major-minute-span {
+	height: 10px;
+	width: 6px;
+	background-color: black;
+	clip-path: polygon(100% 0, 0 0, 50% 100%);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
+}
+
+.minute-1 {
+	transform: rotate(6deg);
+}
+.minute-2 {
+	transform: rotate(12deg);
+}
+.minute-3 {
+	transform: rotate(18deg);
+}
+.minute-4 {
+	transform: rotate(24deg);
+}
+.minute-5 {
+	transform: rotate(30deg);
+}
+.minute-6 {
+	transform: rotate(36deg);
+}
+.minute-7 {
+	transform: rotate(42deg);
+}
+.minute-8 {
+	transform: rotate(48deg);
+}
+.minute-9 {
+	transform: rotate(54deg);
+}
+.minute-10 {
+	transform: rotate(60deg);
+}
+.minute-11 {
+	transform: rotate(66deg);
+}
+.minute-12 {
+	transform: rotate(72deg);
+}
+.minute-13 {
+	transform: rotate(78deg);
+}
+.minute-14 {
+	transform: rotate(84deg);
+}
+.minute-15 {
+	transform: rotate(90deg);
+}
+.minute-16 {
+	transform: rotate(96deg);
+}
+.minute-17 {
+	transform: rotate(102deg);
+}
+.minute-18 {
+	transform: rotate(108deg);
+}
+.minute-19 {
+	transform: rotate(114deg);
+}
+.minute-20 {
+	transform: rotate(120deg);
+}
+.minute-21 {
+	transform: rotate(126deg);
+}
+.minute-22 {
+	transform: rotate(132deg);
+}
+.minute-23 {
+	transform: rotate(138deg);
+}
+.minute-24 {
+	transform: rotate(144deg);
+}
+.minute-25 {
+	transform: rotate(150deg);
+}
+.minute-26 {
+	transform: rotate(156deg);
+}
+.minute-27 {
+	transform: rotate(162deg);
+}
+.minute-28 {
+	transform: rotate(168deg);
+}
+.minute-29 {
+	transform: rotate(174deg);
+}
+.minute-30 {
+	transform: rotate(180deg);
+}
+.minute-31 {
+	transform: rotate(186deg);
+}
+.minute-32 {
+	transform: rotate(192deg);
+}
+.minute-33 {
+	transform: rotate(198deg);
+}
+.minute-34 {
+	transform: rotate(204deg);
+}
+.minute-35 {
+	transform: rotate(210deg);
+}
+.minute-36 {
+	transform: rotate(216deg);
+}
+.minute-37 {
+	transform: rotate(222deg);
+}
+.minute-38 {
+	transform: rotate(228deg);
+}
+.minute-39 {
+	transform: rotate(234deg);
+}
+.minute-40 {
+	transform: rotate(240deg);
+}
+.minute-41 {
+	transform: rotate(246deg);
+}
+.minute-42 {
+	transform: rotate(252deg);
+}
+.minute-43 {
+	transform: rotate(258deg);
+}
+.minute-44 {
+	transform: rotate(264deg);
+}
+.minute-45 {
+	transform: rotate(270deg);
+}
+.minute-46 {
+	transform: rotate(276deg);
+}
+.minute-47 {
+	transform: rotate(282deg);
+}
+.minute-48 {
+	transform: rotate(288deg);
+}
+.minute-49 {
+	transform: rotate(294deg);
+}
+.minute-50 {
+	transform: rotate(300deg);
+}
+.minute-51 {
+	transform: rotate(306deg);
+}
+.minute-52 {
+	transform: rotate(312deg);
+}
+.minute-53 {
+	transform: rotate(318deg);
+}
+.minute-54 {
+	transform: rotate(324deg);
+}
+.minute-55 {
+	transform: rotate(330deg);
+}
+.minute-56 {
+	transform: rotate(336deg);
+}
+.minute-57 {
+	transform: rotate(342deg);
+}
+.minute-58 {
+	transform: rotate(348deg);
+}
+.minute-59 {
+	transform: rotate(354deg);
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Neon Sign/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.neon-sign {
+	padding-top: 10rem;
+	padding-right: 5rem;
+	font-size: 2rem;
+	font-family: 'Warnes', cursive;
+	color: rgb(247, 168, 236);
+	text-shadow: 1px 0px 2px rgb(247, 168, 236), 2px 0px 2px rgb(247, 168, 236), 3px 0px 2px rgb(247, 168, 236),
+		1px 0px 0px rgb(248, 94, 228), 2px 0px 0px rgb(248, 94, 228), 3px 0px 0px rgb(248, 94, 228),
+		1px 0px 1px rgb(248, 94, 228), 2px 0px 1px rgb(248, 94, 228), 3px 0px 1px rgb(248, 94, 228),
+		1px 0px 10px rgb(248, 94, 228), 2px 0px 10px rgb(248, 94, 228), 3px 0px 10px rgb(248, 94, 228),
+		1px 0px 5px rgb(199, 36, 177), 2px 0px 5px rgb(199, 36, 177), 3px 0px 20px rgb(199, 36, 177),
+		1px 0px 10px rgb(199, 36, 177), 2px 0px 40px rgb(199, 36, 177), 3px 0px 20px rgb(199, 36, 177),
+		1px 0px 20px rgb(199, 36, 177), 2px 0px 80px rgb(199, 36, 177), 3px 0px 20px rgb(199, 36, 177);
+	animation: flicker 5s infinite;
+	transform: skewY(-20deg) rotate3d(1, 1, 1, 5deg);
+	transform-origin: left;
+}
+@keyframes flicker {
+	0%,
+	50%,
+	70%,
+	100% {
+		color: rgb(247, 168, 236);
+		text-shadow: 1px 0px 2px rgb(247, 168, 236), 2px 0px 2px rgb(247, 168, 236), 3px 0px 2px rgb(247, 168, 236),
+			1px 0px 0px rgb(248, 94, 228), 2px 0px 0px rgb(248, 94, 228), 3px 0px 0px rgb(248, 94, 228),
+			1px 0px 1px rgb(248, 94, 228), 2px 0px 1px rgb(248, 94, 228), 3px 0px 1px rgb(248, 94, 228),
+			1px 0px 10px rgb(248, 94, 228), 2px 0px 10px rgb(248, 94, 228), 3px 0px 10px rgb(248, 94, 228),
+			1px 0px 5px rgb(199, 36, 177), 2px 0px 5px rgb(199, 36, 177), 3px 0px 20px rgb(199, 36, 177),
+			1px 0px 10px rgb(199, 36, 177), 2px 0px 40px rgb(199, 36, 177), 3px 0px 20px rgb(199, 36, 177),
+			1px 0px 20px rgb(199, 36, 177), 2px 0px 80px rgb(199, 36, 177), 3px 0px 20px rgb(199, 36, 177);
+	}
+	15%,
+	17%,
+	18%,
+	33%,
+	35%,
+	37%,
+	55%,
+	59%,
+	71% {
+		color: rgb(247, 168, 236);
+		text-shadow: 1px 0px 2px rgb(247, 168, 236), 2px 0px 2px rgb(247, 168, 236), 3px 0px 2px rgb(247, 168, 236),
+			1px 0px 0px rgb(248, 94, 228), 2px 0px 0px rgb(248, 94, 228), 3px 0px 0px rgb(248, 94, 228),
+			1px 0px 1px rgb(248, 94, 228), 2px 0px 1px rgb(248, 94, 228), 3px 0px 1px rgb(248, 94, 228),
+			1px 0px 5px rgb(248, 94, 228), 2px 0px 5px rgb(248, 94, 228), 3px 0px 5px rgb(248, 94, 228),
+			1px 0px 2px rgb(199, 36, 177), 2px 0px 2px rgb(199, 36, 177), 3px 0px 10px rgb(199, 36, 177),
+			1px 0px 5px rgb(199, 36, 177), 2px 0px 20px rgb(199, 36, 177), 3px 0px 10px rgb(199, 36, 177),
+			1px 0px 10px rgb(199, 36, 177), 2px 0px 40px rgb(199, 36, 177), 3px 0px 10px rgb(199, 36, 177);
+	}
+	16%,
+	17%,
+	34%,
+	36%,
+	56% {
+		color: rgb(250, 216, 245);
+		text-shadow: none;
+	}
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Chalk Board////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.chalk {
+	color: white;
+	font-family: grutchShaded;
+	font-size: 1.5rem;
+	padding-right: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+	transform: skewY(calc(-20deg - (var(--rotate) * 1deg))) rotate3d(1, 1, 1, 1deg);
+}
+
+.chalk-title {
+	color: greenyellow;
+	font-family: grutchShaded;
+	transform: skewY(calc(-20deg - (var(--rotate) * 1deg))) rotate3d(1, 1, 1, 1deg);
+	font-size: 1.75rem;
+	padding-right: 2rem;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Coffee Cup////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.coffee-cup-container {
+	position: relative;
+	top: -60px;
+	right: -75%;
+	z-index: 7;
+}
+
+.coffee-cup {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 94px;
+	height: 100px;
+	background: linear-gradient(to right, rgb(249, 249, 249), rgb(217, 217, 217));
+	border-bottom-left-radius: 45%;
+	border-bottom-right-radius: 45%;
+}
+
+.cup-top {
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	background: linear-gradient(to right, rgb(249, 249, 249), rgb(217, 217, 217));
+	border-radius: 50%;
+}
+
+.inner-rim {
+	position: absolute;
+	top: 1.6px;
+	left: 3.3px;
+	width: calc(100% - 10px);
+	height: 16.6px;
+	background: linear-gradient(to left, rgb(249, 249, 249), rgb(217, 217, 217));
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.coffee {
+	position: absolute;
+	top: 6.6px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(rgb(92, 69, 44), rgb(12, 7, 5));
+	border-radius: 50%;
+	border: 1.5px solid #e28462;
+	filter: blur(0.5px);
+}
+
+.coffee::after {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 40%;
+	width: 20%;
+	height: 20%;
+	background: #e28462;
+	border-radius: 50%;
+	filter: blur(1px);
+}
+
+.handle {
+	position: absolute;
+	right: -23.3px;
+	top: 13.3px;
+	width: 53.3px;
+	height: 60px;
+	border: 8.3px solid rgb(220, 220, 220);
+	border-left: 8.3px solid transparent;
+	border-bottom: 8.3px solid transparent;
+	border-radius: 50%;
+	transform: rotate(42deg);
+}
+
+.blue-line {
+	background: navy;
+	position: absolute;
+	top: 5px;
+	left: -1%;
+	width: 102%;
+	height: 100%;
+
+	clip-path: ellipse(50% 11% at 50% 50%);
+}
+
+.white-line {
+	background: linear-gradient(to right, rgb(249, 249, 249), rgb(217, 217, 217));
+	position: absolute;
+	top: 0px;
+	left: -1%;
+	width: 102%;
+	height: 100%;
+
+	clip-path: ellipse(50% 11% at 50% 50%);
+}
+
+.bl1 {
+	top: -5px;
+}
+
+.wl1 {
+	top: -10px;
+}
+
+.bl2 {
+	top: -15px;
+}
+.wl2 {
+	top: -20px;
+}
+
+.plate {
+	position: absolute;
+	top: 58.3px;
+	left: 0;
+	transform: translateX(-22%);
+
+	width: 166.6px;
+	height: 66.6px;
+	/* background: linear-gradient(to right, rgb(249, 249, 249), rgb(217, 217, 217)); */
+	background: linear-gradient(to right, navy, rgb(30, 30, 128));
+	border-radius: 50%;
+	box-shadow: 0 17px 17px rgba(0, 0, 0, 0.2);
+}
+
+.plate::before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	right: 3px;
+	bottom: 3px;
+	border-radius: 50%;
+	background: linear-gradient(to left, rgb(249, 249, 249), rgb(217, 217, 217));
+}
+
+.plate::after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-radius: 50%;
+	background: radial-gradient(rgba(0, 0, 0, 0.2) 25%, transparent, transparent);
+}
+
+.vapour {
+	position: relative;
+	display: flex;
+	z-index: 1;
+	padding: 0 10px;
+}
+
+.vapour span {
+	position: relative;
+	bottom: 16.6px;
+	display: block;
+	margin: 0 1px 16.6px;
+	min-width: 4px;
+	height: 40px;
+	background: rgb(255, 255, 255);
+	border-radius: 50%;
+	animation: vapour 5s linear infinite;
+	opacity: 0;
+	filter: blur(6px);
+	animation-delay: calc(var(--i) * -0.5s);
+}
+
+@keyframes vapour {
+	0% {
+		transform: translateY(0) scaleX(1);
+		opacity: 0;
+	}
+	15% {
+		opacity: 1;
+	}
+	50% {
+		transform: translateY(-75px) scaleX(5);
+	}
+	95% {
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(-150px) scaleX(10);
+	}
+}
