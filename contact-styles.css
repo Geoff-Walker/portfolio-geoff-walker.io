@@ -151,11 +151,12 @@ nav {
 	top: 0;
 	background-image: linear-gradient(
 		to right,
+		rgb(96, 107, 124),
 		rgb(116, 129, 151),
 		rgb(139, 157, 180),
-		rgb(176, 196, 222),
-		rgb(176, 196, 222),
-		rgb(176, 196, 222)
+		rgb(139, 157, 180),
+		rgb(139, 157, 180),
+		rgb(139, 157, 180)
 	);
 	/* background-color: rgb(176, 196, 222); */
 	height: 80%;
