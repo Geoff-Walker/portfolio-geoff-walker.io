@@ -690,7 +690,7 @@ nav {
 		1px 0px 5px rgb(199, 36, 177), 2px 0px 5px rgb(199, 36, 177), 3px 0px 20px rgb(199, 36, 177),
 		1px 0px 10px rgb(199, 36, 177), 2px 0px 40px rgb(199, 36, 177), 3px 0px 20px rgb(199, 36, 177),
 		1px 0px 20px rgb(199, 36, 177), 2px 0px 80px rgb(199, 36, 177), 3px 0px 20px rgb(199, 36, 177);
-	animation: flicker 5s infinite;
+	animation: flicker 15s infinite;
 	transform: skewY(-20deg) rotate3d(1, 1, 1, 5deg);
 	transform-origin: left;
 }
