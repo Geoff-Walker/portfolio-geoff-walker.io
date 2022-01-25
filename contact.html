@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact-styles.css">
     <script defer src="contact-script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Warnes&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Warnes&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Warnes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
     <title>Contact</title>
 </head>
 <body>
@@ -130,7 +131,64 @@
               
                 <h1>Time to grab a coffee and get in touch!</h1>
             </div>
+            <div class="poster">
+                <div class="poster-inner ">
+                    <p>CSS<br>Only</p>
+                </div>
+            </div>
             <div class="desk-div">
+             
+                <div class="folder"> 
+                    <div class="tab"><h1 id="tab">Contact Form</h1></div>
+                    <Form action="https://formsubmit.co/318337d88b74a78fbf12a72e5de61e51" method="post"id="contact-form" class="hidden">
+                        <div class="name form-section">
+
+                            <label for="name">Name :</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="email form-section">
+                            <label for="email">E-mail Address :</label>
+                            <input type="email" name="e-mail" id="e-mail" required>
+                        </div>
+                        <div class="phone form-section">
+                            <label for="phone">Telephone Number :</label>
+                            <input type="number" name="phone" id="phone">
+                        </div>
+                        <div class="message form-section">
+                            <label for="message">Message :</label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
+                        <div class="contact-pref form-section">
+                            <h1>Contact Preference :</h1>
+                           <div class="contact">
+
+                               <div class="contact-email">
+                                   <label for="contact-email">E-mail:</label>
+                                   <input type="checkbox" name="contact-email" id="contact-email">
+                                   
+                                </div>
+                                <div class="contact-phone">
+                                    
+                                    <label for="contact-phone">Phone:</label>
+                                    <input type="checkbox" name="contact-phone" id="contact-phone">
+                                </div>
+                            </div>
+                            
+
+                        </div>
+
+                        <input type="submit" value="Submit" id="submit">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501//contact.html">
+                <input type="hidden" name="_captcha" value="false">
+
+                    </Form>
+                    
+                </div>
+
+                    <div class="folder-front"><H1 class="folder-text-hide">Contact<br>Form</H1></div>
+                    
+
+                
                 <div class="coffee-cup-container">
                     <div class="plate"></div>
                     <div class="coffee-cup">
