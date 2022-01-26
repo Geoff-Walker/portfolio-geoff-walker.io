@@ -1,0 +1,30 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+main {
+	background-image: linear-gradient(
+		to right,
+		rgb(96, 107, 124),
+		rgb(116, 129, 151),
+		rgb(139, 157, 180),
+		rgb(139, 157, 180),
+		rgb(139, 157, 180),
+		rgb(139, 157, 180)
+	);
+	height: 100vh;
+	width: 100vw;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 4vh;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	color: black;
+	text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;
+	padding-bottom: 2rem;
+	padding-left: 5rem;
+}
