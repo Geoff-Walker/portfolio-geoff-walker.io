@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact-styles.css">
     <script defer src="contact-script.js"></script>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Warnes&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Warnes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
     <title>Contact</title>
 </head>
 <body>
-    <nav>
+    <nav class="nav-hidden" id="nav">
+   
+        <h1 class="neon-sign sign-mobile desktop-hidden">geoff-walker.io</h1>
         <div class="links links-home">
             <div class="links-inner link-home">
                 <a href="index.html">Home<br>Sweet<br>Home</a>
@@ -30,13 +31,17 @@
             </div>
         </div>
     </nav>
+
     <main>
-        <section class="left">
+        <div class="mobile-menu desktop-hidden">
+            <span class="menu-span"></span>
+        </div>
+        <section class="left mob-hidden">
             <div class="wall-left mob-hidden">
                 <h1 class="neon-sign">geoff-walker.io</h1>
                 <p class="chalk-title" style="--rotate:1">E-mail:</p>
                 <p class="chalk"style="--rotate:1">geoffwalker@outlook.com</p>
-                <p class="chalk-title" style="--rotate:2">Phone:</p>
+                <p class="chalk-title" style="--rotate:2">Github:</p>
                 <a class="chalk"style="--rotate:2" href="https://github.com/Geoff-Walker/Geoff-Walker">github.com/Geoff-Walker</a>
                 <p class="chalk-title" style="--rotate:4">Location:</p>
                 <p class="chalk" style="--rotate:5">🦆 Lincolnshire<br>United Kingdom</p>
@@ -126,8 +131,9 @@
                               
                     
                 </div>
-              
-                <h1>Time to grab a coffee and get in touch!</h1>
+              <div class="center-me">
+                  <h1>Time to grab a coffee and get in touch!</h1>
+                </div>
             </div>
             <div class="poster">
                 <div class="poster-inner ">
@@ -176,9 +182,9 @@
                         </div>
 
                         <input type="submit" value="Submit" id="submit">
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5501//contact.html">
+                        <input type="hidden" name="_next" value="https://www.geoff-walker.io/contact.html">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="http://127.0.0.1:5501//thanks.html">
+                <input type="hidden" name="_next" value="https://www.geoff-walker.io/thanks.html">
 
                     </Form>
                     
