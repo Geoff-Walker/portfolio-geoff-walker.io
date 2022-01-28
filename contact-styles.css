@@ -607,7 +607,7 @@ textarea {
 	width: 50%;
 	margin: 0 auto;
 	background-color: white;
-	font-size: 1rem;
+	font-size: 2vh;
 	font-family: 'Mochiy Pop P One', sans-serif;
 	padding: 0.5rem;
 	border-radius: 0.5rem;
@@ -1786,17 +1786,19 @@ textarea {
 		right: -40vw;
 	}
 	.folder-up {
-		top: -37vh;
+		top: -42vh;
 		left: -30vw;
 		height: 80vh;
 		width: 80vw;
+		z-index: 10;
 	}
 
 	.folder-front-up {
-		top: -37vh;
+		top: -42vh;
 		left: -30vw;
 		height: 80vh;
 		width: 80vw;
+		z-index: 10;
 	}
 
 	.nav-hidden {
@@ -1934,29 +1936,141 @@ textarea {
 		padding-top: 5vh;
 		padding-left: 0;
 	}
+	.clock-div h1 {
+		font-size: 4vh;
+		text-align: center;
+	}
+
+	.coffee-cup-container {
+		position: relative;
+		top: -58px;
+		right: -45%;
+		z-index: 7;
+	}
 }
 
 @media screen and (max-width: 450px) {
+	.mobile-menu {
+		height: 3rem;
+		width: 3rem;
+	}
+
 	.clock-div h1 {
-		font-size: 2vh;
+		font-size: 4vh;
+		text-align: center;
 	}
 
 	.poster {
-		width: 35%;
+		width: 40%;
 		height: 35%;
 	}
 
 	.folder-up {
-		top: -40vh;
+		top: -57vh;
 		left: -35vw;
 		height: 80vh;
 		width: 90vw;
+		z-index: 10;
 	}
 
 	.folder-front-up {
-		top: -40vh;
+		top: -57vh;
 		left: -35vw;
 		height: 80vh;
 		width: 90vw;
+		z-index: 10;
+	}
+
+	.coffee-cup-container {
+		position: relative;
+		top: -58px;
+		right: -45%;
+		z-index: 7;
+	}
+}
+
+@media screen and (max-width: 750px) and (orientation: landscape) {
+	.mobile-menu {
+		height: 3rem;
+		width: 3rem;
+	}
+
+	.poster {
+		width: 20%;
+		height: 75%;
+	}
+
+	.folder {
+		transform: skewX(-20deg) rotateX(-40deg) translateY(-15vh);
+	}
+
+	.folder-front {
+		transform: skewX(-20deg) rotateX(-40deg) translateY(-15vh);
+	}
+
+	.folder-front h1 {
+		font-size: 4.5vh;
+		transform: translateY(-5vh);
+	}
+	.folder-up {
+		transform: skewX(0deg) rotateX(0deg) translateY(-15vh);
+		z-index: 10;
+	}
+
+	.folder-front-up {
+		transform: skewX(0deg) rotateX(0deg) translateY(-15vh);
+		z-index: 10;
+	}
+
+	.clock-div {
+		flex-direction: row;
+		margin-left: 25vw;
+		padding-top: 2vh;
+	}
+
+	.clock-div h1 {
+		font-size: 4vh;
+		padding-left: 1vw;
+		padding-top: 15vh;
+	}
+	nav {
+		flex-direction: row;
+	}
+	.sign-mobile {
+		display: none;
+	}
+
+	.links a {
+		font-size: 4.5vh;
+	}
+
+	@keyframes folder {
+		0% {
+			transform: rotateY(0deg) translateY(-15vh);
+			opacity: 1;
+		}
+
+		90% {
+			opacity: 1;
+		}
+		100% {
+			transform: rotateY(280deg) translateY(-15vh);
+			opacity: 0;
+		}
+	}
+	@keyframes folder-return {
+		0% {
+			transform: rotateY(280deg) translateY(-15vh);
+			opacity: 0;
+		}
+
+		10% {
+			opacity: 1;
+		}
+
+		100% {
+			transform: rotateY(0deg) translateY(-15vh);
+			opacity: 1;
+		}
 	}
 }
