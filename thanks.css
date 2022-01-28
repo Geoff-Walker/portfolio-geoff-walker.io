@@ -25,6 +25,5 @@ main {
 	font-family: 'Mochiy Pop P One', sans-serif;
 	color: black;
 	text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;
-	padding-bottom: 2rem;
-	padding-left: 5rem;
+	text-align: center;
 }

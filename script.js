@@ -12,6 +12,8 @@ const navMobClose = document.querySelector('.nav-mobile-close');
 const navMobOpen = document.querySelector('.nav-mobile-open');
 const mobHeader = document.querySelector('.header-nav-mobile');
 const mobLinks = document.querySelector('.mobile-links');
+const linkedin = document.querySelector('.linkedin-link');
+const resume = document.querySelector('.resume-link');
 
 ////////////////////////////////////////////////////////////////////////Contact bubbles////////////////////////////////////////////////////////////////////////////////
 const contactBubble = document.querySelector('.bubble-contact-me');
@@ -52,8 +54,19 @@ themeSelectorLight.addEventListener('click', applyThemeLight);
 themeSelectorDark.addEventListener('click', applyThemeDark);
 navMobClose.addEventListener('click', closeMobNav);
 navMobOpen.addEventListener('click', openMobNav);
+linkedin.addEventListener('click', goToLinkedIn);
+resume.addEventListener('click', goToResume);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Functions////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function goToLinkedIn() {
+	window.open('https://www.linkedin.com/in/geoff-walker-a3ab02227/', '_blank');
+}
+
+function goToResume() {
+	window.open('http://127.0.0.1:5501/Resume.pdf', '_blank');
+}
+
 function closeMobNav() {
 	navMobOpen.classList.remove('mob-hidden');
 	navMobClose.classList.add('mob-hidden');

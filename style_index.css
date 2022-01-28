@@ -422,10 +422,15 @@ body {
 	font-size: 0.75rem;
 	display: flex;
 	padding-top: 0.5rem;
+	padding-bottom: 1rem;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	cursor: pointer;
+}
+
+.page_theme a {
+	text-decoration: none;
 }
 
 .page_theme-hidden {
@@ -441,6 +446,13 @@ body {
 }
 
 .theme-lemonade {
+	color: white;
+}
+.theme-cola a {
+	color: black;
+}
+
+.theme-lemonade a {
 	color: white;
 }
 
