@@ -448,12 +448,12 @@ body {
 .theme-lemonade {
 	color: white;
 }
-.theme-cola a {
-	color: black;
+.theme-link-cola a {
+	color: white;
 }
 
-.theme-lemonade a {
-	color: white;
+.theme-link-lemonade a {
+	color: black;
 }
 
 .mob-hidden {
@@ -815,6 +815,12 @@ body {
 		z-index: 4;
 		padding-left: 1rem;
 		transform: translateY(0.5rem);
+	}
+
+	.page_theme-section {
+		padding-left: 4rem;
+		display: flex;
+		flex-direction: row;
 	}
 
 	.page_theme-hidden {

@@ -24,6 +24,7 @@ header {
 
 .title {
 	background-image: url(Images/project-images/brushed-metal-1-1198882.png);
+	background-size: cover;
 	min-width: 30%;
 	height: 8vh;
 	font-size: 3.5vh;
@@ -83,6 +84,7 @@ header {
 	height: 50%;
 	margin: 2vh auto;
 	background-image: url(Images/project-images/brushed-metal-1-1198882.png);
+	background-size: cover;
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, .9);
 	border-radius: 1rem;
 	padding-top: 2rem;

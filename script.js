@@ -97,6 +97,10 @@ function applyThemeDark() {
 	background.classList.remove('bubbling_background-light');
 	themeSelectorDark.classList.add('page_theme-hidden');
 	themeSelectorLight.classList.remove('page_theme-hidden');
+	linkedin.classList.add('theme-link-cola');
+	linkedin.classList.remove('theme-link-lemonade');
+	resume.classList.add('theme-link-cola');
+	resume.classList.remove('theme-link-lemonade');
 	canLemon.classList.remove('can-infinite-animate');
 	canLemon.classList.add('can-hidden');
 
@@ -126,6 +130,10 @@ function applyThemeLight() {
 	themeSelectorLight.classList.add('page_theme-hidden');
 	canLemon.classList.add('can-infinite-animate');
 	canLemon.classList.remove('can-hidden');
+	linkedin.classList.remove('theme-link-cola');
+	linkedin.classList.add('theme-link-lemonade');
+	resume.classList.remove('theme-link-cola');
+	resume.classList.add('theme-link-lemonade');
 
 	canZero.classList.add('can-hidden');
 	canZero.classList.remove('can-infinite-animate');
