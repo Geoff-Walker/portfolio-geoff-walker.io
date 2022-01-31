@@ -1,3 +1,153 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Mansalva', cursive;
+}
+
 body {
-	background-color: blueviolet;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(Images/about-images/felipe-santana-xJkTCbtuqAY-unsplash.jpg);
+	background-size: contain;
+}
+
+main {
+	width: 1440px;
+	min-height: 100vh;
+	background: linear-gradient(to right, transparent 6rem, blue 6.1rem, transparent 6.2rem),
+		linear-gradient(to bottom, white, white 4.1rem, rgb(191, 191, 245) 4.2rem, white 4.4rem, transparent 4.5rem),
+		white
+			repeating-linear-gradient(
+				to bottom,
+				transparent,
+				transparent 2rem,
+				rgb(191, 191, 245) 2.1rem,
+				transparent 2.2rem
+			);
+
+	box-shadow: 0px 20px 100px rgba(0, 0, 0, 1);
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	height: 200px;
+}
+
+.header_ul {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 0.5rem;
+	width: 80%;
+}
+
+.header_li {
+	list-style: none;
+	text-decoration: none;
+	padding-left: 5rem;
+	z-index: 4;
+
+	font-size: 3rem;
+}
+
+.header_li a {
+	text-decoration: none;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	color: rgba(0, 0, 0, 1);
+	z-index: 5;
+}
+
+.project-rotate {
+	transform: rotate(3deg);
+}
+#less-left {
+	padding-left: 2rem;
+}
+
+.index-rotate {
+	transform: rotate(-3deg);
+}
+
+.contact-rotate {
+	transform: rotate(4deg) translateY(-.2rem);
+}
+
+.highlight {
+	position: relative;
+	overflow: hidden;
+}
+
+.highlight-yellow {
+	height: 5rem;
+	width: 12rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform-origin: right;
+	z-index: 3;
+
+	animation: highlighter 0.5s linear;
+	cursor: pointer;
+}
+
+@keyframes highlighter {
+	0% {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+
+	75% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.nav-hidden {
+	display: none;
+}
+
+#home-bigger {
+	padding-right: 4rem;
+}
+
+.heading {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	transform: translateY(-5rem);
+	z-index: 1;
+}
+
+.heading h1 {
+	font-size: 4rem;
+	text-decoration: underline;
+	padding-right: 30%;
+	padding-top: 6rem;
+}
+
+.nav-image {
+	height: 10rem;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	background-color: white;
+	border-radius: 50%;
+	margin-top: 1rem;
+	margin-right: 5rem;
+	cursor: pointer;
+}
+
+p {
+	font-size: 2rem;
+	padding-left: 6.5rem;
+	padding-right: 1rem;
+	line-height: 1.1;
+	padding-top: 1rem;
 }
