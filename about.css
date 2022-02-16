@@ -341,3 +341,148 @@ nav {
 	line-height: 1.1;
 	padding-top: 0rem;
 }
+
+.animated-div {
+	padding: 0rem;
+}
+
+.animated-image {
+	height: 20rem;
+	width: 20rem;
+	padding: 1rem;
+	padding-bottom: 3.5rem;
+	border-radius: 0.25rem;
+	background-color: rgb(241, 239, 237);
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4), -3px -2px 4px rgba(138, 138, 138, 0.8) inset,
+		12px 8px 16px rgba(255, 255, 255, 1) inset;
+}
+
+.animated-sticker {
+	height: 10rem;
+	width: 10rem;
+	border-radius: 50%;
+	padding: 1rem;
+	background-color: rgb(247, 244, 241);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), -1px -1px 2px rgba(138, 138, 138, 0.8) inset,
+		6px 4px 8px rgba(255, 255, 255, 1) inset;
+}
+
+.animated-sticker-square {
+	height: 10rem;
+	width: 10rem;
+	border-radius: 10%;
+	padding: 1rem;
+	background-color: rgb(247, 244, 241);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), -1px -1px 2px rgba(138, 138, 138, 0.8) inset,
+		6px 4px 8px rgba(255, 255, 255, 1) inset;
+}
+
+.animated-sticker-rectangle {
+	height: 10rem;
+	width: 20rem;
+	border-radius: 10%;
+	padding: 1rem;
+	background-color: rgb(247, 244, 241);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), -1px -1px 2px rgba(138, 138, 138, 0.8) inset,
+		6px 4px 8px rgba(255, 255, 255, 1) inset;
+}
+
+#first-div {
+	transform: translateY(-0.3rem);
+}
+
+@-moz-document url-prefix() {
+	#first-div {
+		transform: translateY(-0.1rem);
+	}
+}
+
+#second-div {
+	padding-top: 1.9rem;
+}
+
+@-moz-document url-prefix() {
+	#second-div {
+		padding-top: 2.1rem;
+	}
+}
+
+#third-div {
+	padding-top: 2.1rem;
+}
+
+#fourth-div {
+	padding-top: 2.2rem;
+}
+
+#fifth-div {
+	padding-top: 2.2rem;
+}
+
+#sixth-div {
+	padding-top: 2.25rem;
+}
+
+#seventh-div {
+	padding-top: 2.25rem;
+}
+
+#eighth-div {
+	padding-top: 2.2rem;
+}
+
+#ninth-div {
+	padding-top: 2.2rem;
+}
+
+#tenth-div {
+	padding-top: 2.2rem;
+}
+
+#eleventh-div {
+	padding-top: 2.2rem;
+}
+
+#twelve-div {
+	padding-top: 2.2rem;
+}
+
+#thirteen-div {
+	padding-top: 2.2rem;
+}
+
+#fourteen-div {
+	padding-top: 2.2rem;
+}
+
+#fifteen-div {
+	padding-top: 2.2rem;
+}
+
+#sixteen-div {
+	padding-top: 2.2rem;
+}
+
+#seventeen-div {
+	padding-top: 2.2rem;
+}
+
+#eighteen-div {
+	padding-top: 2.2rem;
+}
+
+#nineteen-div {
+	padding-top: 3.8rem;
+	display: flex;
+	flex-direction: column;
+	justify-self: center;
+	align-items: center;
+}
+
+#nineteen-div h2 {
+	transform: translateY(-0.3rem);
+}
+/* 
+.hidden {
+	display: none;
+} */
