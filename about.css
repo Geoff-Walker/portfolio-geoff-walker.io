@@ -334,7 +334,7 @@ nav {
 	width: 50rem;
 	height: 2rem;
 	position: fixed;
-	top: 50rem;
+	top: 75vh;
 	left: -25%;
 	z-index: 5;
 }
@@ -1795,6 +1795,10 @@ nav {
 
 #nineteen-div h2 {
 	transform: translateY(-0.3rem);
+}
+
+.opaque {
+	opacity: 0;
 }
 
 .hidden {
