@@ -1981,7 +1981,7 @@ nav {
 	}
 
 	#bigger-gap {
-		padding-top: 1rem;
+		padding-top: 0.7rem;
 	}
 
 	.logo-9 {
@@ -2006,7 +2006,1460 @@ nav {
 		height: 1rem;
 		position: fixed;
 		top: 75vh;
-		left: -23%;
+		left: -10%;
 		z-index: 5;
+		transform: rotate(-87deg);
 	}
+
+	.animated-section {
+		padding-top: 1.5rem;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: absolute;
+		top: 56.4rem;
+		left: 0rem;
+		width: 300px;
+	}
+
+	.animated-section h1 {
+		font-size: 1.5rem;
+		text-decoration: underline;
+	}
+
+	.animated-section p {
+		font-size: 1.0rem;
+		padding-left: 1.9rem;
+		padding-right: 0.2rem;
+		line-height: 1.1;
+		padding-top: 0rem;
+	}
+
+	.animated-div {
+		padding: 0rem;
+	}
+
+	.animated-image {
+		height: 5rem;
+		width: 5rem;
+		padding: 0.2rem;
+		padding-bottom: 0.7rem;
+		border-radius: 0.05rem;
+		box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), -1px -1px 2px rgba(138, 138, 138, 0.8) inset,
+			4px 3px 5px rgba(255, 255, 255, 1) inset;
+	}
+
+	.animated-sticker {
+		height: 4rem;
+		width: 4rem;
+		padding: 0.2rem;
+		box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), -1px -1px 2px rgba(138, 138, 138, 0.8) inset,
+			6px 4px 8px rgba(255, 255, 255, 1) inset;
+	}
+
+	.animated-sticker-square {
+		height: 4rem;
+		width: 4rem;
+		border-radius: 10%;
+		padding: 0.4rem;
+		background-color: rgb(247, 244, 241);
+		box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), -1px -1px 2px rgba(138, 138, 138, 0.8) inset,
+			6px 4px 8px rgba(255, 255, 255, 1) inset;
+	}
+
+	.animated-sticker-rectangle {
+		height: 4rem;
+		width: 8rem;
+		border-radius: 10%;
+		padding: 0.2rem;
+		box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), -1px -1px 2px rgba(138, 138, 138, 0.8) inset,
+			6px 4px 8px rgba(255, 255, 255, 1) inset;
+	}
+
+	.animated-sticker-elipse {
+		height: 10rem;
+		border-radius: 50%;
+		background-color: rgb(247, 244, 241);
+		box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), -1px -1px 2px rgba(138, 138, 138, 0.8) inset,
+			6px 4px 8px rgba(255, 255, 255, 1) inset;
+	}
+
+	#first-div {
+		transform: translateY(0.1rem);
+		height: 10rem;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+
+	.first-div-img-1 {
+		position: relative;
+		top: -16rem;
+		left: 4rem;
+		transform: rotate(6deg);
+		animation: image-1 1.5s linear;
+	}
+
+	@keyframes image-1 {
+		0% {
+			top: -20rem;
+			left: -50rem;
+			transform: rotate(0deg);
+		}
+
+		25% {
+			transform: rotate(180deg);
+		}
+
+		50% {
+			transform: rotate(360deg);
+		}
+
+		75% {
+			transform: rotate(180deg);
+		}
+
+		100% {
+			top: -16rem;
+			left: 4rem;
+			transform: rotate(6deg);
+		}
+	}
+
+	#second-div {
+		position: relative;
+		top: 0rem;
+		left: 0;
+		height: 16rem;
+	}
+	.second-div-img-2 {
+		position: relative;
+		top: -25rem;
+		left: 7rem;
+		animation: stick-2 0.5s linear;
+	}
+
+	@keyframes stick-2 {
+		0% {
+			height: 16rem;
+			width: 16rem;
+			transform: rotatex(35deg);
+			top: -28rem;
+			left: 20rem;
+		}
+
+		100% {
+			height: 4rem;
+			width: 4rem;
+			top: -28rem;
+			left: 40rem;
+		}
+	}
+
+	#third-div {
+		position: relative;
+		top: 0.5rem;
+		left: 0;
+		height: 12.5rem;
+	}
+
+	.third-div-img-3 {
+		position: relative;
+		top: -28rem;
+		left: 5rem;
+		transform: rotate(3deg);
+		animation: image-3 1.5s linear;
+	}
+
+	@keyframes image-3 {
+		0% {
+			top: -20rem;
+			left: -100rem;
+			transform: rotate(0deg);
+		}
+
+		25% {
+			transform: rotate(180deg);
+		}
+
+		50% {
+			transform: rotate(360deg);
+		}
+
+		75% {
+			transform: rotate(180deg);
+		}
+
+		100% {
+			top: -35rem;
+			left: 15rem;
+			transform: rotate(3deg);
+		}
+	}
+
+	#fourth-div {
+		position: relative;
+		top: 1.2rem;
+		left: 0;
+		height: 18rem;
+	}
+
+	.fourth-div-img-4 {
+		position: relative;
+		top: -30rem;
+		left: 2rem;
+		transform: rotate(-6deg);
+		animation: image-4 1.5s linear;
+	}
+
+	@keyframes image-4 {
+		0% {
+			top: -20rem;
+			left: 50rem;
+			transform: rotate(720deg);
+		}
+
+		100% {
+			top: -30rem;
+			left: 2rem;
+			transform: rotate(-6deg);
+		}
+	}
+	.fourth-div-img-5 {
+		position: relative;
+		top: -25rem;
+		left: 4rem;
+		animation: stick-5 0.5s linear;
+	}
+
+	@keyframes stick-5 {
+		0% {
+			height: 20rem;
+			width: 20rem;
+			transform: rotatex(35deg);
+			top: -28rem;
+			left: 4rem;
+		}
+
+		100% {
+			height: 4rem;
+			width: 4rem;
+			top: -25rem;
+			left: 4rem;
+		}
+	}
+	/*
+	#fifth-div {
+		position: relative;
+		top: 3.6rem;
+		left: 0;
+		height: 10rem;
+	}
+	
+	.fifth-div-img-6 {
+		position: relative;
+		top: -40rem;
+		left: 10rem;
+		transform: rotate(1deg);
+		animation: image-6 1.5s linear;
+	}
+	
+	@keyframes image-6 {
+		0% {
+			top: -20rem;
+			left: -100rem;
+			transform: rotate(0deg);
+		}
+	
+		25% {
+			transform: rotate(180deg);
+		}
+	
+		50% {
+			transform: rotate(360deg);
+		}
+	
+		75% {
+			transform: rotate(180deg);
+		}
+	
+		100% {
+			top: -40rem;
+			left: 10rem;
+			transform: rotate(1deg);
+		}
+	}
+	
+	#sixth-div {
+		position: relative;
+		top: 4.7rem;
+		left: 0;
+		height: 15rem;
+	}
+	
+	.sixth-div-img-7 {
+		position: relative;
+		top: -40rem;
+		left: 35rem;
+		transform: rotate(-6deg);
+		animation: image-7 1.5s linear;
+	}
+	
+	@keyframes image-7 {
+		0% {
+			top: -20rem;
+			left: -100rem;
+			transform: rotate(0deg);
+		}
+	
+		25% {
+			transform: rotate(180deg);
+		}
+	
+		50% {
+			transform: rotate(360deg);
+		}
+	
+		75% {
+			transform: rotate(180deg);
+		}
+	
+		100% {
+			top: -40rem;
+			left: 35rem;
+			transform: rotate(-6deg);
+		}
+	}
+	
+	.sixth-div-img-8 {
+		position: relative;
+		top: -40rem;
+		left: 30rem;
+		transform: rotate(6deg);
+		animation: image-8 1.5s linear;
+	}
+	
+	@keyframes image-8 {
+		0% {
+			top: -20rem;
+			left: 100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -40rem;
+			left: 30rem;
+			transform: rotate(6deg);
+		}
+	}
+	
+	#seventh-div {
+		position: relative;
+		top: 5rem;
+		left: 0;
+		height: 16rem;
+	}
+	
+	.seventh-div-img-9 {
+		position: relative;
+		top: -40rem;
+		left: 10rem;
+		transform: rotate(2deg);
+		animation: image-9 1.5s linear;
+	}
+	
+	@keyframes image-9 {
+		0% {
+			top: -20rem;
+			left: -100rem;
+			transform: rotate(0deg);
+		}
+	
+		25% {
+			transform: rotate(180deg);
+		}
+	
+		50% {
+			transform: rotate(360deg);
+		}
+	
+		75% {
+			transform: rotate(180deg);
+		}
+	
+		100% {
+			top: -40rem;
+			left: 10rem;
+			transform: rotate(2deg);
+		}
+	}
+	
+	.seventh-div-img-10 {
+		position: relative;
+		top: -35rem;
+		left: 30rem;
+		transform: rotate(-6deg);
+		animation: image-10 1.5s linear;
+	}
+	
+	@keyframes image-10 {
+		0% {
+			top: -20rem;
+			left: -100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -35rem;
+			left: 30rem;
+			transform: rotate(-6deg);
+		}
+	}
+	
+	#eighth-div {
+		position: relative;
+		top: 4.5rem;
+		left: 0;
+		height: 18rem;
+	}
+	
+	.eighth-div-img-11 {
+		position: relative;
+		top: -37rem;
+		left: 8rem;
+		transform: rotate(-6deg);
+		animation: image-11 1.5s linear;
+	}
+	
+	@keyframes image-11 {
+		0% {
+			top: -37rem;
+			left: -100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -37rem;
+			left: 8rem;
+			transform: rotate(-6deg);
+		}
+	}
+	.eighth-div-img-12 {
+		position: relative;
+		top: -38rem;
+		left: 5rem;
+		animation: stick-12 .5s linear;
+	}
+	
+	@keyframes stick-12 {
+		0% {
+			height: 40rem;
+			width: 40rem;
+			transform: rotatex(35deg);
+			top: -38rem;
+			left: 5rem;
+		}
+	
+		100% {
+			height: 10rem;
+			width: 10rem;
+			top: -38rem;
+			left: 5rem;
+		}
+	}
+	
+	.eighth-div-img-13 {
+		position: relative;
+		top: -37rem;
+		left: 20rem;
+		transform: rotate(3deg);
+		animation: image-13 1.5s linear;
+	}
+	
+	@keyframes image-13 {
+		0% {
+			top: -37rem;
+			left: 100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -37rem;
+			left: 20rem;
+			transform: rotate(3deg);
+		}
+	}
+	
+	.eighth-div-img-14 {
+		position: relative;
+		top: -37rem;
+		left: 18rem;
+		transform: rotate(-6deg);
+		animation: image-14 1.5s linear;
+	}
+	
+	@keyframes image-14 {
+		0% {
+			top: -37rem;
+			left: 100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -37rem;
+			left: 18rem;
+			transform: rotate(-6deg);
+		}
+	}
+	
+	#ninth-div {
+		position: relative;
+		top: 4rem;
+		left: 0;
+		height: 21rem;
+	}
+	
+	.ninth-div-img-15 {
+		position: relative;
+		top: -42rem;
+		left: 10rem;
+		transform: rotate(6deg);
+		animation: image-15 1.5s linear;
+	}
+	
+	@keyframes image-15 {
+		0% {
+			top: -42rem;
+			left: -100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -42rem;
+			left: 10rem;
+			transform: rotate(6deg);
+		}
+	}
+	
+	.ninth-div-img-16 {
+		position: relative;
+		top: -42rem;
+		left: 2rem;
+		transform: rotate(-6deg);
+		animation: image-16 1.5s linear;
+	}
+	
+	@keyframes image-16 {
+		0% {
+			top: -42rem;
+			left: -100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -42rem;
+			left: 2rem;
+			transform: rotate(-6deg);
+		}
+	}
+	
+	.ninth-div-img-17 {
+		position: relative;
+		top: -42rem;
+		left: 12rem;
+		transform: rotate(-1deg);
+		animation: stick-17 .5s linear;
+	}
+	
+	@keyframes stick-17 {
+		0% {
+			height: 40rem;
+			width: 40rem;
+			transform: rotatex(35deg);
+			top: -42rem;
+			left: 12rem;
+		}
+	
+		100% {
+			height: 10rem;
+			width: 10rem;
+			top: -42rem;
+			left: 12rem;
+		}
+	}
+	
+	.ninth-div-img-18 {
+		position: relative;
+		top: -42rem;
+		left: 15rem;
+		transform: rotate(3deg);
+		animation: image-18 1.5s linear;
+	}
+	
+	@keyframes image-18 {
+		0% {
+			top: -37rem;
+			left: 100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -42rem;
+			left: 15rem;
+			transform: rotate(-6deg);
+		}
+	}
+	
+	#tenth-div {
+		position: relative;
+		top: 5.1rem;
+		left: 0;
+		height: 22rem;
+	}
+	
+	.tenth-div-img-19 {
+		position: relative;
+		top: -42rem;
+		left: 5rem;
+		transform: rotate(3deg);
+		animation: image-19 1.5s linear;
+	}
+	
+	@keyframes image-19 {
+		0% {
+			top: -37rem;
+			left: -100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -42rem;
+			left: 5rem;
+			transform: rotate(3deg);
+		}
+	}
+	
+	.tenth-div-img-20 {
+		position: relative;
+		top: -42rem;
+		left: 5rem;
+		transform: rotate(-7deg);
+		animation: image-20 1.5s linear;
+	}
+	
+	@keyframes image-20 {
+		0% {
+			top: -37rem;
+			left: -100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -42rem;
+			left: 5rem;
+			transform: rotate(-7deg);
+		}
+	}
+	
+	.tenth-div-img-21 {
+		position: relative;
+		top: -47rem;
+		left: 15rem;
+		transform: rotate(3deg);
+		animation: stick-21 0.5s linear;
+	}
+	
+	@keyframes stick-21 {
+		0% {
+			height: 40rem;
+			width: 40rem;
+			transform: rotatex(35deg);
+			top: -42rem;
+			left: 12rem;
+		}
+	
+		100% {
+			height: 10rem;
+			width: 10rem;
+			top: -47rem;
+			left: 15rem;
+			transform: rotate(3deg);
+		}
+	}
+	
+	.tenth-div-img-22 {
+		position: relative;
+		top: -47rem;
+		left: 20rem;
+	
+		animation: stick-22 0.5s linear;
+	}
+	@keyframes stick-22 {
+		0% {
+			height: 40rem;
+			width: 40rem;
+			transform: rotatex(35deg);
+			top: -42rem;
+			left: 22rem;
+		}
+	
+		100% {
+			height: 10rem;
+			width: 10rem;
+			top: -47rem;
+			left: 20rem;
+		}
+	}
+	
+	#eleventh-div {
+		position: relative;
+		top: 5.1rem;
+		left: 0;
+		height: 22rem;
+	}
+	
+	.eleventh-div-img-23 {
+		position: relative;
+		top: -48rem;
+		left: 10rem;
+		transform: rotate(3deg);
+		animation: stick-23 0.5s linear;
+	}
+	
+	@keyframes stick-23 {
+		0% {
+			height: 40rem;
+			width: 40rem;
+			transform: rotatex(35deg);
+			top: -42rem;
+			left: 12rem;
+		}
+	
+		100% {
+			height: 10rem;
+			width: 10rem;
+			top: -48rem;
+			left: 10rem;
+			transform: rotate(3deg);
+		}
+	}
+	
+	.eleventh-div-img-24 {
+		position: relative;
+		top: -45rem;
+		left: 10rem;
+		transform: rotate(3deg);
+		animation: stick-24 0.5s linear;
+	}
+	
+	@keyframes stick-24 {
+		0% {
+			height: 40rem;
+			width: 40rem;
+			transform: rotatex(35deg);
+			top: -42rem;
+			left: 12rem;
+		}
+	
+		100% {
+			height: 10rem;
+			width: 10rem;
+			top: -45rem;
+			left: 10rem;
+			transform: rotate(3deg);
+		}
+	}
+	
+	.eleventh-div-img-25 {
+		position: relative;
+		top: -48rem;
+		left: 10rem;
+		transform: rotate(-6deg);
+		animation: stick-25 0.5s linear;
+	}
+	
+	@keyframes stick-25 {
+		0% {
+			height: 40rem;
+			width: 40rem;
+			transform: rotatex(35deg);
+			top: -42rem;
+			left: 12rem;
+		}
+	
+		100% {
+			height: 10rem;
+			width: 10rem;
+			top: -48rem;
+			left: 10rem;
+			transform: rotate(-6deg);
+		}
+	}
+	
+	.eleventh-div-img-26 {
+		position: relative;
+		top: -43rem;
+		left: 25rem;
+		transform: rotate(3deg);
+		animation: image-26 1.5s linear;
+	}
+	
+	@keyframes image-26 {
+		0% {
+			top: -37rem;
+			left: 100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -42rem;
+			left: 25rem;
+			transform: rotate(-7deg);
+		}
+	}
+	
+	#twelve-div {
+		position: relative;
+		top: 5.1rem;
+		left: 0;
+		height: 18rem;
+	}
+	
+	.twelve-div-img-27 {
+		position: relative;
+		top: -48rem;
+		left: 20rem;
+		animation: stick-27 0.5s linear;
+	}
+	
+	@keyframes stick-27 {
+		0% {
+			height: 40rem;
+			width: 40rem;
+			transform: rotatex(35deg);
+			top: -42rem;
+			left: 12rem;
+		}
+	
+		100% {
+			height: 10rem;
+			width: 10rem;
+			top: -48rem;
+			left: 20rem;
+		}
+	}
+	
+	.twelve-div-img-28 {
+		position: relative;
+		top: -38rem;
+		left: 35rem;
+		transform: rotate(-6deg);
+		animation: image-28 1.5s linear;
+	}
+	
+	@keyframes image-28 {
+		0% {
+			top: -37rem;
+			left: 100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -38rem;
+			left: 35rem;
+			transform: rotate(-6deg);
+		}
+	}
+	
+	#thirteen-div {
+		position: relative;
+		top: 4.7rem;
+		left: 0;
+		height: 18rem;
+	}
+	
+	.thirteen-div-img-29 {
+		position: relative;
+		top: -38rem;
+		left: 15rem;
+		transform: rotate(-6deg);
+		animation: image-29 1.5s linear;
+	}
+	
+	@keyframes image-29 {
+		0% {
+			top: -37rem;
+			left: -100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -38rem;
+			left: 15rem;
+			transform: rotate(-6deg);
+		}
+	}
+	
+	.thirteen-div-img-30 {
+		position: relative;
+		top: -38rem;
+		left: 5rem;
+		transform: rotate(6deg);
+		animation: image-30 1.5s linear;
+	}
+	
+	@keyframes image-30 {
+		0% {
+			top: -37rem;
+			left: -100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -38rem;
+			left: 5rem;
+			transform: rotate(6deg);
+		}
+	}
+	
+	.thirteen-div-img-31 {
+		position: relative;
+		top: -38rem;
+		left: 25rem;
+		transform: rotate(-3deg);
+		animation: image-31 1.5s linear;
+	}
+	
+	@keyframes image-31 {
+		0% {
+			top: -37rem;
+			left: 100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -38rem;
+			left: 25rem;
+			transform: rotate(-3deg);
+		}
+	}
+	
+	#fourteen-div {
+		position: relative;
+		top: 4rem;
+		left: 0;
+		height: 15rem;
+	}
+	
+	.fourteen-div-img-32 {
+		position: relative;
+		top: -31rem;
+		left: 20rem;
+		animation: stick-32 0.5s linear;
+	}
+	
+	@keyframes stick-32 {
+		0% {
+			height: 40rem;
+			width: 40rem;
+			transform: rotatex(35deg);
+			top: -42rem;
+			left: 12rem;
+		}
+	
+		100% {
+			height: 10rem;
+			width: 10rem;
+			top: -31rem;
+			left: 20rem;
+		}
+	}
+	
+	.fourteen-div-img-33 {
+		position: relative;
+		top: -31rem;
+		left: 25rem;
+		transform: rotate(-3deg);
+		animation: stick-33 0.5s linear;
+	}
+	
+	@keyframes stick-33 {
+		0% {
+			height: 40rem;
+			width: 40rem;
+			transform: rotatex(35deg);
+			top: -42rem;
+			left: 12rem;
+		}
+	
+		100% {
+			height: 10rem;
+			width: 10rem;
+			top: -31rem;
+			left: 25rem;
+			transform: rotate(-3deg);
+		}
+	}
+	
+	.fourteen-div-img-34 {
+		position: relative;
+		top: -31rem;
+		left: 30rem;
+		transform: rotate(3deg);
+		animation: stick-34 0.5s linear;
+	}
+	
+	@keyframes stick-34 {
+		0% {
+			height: 40rem;
+			width: 40rem;
+			transform: rotatex(35deg);
+			top: -42rem;
+			left: 12rem;
+		}
+	
+		100% {
+			height: 10rem;
+			width: 10rem;
+			top: -31rem;
+			left: 30rem;
+			transform: rotate(-3deg);
+		}
+	}
+	
+	#fifteen-div {
+		position: relative;
+		top: 4.6rem;
+		left: 0;
+		height: 29rem;
+	}
+	
+	.fifteen-div-img-35 {
+		position: relative;
+		top: -48rem;
+		left: 5rem;
+		transform: rotate(-3deg);
+		animation: image-35 1.5s linear;
+	}
+	
+	@keyframes image-35 {
+		0% {
+			top: -37rem;
+			left: -100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -48rem;
+			left: 5rem;
+			transform: rotate(-3deg);
+		}
+	}
+	
+	.fifteen-div-img-36 {
+		position: relative;
+		top: -48rem;
+		left: 7rem;
+		transform: rotate(3deg);
+		animation: stick-36 0.5s linear;
+	}
+	
+	@keyframes stick-36 {
+		0% {
+			height: 40rem;
+			width: 40rem;
+			transform: rotatex(35deg);
+			top: -42rem;
+			left: 12rem;
+		}
+	
+		100% {
+			height: 10rem;
+			width: 10rem;
+			top: -48rem;
+			left: 7rem;
+			transform: rotate(-3deg);
+		}
+	}
+	
+	.fifteen-div-img-37 {
+		position: relative;
+		top: -48rem;
+		left: 20rem;
+		transform: rotate(6deg);
+		animation: image-37 1.5s linear;
+	}
+	
+	@keyframes image-37 {
+		0% {
+			top: -37rem;
+			left: 100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -48rem;
+			left: 20rem;
+			transform: rotate(6deg);
+		}
+	}
+	
+	.fifteen-div-img-38 {
+		position: relative;
+		top: -48rem;
+		left: 18rem;
+		transform: rotate(-5deg);
+		animation: image-38 1.5s linear;
+	}
+	
+	@keyframes image-38 {
+		0% {
+			top: -37rem;
+			left: 100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -48rem;
+			left: 18rem;
+			transform: rotate(-5deg);
+		}
+	}
+	
+	#sixteen-div {
+		position: relative;
+		top: 4.3rem;
+		left: 0;
+		height: 22rem;
+	}
+	
+	.sixteen-div-img-39 {
+		position: relative;
+		top: -48rem;
+		left: 0rem;
+		transform: rotate(-5deg);
+		animation: image-39 1.5s linear;
+	}
+	
+	@keyframes image-39 {
+		0% {
+			top: -37rem;
+			left: -100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -48rem;
+			left: 0rem;
+			transform: rotate(-5deg);
+		}
+	}
+	
+	.sixteen-div-img-40 {
+		position: relative;
+		top: -48rem;
+		left: -3rem;
+		transform: rotate(5deg);
+		animation: image-40 1.5s linear;
+	}
+	
+	@keyframes image-40 {
+		0% {
+			top: -37rem;
+			left: -100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -48rem;
+			left: -3rem;
+			transform: rotate(5deg);
+		}
+	}
+	
+	.sixteen-div-img-41 {
+		position: relative;
+		top: -46rem;
+		left: -5rem;
+		transform: rotate(-1deg);
+		animation: image-41 1.5s linear;
+	}
+	
+	@keyframes image-41 {
+		0% {
+			top: -37rem;
+			left: -100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -46rem;
+			left: -5rem;
+			transform: rotate(-1deg);
+		}
+	}
+	
+	.sixteen-div-img-42 {
+		position: relative;
+		top: -46rem;
+		left: -8rem;
+		transform: rotate(-6deg);
+		animation: image-42 1.5s linear;
+	}
+	
+	@keyframes image-42 {
+		0% {
+			top: -37rem;
+			left: 100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -46rem;
+			left: -8rem;
+			transform: rotate(-6deg);
+		}
+	}
+	
+	.sixteen-div-img-43 {
+		position: relative;
+		top: -66rem;
+		right: -70rem;
+		transform: rotate(6deg);
+		animation: image-43 1.5s linear;
+	}
+	
+	@keyframes image-43 {
+		0% {
+			top: -37rem;
+			right: -150rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -66rem;
+			right: -70rem;
+			transform: rotate(6deg);
+		}
+	}
+	
+	#seventeen-div {
+		position: relative;
+		top: 4.3rem;
+		left: 0;
+		height: 11rem;
+	}
+	
+	.seventeen-div-img-44 {
+		position: relative;
+		top: -41rem;
+		left: 18rem;
+		transform: rotate(6deg);
+		animation: image-44 1.5s linear;
+	}
+	
+	@keyframes image-44 {
+		0% {
+			top: -48rem;
+			left: -100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -41rem;
+			left: 18rem;
+			transform: rotate(6deg);
+		}
+	}
+	
+	.seventeen-div-img-45 {
+		position: relative;
+		top: -41rem;
+		left: 37rem;
+		transform: rotate(3deg);
+		animation: stick-36 0.5s linear;
+	}
+	
+	@keyframes stick-45 {
+		0% {
+			height: 40rem;
+			width: 40rem;
+			transform: rotatex(35deg);
+			top: -42rem;
+			left: 12rem;
+		}
+	
+		100% {
+			height: 10rem;
+			width: 10rem;
+			top: -41rem;
+			left: 37rem;
+			transform: rotate(-3deg);
+		}
+	}
+	
+	#eighteen-div {
+		position: relative;
+		top: 4.3rem;
+		left: 0;
+		height: 25rem;
+	}
+	
+	.eighteen-div-img-46 {
+		position: relative;
+		top: -48rem;
+		left: 0rem;
+		transform: rotate(-3deg);
+		animation: image-46 1.5s linear;
+	}
+	
+	@keyframes image-46 {
+		0% {
+			top: -48rem;
+			left: -100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -48rem;
+			left: 0rem;
+			transform: rotate(-3deg);
+		}
+	}
+	
+	.eighteen-div-img-47 {
+		position: relative;
+		top: -48rem;
+		left: -2rem;
+		transform: rotate(3deg);
+		animation: image-47 1.5s linear;
+	}
+	
+	@keyframes image-47 {
+		0% {
+			top: -48rem;
+			left: -100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -48rem;
+			left: -2rem;
+			transform: rotate(3deg);
+		}
+	}
+	
+	.eighteen-div-img-48 {
+		position: relative;
+		top: -51rem;
+		left: -2rem;
+		transform: rotate(-3deg);
+		animation: stick-48 0.5s linear;
+	}
+	
+	@keyframes stick-48 {
+		0% {
+			height: 40rem;
+			width: 40rem;
+			transform: rotatex(35deg);
+			top: -42rem;
+			left: 12rem;
+		}
+	
+		100% {
+			height: 10rem;
+			width: 10rem;
+			top: -51rem;
+			left: -2rem;
+			transform: rotate(-3deg);
+		}
+	}
+	
+	.eighteen-div-img-49 {
+		position: relative;
+		top: -48rem;
+		left: -2rem;
+		transform: rotate(-3deg);
+		animation: image-49 1.5s linear;
+	}
+	
+	@keyframes image-49 {
+		0% {
+			top: -48rem;
+			left: 100rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -48rem;
+			left: -2rem;
+			transform: rotate(-3deg);
+		}
+	}
+	
+	.eighteen-div-img-50 {
+		position: relative;
+		top: -68rem;
+		right: -70rem;
+		transform: rotate(6deg);
+		animation: image-50 1.5s linear;
+	}
+	
+	@keyframes image-50 {
+		0% {
+			top: -48rem;
+			right: -150rem;
+			transform: rotate(720deg);
+		}
+	
+		100% {
+			top: -68rem;
+			right: -70rem;
+			transform: rotate(6deg);
+		}
+	}
+	
+	#nineteen-div {
+		position: relative;
+		top: 7.2rem;
+		left: 0;
+		height: 10rem;
+	}
+	
+	.nineteen-div-img-51 {
+		position: relative;
+		top: -5rem;
+		left: 30rem;
+	
+		animation: stick-51 0.5s linear;
+	}
+	
+	@keyframes stick-51 {
+		0% {
+			height: 40rem;
+			width: 20rem;
+			transform: rotatex(35deg);
+			top: -5rem;
+			left: 28rem;
+		}
+	
+		100% {
+			height: 10rem;
+			width: 10rem;
+			top: -5rem;
+			left: 30rem;
+		}
+	}
+	
+	.center-signiture {
+		display: flex;
+		flex-direction: column;
+		justify-self: center;
+		align-items: center;
+	}
+	
+	#nineteen-div h2 {
+		transform: translateY(-0.3rem);
+	} */
 }
