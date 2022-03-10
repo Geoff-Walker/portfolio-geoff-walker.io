@@ -387,7 +387,7 @@ header {
 .door {
 	height: 80vh;
 	width: 32vw;
-	background-image: url(Images/project-images/doors.svg);
+	background-image: url(Images/project-images/doors-small.png);
 	background-position: right center;
 	background-size: cover;
 	position: fixed;
