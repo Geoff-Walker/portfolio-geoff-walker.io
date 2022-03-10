@@ -92,7 +92,7 @@ function returnHome() {
 }
 
 function openResume() {
-	window.open('https://www.geoff-walker.io/Resume.pdf');
+	window.open('https://www.geoff-walker.io/geoff-resume.pdf');
 }
 
 function openLinkdIn() {

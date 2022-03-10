@@ -64,7 +64,7 @@ function goToLinkedIn() {
 }
 
 function goToResume() {
-	window.open('http://127.0.0.1:5501/Resume.pdf', '_blank');
+	window.open('https://www.geoff-walker.io/geoff-resume.pdf', '_blank');
 }
 
 function closeMobNav() {
