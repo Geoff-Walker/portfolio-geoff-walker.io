@@ -287,12 +287,24 @@ header {
 	background-image: url(Images/project-images/giorgio-trovato-OKXwmdbdXkk-unsplash.jpg);
 }
 
+.project-rock-paper {
+	background-image: url(Images/project-images/rock-paper-scissors-background.jpg);
+}
+
+.project-calculator {
+	background-image: url(Images/project-images/calc-back.jpg);
+}
+
 .project-fem-json {
 	background-image: url(Images/project-images/gina-lin-m27OTMegUyA-unsplash.jpg);
 }
 
 .project-etch {
 	background-image: url(Images/project-images/mick-haupt-8tN0Uq0GjCs-unsplash.jpg);
+}
+
+.project-nexter {
+	background-image: url(Images/project-images/nexter-back.jpg);
 }
 
 .project-fork {
