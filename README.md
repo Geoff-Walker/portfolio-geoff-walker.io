@@ -31,7 +31,9 @@ When I was trying to come up with a design for my home page I wanted something t
 
 Really liking a challenge and wanting to really perfect my animation skills I decided to try and recreate the Eta James classic "I dont want you", forever linked with the diet coke break adverts.  A little while later and after hearing a 30s loop more times than sanity should allow I came up with an animation that is accurate enough to evoke the song even in silence.  The diet coke break background artwork and all the cans and spray on this page were draw by myself in inkscape.
 
-<img src="https://github.com/Geoff-Walker/Geoff-Walker/blob/main/geoff-walker.io.gif" width="256" height="192">
+<div align="center">
+<img src="https://github.com/Geoff-Walker/Geoff-Walker/blob/main/geoff-walker.io.gif" width="512" height="384">
+</div>
 
 __Fancy hover__
 I used data attributes in order to create a fancy hover effect using a before and after psuedo class on the nav links
