@@ -42,6 +42,7 @@ The diet coke break, background artwork and all the cans and spray on this page 
 
 ## Projects ## 
 The idea for this page was to have an elevator where each floor was a different project within the portfolio.  This was my biggest challenge by far I knew what I wanted to achieve but really had to look hard for effective tools like scroll-snap and the intersection observer in order to bring the vision to reality.  I really love the final effect especially on desktop.
+
 <div align="center">
 <img src="https://github.com/Geoff-Walker/Geoff-Walker/blob/main/Projects.gif" width="512" height="384">
 </div>
@@ -100,10 +101,13 @@ A sign animated to appear as a neon sign
 
 __Coffee Cup and Steam__
 A coffee cup, saucer and steam all in css
+
 __A desk and signs__
 CSS only
+
 __A folder that animates open and closed__
 An animation rotation the cover of the folder on the hover event
+
 __APi emailer__
 Contact from emailer set up                                                                                         
 
