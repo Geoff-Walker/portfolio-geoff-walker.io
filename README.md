@@ -69,22 +69,43 @@ The intersection observer also both opens and closes the doors by triggering ani
 __Page filter__
 Even if at the time of writing this I dont really have enough projects on the page to need a filter, I intent to keep adding to it and it demonstrates another capability
 
-__Picture Heavy  - Lazy Loading __
+__Picture Heavy  - Lazy Loading__
 If on self reflection I have a critism of this page it is the picture heavy nature of it and the knock on loading times.  I have tried to improve this by optimising image quality, compressing gifs and implementing lazy loading on all but the first two floors.
 
 
 ## About ## 
+As a career changer I needed to tell the story of how I got here which is due to my age longer than a recent graduate, at the same time I didnt want it to be boring so I wanted to animate it with images at the right time like it was a storyboard so it fealt engaging.  The concept I came up with is as if I were handwriting on A4 ruled paper while throwing on polaroids and applying school stickers.
 
+__A4 paper__
+The A4 paper backgorund is made using three linear gradients on a white background two fixed and one repeating, by playing with the stop, start positions of the grdients I have managed to get a bleed effect which is very lifelike and makes the paper seem not white.
 
+__Hitting the lines__
+The second challenge came from now I had lines to write on that the handwriting was on top of it.  By using three fixed pixel layouts not something I would normally do I have managed to keep everything on the correct lines and flowing nicely
+
+__Rendering the story__
+I have again used the intersection obeserver to detect if the div is visible and fade it in, while simultaneously triggering an animation either a polaroid or a sticker.
+On mobile I removed the image and sticker rendering as it interfered with the readability and flow of the story.
+
+__Pencil in Inkscape__
+The pencil art in this was drawn by myself in inkscape
 
 ## Contact ##
+The goal of this page was simply to go to town with CSS the whole page is CSS only with a Javascript based clock and api based form emailer.
 
+__Javascript Clock__
+I built this ornate clock based upon date time object within the browser
 
-## Lessons learnt and areas to improve 
+__CSS Neon Sign__
+A sign animated to appear as a neon sign
 
-
-
-                                                                                               
+__Coffee Cup and Steam__
+A coffee cup, saucer and steam all in css
+__A desk and signs__
+CSS only
+__A folder that animates open and closed__
+An animation rotation the cover of the folder on the hover event
+__APi emailer__
+Contact from emailer set up                                                                                         
 
 
 ## Contact Details
