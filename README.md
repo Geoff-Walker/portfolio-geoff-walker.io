@@ -1,7 +1,7 @@
 <img src="https://github.com/Geoff-Walker/Geoff-Walker/blob/main/my-banner.png">
 
 # About Me
-Hi my names Geoff and I live in rural Lincolnshire with my beautiful wife Helen. After a nasty fall left me an amputee, my established career as an engineer ended abruptly, little did I know when I started coding as a hobby that my true calling for programming had only just begun. Since then I have fallen in love with programming and developed a talent for interactive UI/UX web development.
+Hi my names Geoff and I live in rural Lincolnshire with my beautiful wife Helen. After a nasty fall left me an amputee, my established career as a mechanical engineer ended abruptly, little did I know when I started coding as a hobby that my true calling for programming had only just begun. Since then I have fallen in love with programming and developed a talent for interactive UI/UX web development.
 
 If you have a hybrid/remote employment opportunity or would like to discuss work on a freelance basis, please don't hesitate to contact me.
 
