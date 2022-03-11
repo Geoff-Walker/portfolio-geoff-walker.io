@@ -34,7 +34,7 @@ I created a light and dark theme based on either cola or lemonade
 __Javascript Coke Bubbles__
 Again I used a before and after on a javascript generated, span element, to create a bubble of either coke or lemonade depending on the light and dark theme.
 
-__Diet Coke Animationm__
+__Diet Coke Animation__
 Really liking a challenge and wanting to really perfect my animation skills, I decided to try and recreate the Eta James classic "I dont want you", forever linked with the diet coke break adverts.  A little while later and after hearing a thirty second loop more times than sanity should allow, I came up with an animation that is accurate enough to evoke the song even in silence.
 
 __Artwork in Inkscape__
