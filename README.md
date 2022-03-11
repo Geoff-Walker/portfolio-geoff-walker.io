@@ -58,7 +58,7 @@ __Intersection observer__
 The intersection observer helped me trigger rendering and animation functions depending on if the floor is intersecting 
 
 __Rendering each floor__
-As the lift registers intersection with the floor via the intersection observer the Dom is manipulated to change the following on screen using the data attributes established in the htmnl of the floor.
+As the lift registers intersection with the floor via the intersection observer the Dom is manipulated to change the following on screen using the data attributes established in the html of the floor.
 
 1. The Header
 2. The Technologies used on the left panel
