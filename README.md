@@ -7,12 +7,10 @@ If you have a hybrid/remote employment opportunity or would like to discuss work
 
 ## Examples of Work
 <div align="center">
-<img src="https://github.com/Geoff-Walker/Geoff-Walker/blob/main/Aspects%20of%20beauty.gif.gif" width="256">
-<img src="https://github.com/Geoff-Walker/Geoff-Walker/blob/main/geoff-walker.io.gif" width="256" height="192">
+
+
 <img src="https://github.com/Geoff-Walker/Geoff-Walker/blob/main/Projects.gif" width="256" height="192">
-<img src="https://github.com/Geoff-Walker/portfolio-geoff-walker.io/blob/main/Images/project-images/fem-json-activity.jpeg" width="256">
-<img src="https://github.com/Geoff-Walker/odin-calculator/blob/main/calculator.jpeg" width="256">
-<img src="https://github.com/Geoff-Walker/Geoff-Walker/blob/main/rps.png" width="256"  height="192">
+
 </div>
 
 # My Portfolio
@@ -32,6 +30,8 @@ In todays world all screen sizes need to be accomodated and I hope that I have a
 When I was trying to come up with a design for my home page I wanted something that was dynamic and full of motion, I didn't however want the enormous download times that a big background video would bring. So I came up with the coke bubbles concept, self generated with javasdcript.  
 
 Really liking a challenge and wanting to really perfect my animation skills I decided to try and recreate the Eta James classic "I dont want you", forever linked with the diet coke break adverts.  A little while later and after hearing a 30s loop more times than sanity should allow I came up with an animation that is accurate enough to evoke the song even in silence.  The diet coke break background artwork and all the cans and spray on this page were draw by myself in inkscape.
+
+<img src="https://github.com/Geoff-Walker/Geoff-Walker/blob/main/geoff-walker.io.gif" width="256" height="192">
 
 __Fancy hover__
 I used data attributes in order to create a fancy hover effect using a before and after psuedo class on the nav links
