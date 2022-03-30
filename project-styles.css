@@ -303,6 +303,10 @@ header {
 	background-image: url(Images/project-images/mick-haupt-8tN0Uq0GjCs-unsplash.jpg);
 }
 
+.project-shareposts {
+	background-image: url(Images/project-images/post_board.png);
+}
+
 .project-nexter {
 	background-image: url(Images/project-images/nexter-back.jpg);
 }
